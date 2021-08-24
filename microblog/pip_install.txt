@@ -1,0 +1,11 @@
+$ python3 -m venv venv
+$ venv\Scripts\activate
+(venv) $ pip install flask
+>>> import flask
+(venv) $ export FLASK_APP=microblog.py
+(venv) $ pip install python-dotenv
+(venv) $ pip install flask-wtf
+(venv) $ pip install flask-sqlalchemy
+(venv) $ pip install flask-migrate
+(venv) $ pip install flask-login
+(venv) $ pip install email-validator
