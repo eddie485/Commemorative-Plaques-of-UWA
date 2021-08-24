@@ -1,0 +1,19 @@
+{%extends "base.html"%}
+
+{%block head%}
+    <style>
+        .flex-fill { 
+            min-height: 100%;   
+            height: 100%;
+        }
+    </style>
+{%endblock%}
+{%block body%}
+<div class="container-fluid">
+    <div class="row flex-fill" style="height:100vh">
+        <div class="col-sm-8" style="background-color: gray; text-align: center; line-height:500px; font-size: 60px;">MAP GOES HERE</div>
+        <div class="col-sm-4" style="background-color: lightgray; text-align: center; line-height:500px; font-size: 40px;">IMAGE/BLURB HERE</div>
+    </div>    
+</div>
+
+{%endblock%}
