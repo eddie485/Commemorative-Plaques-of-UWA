@@ -1,7 +1,38 @@
 {%extends "base.html"%}
 
 {%block head%}
+<style>
+    .flex-fill { 
+        min-height: 100%;   
+        height: 100%;
+    }
+    h1, p, pre{
+        text-align: justify;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
 {%endblock%}
 
 {%block body%}
+
+<div class="container-fluid " style="background-color: gainsboro; font-size: 15px; padding-top: 15px;">
+    <div class="row">
+    <div class="col-sm-6">
+        <h1>UWA Historical Society</h1>
+        <p>
+            encourage appreciation of University history amongst staff, students, graduates and the community
+            create a fellowship of persons interested in the history of the campus
+            promote University projects of an historical nature
+            contribute to the development of the University's historical record
+            collect and catalogue historical University artefacts
+            encourage historical displays of University material
+            improve access to University historical resources staff and research students. 
+        </p>
+    </div>
+    <div class="col-sm-6" style ="padding-bottom: 15px;"> 
+        <img class="d-block w-30" src= "{{ url_for('static', filename='images/book.jpg')}}">
+    </div>
+    </div>
+</div>
+
 {%endblock%}
