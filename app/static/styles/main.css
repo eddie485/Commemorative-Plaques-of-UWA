@@ -1,0 +1,13 @@
+.flex-fill { 
+    min-height: 100%;   
+    height: 100%;
+}
+
+.flex-item {
+    margin: auto;
+}
+
+h1, p, pre{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
