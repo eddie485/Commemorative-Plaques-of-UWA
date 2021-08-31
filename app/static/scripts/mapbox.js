@@ -2,7 +2,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbWVtb3JhdGl2ZS1wbGFxdWVzLW9mLXV3YSIsImEiO
 // Display a map of UWA
 const map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL or use 'mapbox://styles/mapbox/streets-v11' for non satelite
     center: [115.8181, -31.9789], // starting position [longitude, latitude]
     zoom: 17 // starting zoom 
 });
