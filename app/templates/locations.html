@@ -4,4 +4,24 @@
 {%endblock%}
 
 {%block body%}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <div style = "margin: 25px;">
+                    <h1>LOCATIONS OF INTEREST</h1>
+                </div>
+                {% for location in locations_list %}
+                
+                <div class = "contatiner location-container">
+                    {{location.Name}}
+                    <i>{{location.Type}}</i>
+                    <img class="d-block w-100" src= {{locations.Image_Path}} alt="First slide">
+                    {{location.Description}}
+                </div>    
+                {%endfor%}
+                
+            </div>
+        </div>
+
+    </div>
 {%endblock%}
