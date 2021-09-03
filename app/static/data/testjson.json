@@ -1,0 +1,23 @@
+{
+    "locations": [
+        {
+            "title" : "Winthrop Hall",
+            "blurb" : [
+                {
+                    "para1" : "Winthrop Hall measures 135 feet long by 60 feet wide with a height from floor to ceiling of 50 feet. The Hall features a Clock Tower, a glazed terracotta gryphon’s frieze that circles the building just under the roof eaves, an undercroft and a reflection pool at its front.",
+                    "para2" : "It seats 1069 people in the body of the Hall and 150 or more on the dais. The Hall, as well as other Hackett Memorial Buildings, is permanently entered into the Register of Heritage Places.",
+                    "para3" : "At its highest point Winthrop Hall’s clock tower measures 150 feet. As well as the clock, it has six rooms that originally accommodated staff and research students."
+                }
+            ]
+        }
+        
+    ],
+    "welcome" : 
+        {
+            "title" : "Welcome to Commemorative-Plaques-of-UWA",
+            "blurb" : "choose on of the themes to get started on a walk, or click an icon to get more information"
+        }
+    
+}
+    
+    
