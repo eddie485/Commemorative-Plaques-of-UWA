@@ -21,7 +21,7 @@ map.dragRotate.disable();
 map.touchZoomRotate.disableRotation();
 
 // Add geolocate control to the map.
-map.addControl(
+var geolocate =
     new mapboxgl.GeolocateControl({
     positionOptions: {
     enableHighAccuracy: true
@@ -31,5 +31,8 @@ map.addControl(
     // Draw an arrow next to the location dot to indicate which direction the device is heading.
     showUserHeading: true
     })
-    );
 
+map.addControl(geolocate);
+map.on('load', function() {
+    geolocate.trigger(); //<- Automatically activates geolocation
+});
