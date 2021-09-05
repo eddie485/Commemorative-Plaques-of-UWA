@@ -11,6 +11,9 @@ def index():
 def about():
     return render_template("about.html", title="About")
 
+
+
+
 @app.route("/locations")
 def locations():
     return render_template("locations.html", title="Locations")
