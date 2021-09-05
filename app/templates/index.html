@@ -19,16 +19,15 @@
             height: 1px;
             background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
         }
+
+        #map {
+            height: 100%;
+        }
     </style>
 {%endblock%}
 {%block body%}
-<style>
-    #map {
-        height: 70vw;
-    }
-</style>
 <div class="container-fluid">
-    <div class="row" style="height:100vh">
+    <div class="row" style="height:70vw">
         <div class="col-md-8 col-xs-1" id="map">
             <script src="{{ url_for('static', filename='scripts/mapbox.js')}}"></script>
         </div>
