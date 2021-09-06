@@ -19,13 +19,19 @@
             height: 1px;
             background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
         }
+
+        #map {
+            height: 100%;
+        }
     </style>
 {%endblock%}
 {%block body%}
 <div class="container-fluid">
-    <div class="row" style="height:100vh">
+    <div class="row" style="height:70vw">
         <div class="col-md-8 col-xs-1" id="map">
             <script src="{{ url_for('static', filename='scripts/mapbox.js')}}"></script>
+	    <script src="{{ url_for('static', filename='scripts/walk1.js')}}"></script>
+            <script src="{{ url_for('static', filename='scripts/walk2.js')}}"></script>
         </div>
         <div class="col-md-4 col-xs-1" style="background-color:white; text-align: center; line-height:500px; font-size: 40px;">
             <div class="container" style="padding-top: 30px; padding-bottom: 15px;">
