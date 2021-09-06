@@ -8,7 +8,7 @@ const queenAndDuke = new mapboxgl.Marker( { color: color1 } )
 // Create a new marker.
 const artsBuilding = new mapboxgl.Marker( { color: color1 } )
     .setLngLat([115.818118, -31.978412])
-    .addTo(map);
+    .addTo(map); 
 
 // Create a new marker.
 const theCharioteer = new mapboxgl.Marker( { color: color1 } )
@@ -59,9 +59,5 @@ const emma = new mapboxgl.Marker( { color: color1 } )
 const sundial = new mapboxgl.Marker( { color: color1 } )
     .setLngLat([115.819341, -31.978653])
     .addTo(map);
-
-
-
-
 
 
