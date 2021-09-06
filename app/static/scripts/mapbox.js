@@ -1,10 +1,10 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbWVtb3JhdGl2ZS1wbGFxdWVzLW9mLXV3YSIsImEiOiJja3N4Y3p4M3owYmI4MnNwMmxqcmptbnpxIn0.viaDBFBPyZe6hpYUDP7q-A';;
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbWVtb3JhdGl2ZS1wbGFxdWVzLW9mLXV3YSIsImEiOiJja3N4Y3p4M3owYmI4MnNwMmxqcmptbnpxIn0.viaDBFBPyZe6hpYUDP7q-A';
 // Display a map of UWA
 const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL or use 'mapbox://styles/mapbox/streets-v11' for non satelite
-    center: [115.8181, -31.9789], // starting position [longitude, latitude]
-    zoom: 17 // starting zoom 
+    center: [115.8181, -31.9805], // starting position [longitude, latitude]
+    zoom: 16 // starting zoom 
 });
 
 // Set bounds to UWA, Crawley Campus.
@@ -22,7 +22,6 @@ map.dragRotate.disable();
 map.touchZoomRotate.disableRotation();
 
 // Add geolocate control to the map.
-
 var geolocate =
     new mapboxgl.GeolocateControl({
     positionOptions: {
@@ -39,7 +38,6 @@ var geolocate =
     //trackUserLocation: true,
     // Draw an arrow next to the location dot to indicate which direction the device is heading.
     showUserHeading: true
-
     })
 
     //})
