@@ -1,27 +1,78 @@
 {%extends "base.html"%}
 
 {%block head%}
+<style>
+    .row{
+        background-color: #ede7d3;
+    }
+
+    #more1{
+        display: none;
+    }
+</style>
+
 {%endblock%}
 
 {%block body%}
     <div class="container-fluid">
-        <div class="row">
-            <div class="container">
-                <div style = "margin: 25px;">
-                    <h1>LOCATIONS OF INTEREST</h1>
-                </div>
-                {% for location in locations_list %}
-                
-                <div class = "contatiner location-container">
-                    {{location.Name}}
-                    <i>{{location.Type}}</i>
-                    <img class="d-block w-100" src= {{locations.Image_Path}} alt="First slide">
-                    {{location.Description}}
-                </div>    
-                {%endfor%}
-                
+        
+        <div class="container">
+            <div style = "margin: 25px;">
+                <h1>LOCATIONS OF INTEREST</h1>
             </div>
+            
+            <div class="row">
+                <div class="col-xs-4 col-md-4"><h1>Winthrop Hall</h1></div>
+                <div class="col-xs-7 col-md-7"><p>Some information about Winthrop Hall<span id="dots1">...</span>
+                <span id="more1">And even more it turns out because woah so much information</span>
+                </p></div>
+                <div class="col-xs-1 col-md-1"><button onclick="expandID('1')" id = myBtn1>Read more</button></div>
+            </div>
+
+            <div id="empty">
+
+            </div>
+            
+        
         </div>
 
     </div>
+    <script>
+        function expandID(id) {
+            var dots = document.getElementById("dots" + id);
+            var moreText = document.getElementById("more" + id);
+            var btnText = document.getElementById("myBtn" + id);
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+            }
+            }
+
+        function createBlock(id){
+            var empty = document.getElementById('empty')
+            var html = 
+                '<div class="col-xs-4 col-md-4"><h1></h1></div> \
+                    <div class="col-xs-7 col-md-7"> \
+                        <p> <span id = "info' + id + '"></span> \
+                            <span id="dots' + id + '">...</span> \
+                            <span id="more' + id + '">And even more it turns out because woah so much information</span> \
+                        </p> \
+                    </div> \
+                <div class="col-xs-1 col-md-1"> \
+                    <button onclick="expandID("1)" id = myBtn' + id + '>Read more</button> \
+                </div>'
+            empty.className = "row"
+            empty.innerHTML = html
+            empty.getElementbyID('info'+id).innerHTML = //ADD JSON TO RELEVANT INFO
+            empty.getElementbyID('more'+id).innerHTML = //ADD JSON TO RELEVANT INFO
+            
+        }
+    </script>
+
 {%endblock%}
