@@ -26,6 +26,7 @@
     </style>
 {%endblock%}
 {%block body%}
+
 <div class="container-fluid">
     <div class="row" style="height:70vw">
         <div class="col-md-8 col-xs-1" id="map">
@@ -61,14 +62,20 @@
             <div class="container" style="font-size: 15px; line-height: 150%; padding-top: 15px;">
                 <h1>Winthrop Hall</h1>
                 <br>
-                <p>
-                    Winthrop Hall measures 135 feet long by 60 feet wide with a height from floor to ceiling of 50 feet. The Hall features a Clock Tower, a glazed terracotta gryphon’s frieze that circles the building just under the roof eaves, an undercroft and a reflection pool at its front.
-
-                    It seats 1069 people in the body of the Hall and 150 or more on the dais. The Hall, as well as other Hackett Memorial Buildings, is permanently entered into the Register of Heritage Places.
-
-                    At its highest point Winthrop Hall’s clock tower measures 150 feet. As well as the clock, it has six rooms that originally accommodated staff and research students.
+                <p id = "Stuff">
 
                 </p>
+                
+                <!-- Basically just reads the json file and puts it into the tag with the defined id -->
+                <script>
+                  $(document).ready(function(){
+                    $.getJSON("../static/sites.json",function(sites){
+                      var bob = sites.SiteName;
+                      $('#Stuff').append(bob);
+                    });
+                  });
+
+                </script>
             </div>
         </div>
     </div>
