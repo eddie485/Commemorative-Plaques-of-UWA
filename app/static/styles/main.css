@@ -39,4 +39,7 @@ p, pre{
 
 footer{
     background-color: rgba(39,52,139,255);
+    position: absolute;
+    bottom: 0;
+    width: 100%
 }
