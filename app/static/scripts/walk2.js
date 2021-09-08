@@ -34,9 +34,13 @@ new mapboxgl.Marker( { color: color2 } )
     .addTo(map);
 
 // create the popup
-const reidL = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Reid Library'
-    );
+const reidL = new mapboxgl.Popup({ offset: 25 })
+    .setHTML("<img src='../images/reid.jpg'></img>");
+    //.setHTML("<img src=https://www.freeimages.com/photo/wood-seesaw-for-4x4-training-1633319></img>")
+    //.setHTML("<img src=url('../images/reid.jpg')></img>");
+    //.setHTML(<img class="d-block w-100" src= "{{ url_for('static', filename='images/reid.jpg')}}" alt="First slide"></img>);
+    //.setHTML("<img src= {{ url_for('static', filename='images/reid.jpg')}}></img>");
+    
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
