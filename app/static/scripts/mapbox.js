@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbWVtb3JhdGl2ZS1wbGFxdWVzLW9mLXV3YSIsImEiOiJja3N4Y3p4M3owYmI4MnNwMmxqcmptbnpxIn0.viaDBFBPyZe6hpYUDP7q-A';;
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbWVtb3JhdGl2ZS1wbGFxdWVzLW9mLXV3YSIsImEiOiJja3N4Y3p4M3owYmI4MnNwMmxqcmptbnpxIn0.viaDBFBPyZe6hpYUDP7q-A';
 // Display a map of UWA
 
 var satelite_map = 'mapbox://styles/mapbox/satellite-streets-v11'; //URL for satelite style map
@@ -26,17 +26,28 @@ map.dragRotate.disable();
 map.touchZoomRotate.disableRotation();
 
 // Add geolocate control to the map.
+var geolocate =
+    new mapboxgl.GeolocateControl({
+    positionOptions: {
+    enableHighAccuracy: true
+    },
+
 //map.addControl(
     //new mapboxgl.GeolocateControl({
     //positionOptions: {
     //enableHighAccuracy: true
     //},
+
     // When active the map will receive updates to the device's location as it changes.
     //trackUserLocation: true,
     // Draw an arrow next to the location dot to indicate which direction the device is heading.
     showUserHeading: true
+    })
+
     //})
     //);
 
-
-
+map.addControl(geolocate);
+map.on('load', function() {
+    geolocate.trigger(); //<- Automatically activates geolocation
+});
