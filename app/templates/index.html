@@ -66,18 +66,6 @@
 
                 </p>
 
-                <!-- Basically just reads the json file and puts it into the tag with the defined id -->
-                <script>
-                  $(document).ready(function(){
-                    $.getJSON("../static/sites.json",function(sites){
-                      var bob = sites.SiteName;
-                      var safbgfgd = sites.Description;
-                      $('#Site').append(bob);
-                      $('#Stuff').append(safbgfgd);
-                    });
-                  });
-
-                </script>
             </div>
         </div>
     </div>
