@@ -28,8 +28,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Themes</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">A Walk Through Time</a>
-                            <a class="dropdown-item" href="#">Music</a>
+                            <a class="dropdown-item" href="{{ url_for('walk1') }}">A Walk Through Time</a>
+                            <a class="dropdown-item" href="{{ url_for('walk2') }}">Music</a>
                             <a class="dropdown-item" href="#">Science</a>
                         </div>
                     </li>
@@ -41,7 +41,7 @@
             </div>
         </nav>
         {%block body%}{%endblock%}
-        <footer class="footer text-white text-center text-lg-start">
+        <footer class="footer text-white text-center">
             <div class="text-center p-3"> Copyright Stuff</div>
         </footer>
     </body>
