@@ -44,8 +44,17 @@ map.addControl(
         'geometry': {
         'type': 'LineString',
         'coordinates': [
-        [115.818187, -31.978437],
-        [115.818562, -31.978687]
+        [115.818687, -31.978687], //Fox
+        [115.818562, -31.978687], //Murdoch
+        [115.818187, -31.978437], //Alexander
+        [115.816937, -31.978563], //Ross
+        [115.816563, -31.979188], //Weatherburn
+        [115.817037, -31.979900], //Irwin St
+        [115.817813, -31.980187], //James Oval
+        [115.818562, -31.981437], //Tatersall
+        [115.818438, -31.982062], //Bayliss
+        [115.819812, -31.981063], //Cameron Hall
+        [115.819812, -31.979563] //Beasley
         ]
         }
         }
@@ -59,8 +68,8 @@ map.addControl(
         'line-cap': 'round'
         },
         'paint': {
-        'line-color': '#888',
-        'line-width': 8
+        'line-color': '#33C9EB',
+        'line-width': 3
         }
         });
         });
