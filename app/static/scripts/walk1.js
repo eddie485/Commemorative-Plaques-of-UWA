@@ -20,7 +20,7 @@ const artsBuilding = new mapboxgl.Popup({ offset: 25 }).setText(
 new mapboxgl.Marker( { color: color1 } )
     .setLngLat([115.818118, -31.978412])
     .setPopup(artsBuilding) // sets a popup on this marker
-    .addTo(map); 
+    .addTo(map);
 
 // create the popup
 const theCharioteer = new mapboxgl.Popup({ offset: 25 }).setText(
@@ -131,5 +131,3 @@ new mapboxgl.Marker( { color: color1 } )
     .setLngLat([115.819341, -31.978653])
     .setPopup(sundial) // sets a popup on this marker
     .addTo(map);
-
-

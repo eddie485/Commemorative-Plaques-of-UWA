@@ -1,8 +1,195 @@
 {
-        "SiteName": "Site  1",
-        "Longitude": -115,
-        "Latitude": 35,
+  "Fox_Lecture_Theatre" : {
+
+        "Longitude": 115.818687,
+        "Latitude": -31.978687,
         "Description": "This is a site",
         "Type": "Plaque",
         "FilePath": "..."
+    },
+    "Alexander_Lecture_Theatre" : {
+
+          "Longitude": 115.818187,
+          "Latitude": 31.978437,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Murdoch_Lecture_Theatre" : {
+
+          "Longitude": 115.818562,
+          "Latitude": -31.978687,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Reid_Library" : {
+
+          "Longitude": 115.817813,
+          "Latitude": -31.978938,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Ross_Lecture_Theatre" : {
+
+          "Longitude": 115.816937,
+          "Latitude": -31.978563,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Weatherburn_Lecture_Theatre" : {
+
+          "Longitude": 115.816563,
+          "Latitude": -31.979188,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Irwin_St_Building" : {
+
+          "Longitude": 115.817037,
+          "Latitude": -31.979900,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "James_Oval" : {
+
+          "Longitude": 115.817813,
+          "Latitude": -31.980187,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Tattersall_Lecture_Theatre" : {
+
+          "Longitude": 115.818562,
+          "Latitude": -31.981437,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Bayliss_Building" : {
+
+          "Longitude": 115.818438,
+          "Latitude": -31.982062,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Cameron_Hall" : {
+
+          "Longitude": 115.819812,
+          "Latitude": -31.981063,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Beasley_Law_Building" : {
+
+          "Longitude": 115.819812,
+          "Latitude": -31.979563,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Queen_And_Duke" : {
+
+          "Longitude": 115.818118,
+          "Latitude": -31.978412,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Arts_Building" : {
+
+          "Longitude": 115.818118,
+          "Latitude": -31.978412,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "The_Charioteer" : {
+
+          "Longitude": 115.818607,
+          "Latitude": -31.978105,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "The_Octagon_Theatre" : {
+
+          "Longitude": 115.819282,
+          "Latitude": -31.977331,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "The_Black_Stump" : {
+
+          "Longitude": 115.819077,
+          "Latitude": -31.977245,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Dolphin_Theatre" : {
+
+          "Longitude": 115.819083,
+          "Latitude": -31.977239,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Percy_Grainger" : {
+
+          "Longitude": 115.820474,
+          "Latitude": -31.976775,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Integrata" : {
+
+          "Longitude": 115.820009,
+          "Latitude": -31.976649,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Eileen_Joyce" : {
+
+          "Longitude": 115.820008,
+          "Latitude": -31.976651,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "The_Dancer" : {
+
+          "Longitude": 115.819028,
+          "Latitude": -31.976931,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Emma" : {
+
+          "Longitude": 115.818118,
+          "Latitude": -31.978412,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
+    },
+    "Sundial" : {
+
+          "Longitude": 115.819341,
+          "Latitude": -31.978653,
+          "Description": "This is a site",
+          "Type": "Plaque",
+          "FilePath": "..."
     }
+
+}

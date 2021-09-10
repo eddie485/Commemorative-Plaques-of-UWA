@@ -1,8 +1,13 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbWVtb3JhdGl2ZS1wbGFxdWVzLW9mLXV3YSIsImEiOiJja3N4Y3p4M3owYmI4MnNwMmxqcmptbnpxIn0.viaDBFBPyZe6hpYUDP7q-A';;
 // Display a map of UWA
+
+var satelite_map = 'mapbox://styles/mapbox/satellite-streets-v11'; //URL for satelite style map
+var street_map = 'mapbox://styles/mapbox/streets-v11'; //URL for street style map
+
 const map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL or use 'mapbox://styles/mapbox/streets-v11' for non satelite
+    style: satelite_map,
+
     center: [115.8181, -31.9789], // starting position [longitude, latitude]
     zoom: 17 // starting zoom 
 });
