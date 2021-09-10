@@ -3,16 +3,17 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbWVtb3JhdGl2ZS1wbGFxdWVzLW9mLXV3YSIsImEiO
 const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL or use 'mapbox://styles/mapbox/streets-v11' for non satelite
-    center: [115.8181, -31.9789], // starting position [longitude, latitude]
-    zoom: 17 // starting zoom 
+    center: [115.8181, -31.9805], // starting position [longitude, latitude]
+    zoom: 16 // starting zoom
 });
-/* // Set bounds to UWA, Crawley Campus.
+
+// Set bounds to UWA, Crawley Campus.
 const bounds = [
     [115.8081, -31.9889], // [west, south]
     [115.8281, -31.9729]  // [east, north]
 ];
 // Set the map's max bounds.
-map.setMaxBounds(bounds); */
+map.setMaxBounds(bounds);
 
 // disable map rotation using right click + drag
 map.dragRotate.disable();
@@ -21,15 +22,28 @@ map.dragRotate.disable();
 map.touchZoomRotate.disableRotation();
 
 // Add geolocate control to the map.
-map.addControl(
+var geolocate =
     new mapboxgl.GeolocateControl({
     positionOptions: {
     enableHighAccuracy: true
     },
+
+//map.addControl(
+    //new mapboxgl.GeolocateControl({
+    //positionOptions: {
+    //enableHighAccuracy: true
+    //},
+
     // When active the map will receive updates to the device's location as it changes.
-    trackUserLocation: true,
+    //trackUserLocation: true,
     // Draw an arrow next to the location dot to indicate which direction the device is heading.
     showUserHeading: true
     })
-    );
 
+    //})
+    //);
+
+//map.addControl(geolocate);
+//map.on('load', function() {
+  //  geolocate.trigger(); //<- Automatically activates geolocation
+//});
