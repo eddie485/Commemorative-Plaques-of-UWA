@@ -59,14 +59,9 @@ new mapboxgl.Marker( { color: color2 } )
 new CustomMarker({ color: color2 })
         .setLngLat([115.817813, -31.978938])
         .onClick(() => { //when clicked, define the following function
-
                 $.getJSON("../static/sites.json",function(sites){
-                  var bob = "Reid Library";
                   var safbgfgd = sites.Reid_Library.Description;
-                  $('#Site').empty();
-                  $('#Stuff').empty();
-                  $('#Site').append(bob);
-                  $('#Stuff').append(safbgfgd);
+                  $("#Content").html(safbgfgd);
                 });
         })
         .addTo(map);

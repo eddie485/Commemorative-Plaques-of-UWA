@@ -1,4 +1,14 @@
 {
+  "Reid_Library" : {
+
+        "Longitude": 115.817813,
+        "Latitude": -31.978938,
+        // need to start off with <h1> PLAQUE NAME </h1> then a <p> DESCRIPTION </p>
+        //then add in <b> BOLD WORD </b> for bold words and <br><br> for line breaks in the description text
+        "Description": "<h1>Reid Library</h1><p><b>Sir Alexander James Reid</b>, [1889 - 1968]. C.M.G., I.S.O., B.A., Hon. LL.D., FASA., arrived in Western Australia from Glasgow in 1909 and gained his BA in 1924 at UWA. He was in the University Dramatic Society and maintained his interest in the performing arts. Reid joined the Public Service as a messenger boy in 1911 and rose to be Under-Treasurer in 1934.  He joined the University Senate in 1944, was Pro-Chancellor, 1948-1956, and Chancellor, 1956-1962. Reid’s Chancellorship coincided with post-war reconstruction and increased funding from State and Commonwealth governments. With a broad network of influential connections his financial acumen was much appreciated. <br><br>Reid served on many organisations including the Workers’ Home Board (later the State Housing Commission), Royal Perth Hospital Board, State Electricity Commission and the Boards of Chamberlain Industries and Wundowie Charcoal and Steel. He represented UWA on the Murray Committee on Australian Universities, in 1957 and variously served as Chairman of the Festival of Perth Board, Director of the Australian Elizabethan Theatre Trust and a Board Member of the WA National Theatre Company at the Playhouse.</p>",
+        "Type": "Plaque",
+        "FilePath": "..."
+  },
   "Fox_Lecture_Theatre" : {
 
         "Longitude": 115.818687,
@@ -20,14 +30,6 @@
           "Longitude": 115.818562,
           "Latitude": -31.978687,
           "Description": "Sir Walter Forbes Logie Murdoch, [1874 - 1970]. K.C.M.G., O.B.E., M.A., B.A., Hon. D.Litt., came to Australia from Scotland in 1884. Murdoch graduated from the University of Melbourne in 1894 and gained his M.A. in 1897. Appointed Assistant Lecturer in English at Melbourne University in 1903, he wrote for the Argus until his appointment as Foundation Professor of English at UWA in 1913. He served as Vice-Chancellor, 1916-1917, Senator, 1917-1948 and Chancellor, 1943-1948.Murdoch carried his share of the administrative and committee work expected of the seven Foundation Professors and entered public debate on social and economic issues with verve. An effective broadcaster he forged an important link between community and University. His stimulating, sometimes controversial, essays were widely read and his name familiar in many households. He was founding president of the WA Branch of the League of Nations, 1920-1936, and President of the WA Kindergarten Union, 1933-1936.  Murdoch University was named in his honour. ",
-          "Type": "Plaque",
-          "FilePath": "..."
-    },
-    "Reid_Library" : {
-
-          "Longitude": 115.817813,
-          "Latitude": -31.978938,
-          "Description": "Sir Alexander James Reid, [1889 - 1968]. C.M.G., I.S.O., B.A., Hon. LL.D., FASA., arrived in Western Australia from Glasgow in 1909 and gained his BA in 1924 at UWA. He was in the University Dramatic Society and maintained his interest in the performing arts. Reid joined the Public Service as a messenger boy in 1911 and rose to be Under-Treasurer in 1934.  He joined the University Senate in 1944, was Pro-Chancellor, 1948-1956, and Chancellor, 1956-1962. Reid’s Chancellorship coincided with post-war reconstruction and increased funding from State and Commonwealth governments. With a broad network of influential connections his financial acumen was much appreciated. Reid served on many organisations including the Workers’ Home Board (later the State Housing Commission), Royal Perth Hospital Board, State Electricity Commission and the Boards of Chamberlain Industries and Wundowie Charcoal and Steel. He represented UWA on the Murray Committee on Australian Universities, in 1957 and variously served as Chairman of the Festival of Perth Board, Director of the Australian Elizabethan Theatre Trust and a Board Member of the WA National Theatre Company at the Playhouse.  ",
           "Type": "Plaque",
           "FilePath": "..."
     },
