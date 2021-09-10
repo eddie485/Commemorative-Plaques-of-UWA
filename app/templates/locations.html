@@ -29,7 +29,7 @@
                 <div class="col-xs-1 col-md-1"><button onclick="expandID('1')" id = myBtn1>Read more</button></div>
             </div>
 
-            <div id="empty">
+            <div id="empty" onload = >
 
             </div>
             
@@ -61,16 +61,16 @@
                     <div class="col-xs-7 col-md-7"> \
                         <p> <span id = "info' + id + '"></span> \
                             <span id="dots' + id + '">...</span> \
-                            <span id="more' + id + '">And even more it turns out because woah so much information</span> \
+                            <span id="more' + id + '"></span> \
                         </p> \
                     </div> \
                 <div class="col-xs-1 col-md-1"> \
-                    <button onclick="expandID("1)" id = myBtn' + id + '>Read more</button> \
+                    <button onclick="expandID(' + id +')" id = myBtn' + id + '>Read more</button> \
                 </div>'
             empty.className = "row"
             empty.innerHTML = html
-            empty.getElementbyID('info'+id).innerHTML = //ADD JSON TO RELEVANT INFO
-            empty.getElementbyID('more'+id).innerHTML = //ADD JSON TO RELEVANT INFO
+            empty.getElementbyID('info'+id).innerHTML = '';//ADD JSON TO RELEVANT INFO
+            empty.getElementbyID('more'+id).innerHTML = '';//ADD JSON TO RELEVANT INFO
             
         }
     </script>
