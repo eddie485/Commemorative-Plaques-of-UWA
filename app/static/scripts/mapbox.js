@@ -4,7 +4,7 @@ const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL or use 'mapbox://styles/mapbox/streets-v11' for non satelite
     center: [115.8181, -31.9805], // starting position [longitude, latitude]
-    zoom: 16 // starting zoom 
+    zoom: 16 // starting zoom
 });
 
 // Set bounds to UWA, Crawley Campus.
@@ -43,7 +43,7 @@ var geolocate =
     //})
     //);
 
-map.addControl(geolocate);
-map.on('load', function() {
-    geolocate.trigger(); //<- Automatically activates geolocation
-});
+//map.addControl(geolocate);
+//map.on('load', function() {
+  //  geolocate.trigger(); //<- Automatically activates geolocation
+//});

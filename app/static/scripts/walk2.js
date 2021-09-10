@@ -37,11 +37,6 @@ const alexanderLT = new mapboxgl.Popup({ offset: 25 }).setText(
     'Alexander Lecture Theatre'
     );
 
-// create the popup
-const alexanderLT = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Alexander Lecture Theatre'
-    );
-
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
     .setLngLat([115.818187, -31.978437])
@@ -76,11 +71,6 @@ new mapboxgl.Marker( { color: color2 } )
             })
             .addTo(map);
 
-
-// create the popup
-const rossLT = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Ross Lecture Theatre'
-    );
 
 // create the popup
 const rossLT = new mapboxgl.Popup({ offset: 25 }).setText(
