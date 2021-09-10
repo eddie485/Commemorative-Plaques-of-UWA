@@ -117,7 +117,7 @@ const emma = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.818118, -31.978412])
+    .setLngLat([115.819028, -31.976931])
     .setPopup(emma) // sets a popup on this marker
     .addTo(map);
 
