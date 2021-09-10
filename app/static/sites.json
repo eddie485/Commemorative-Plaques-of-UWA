@@ -1,26 +1,8 @@
-[
-    {
+{
         "SiteName": "Site  1",
         "Longitude": -115,
         "Latitude": 35,
         "Description": "This is a site",
         "Type": "Plaque",
         "FilePath": "..."
-    },
-    {
-        "SiteName": "Site  2",
-        "Longitude": -115,
-        "Latitude": 35,
-        "Description": "This is a site",
-        "Type": "Plaque",
-        "FilePath": "..."
-    },
-    {
-        "SiteName": "Site  3",
-        "Longitude": -115,
-        "Latitude": 35,
-        "Description": "This is a site",
-        "Type": "Plaque",
-        "FilePath": "..."
     }
-]
