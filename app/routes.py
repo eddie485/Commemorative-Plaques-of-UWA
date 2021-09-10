@@ -1,6 +1,6 @@
-from app import app
+from app import app, db
 from flask import render_template, flash, redirect, url_for
-import json
+
 
 @app.route("/")
 @app.route("/index")
@@ -13,8 +13,7 @@ def about():
 
 @app.route("/locations")
 def locations():
-    return render_template("locations.html", title="Locations",
-    locations=json.dumps(locations_list))
+    return render_template("locations.html", title="Locations")
 
 if __name__=="__main__":
     app.run(debug=True)
