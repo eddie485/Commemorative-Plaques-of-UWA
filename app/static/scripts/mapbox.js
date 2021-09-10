@@ -29,52 +29,91 @@ map.touchZoomRotate.disableRotation();
 // Add geolocate control to the map.
 map.addControl(
     new mapboxgl.GeolocateControl({
-    positionOptions: {
-    enableHighAccuracy: true
+        positionOptions: {
+        enableHighAccuracy: true
     },
      //When active the map will receive updates to the device's location as it changes.
     trackUserLocation: true,
     // Draw an arrow next to the location dot to indicate which direction the device is heading.
     showUserHeading: true
     })
-    );
+);
 
 
     map.on('load', () => {
-        map.addSource('route', {
-        'type': 'geojson',
-        'data': {
-        'type': 'Feature',
-        'properties': {},
-        'geometry': {
-        'type': 'LineString',
-        'coordinates': [
-        [115.818687, -31.978687], //Fox
-        [115.818562, -31.978687], //Murdoch
-        [115.818187, -31.978437], //Alexander
-        [115.816937, -31.978563], //Ross
-        [115.816563, -31.979188], //Weatherburn
-        [115.817037, -31.979900], //Irwin St
-        [115.817813, -31.980187], //James Oval
-        [115.818562, -31.981437], //Tatersall
-        [115.818438, -31.982062], //Bayliss
-        [115.819812, -31.981063], //Cameron Hall
-        [115.819812, -31.979563] //Beasley
-        ]
-        }
-        }
+        //Walk 1 line
+        map.addSource('route1', {
+            'type': 'geojson',
+            'data': {
+                'type': 'Feature',
+                'properties': {},
+                'geometry': {
+                    'type': 'LineString',
+                    'coordinates': [
+                        [115.818687, -31.978687], //Fox
+                        [115.818562, -31.978687], //Murdoch
+                        [115.818187, -31.978437], //Alexander
+                        [115.816937, -31.978563], //Ross
+                        [115.816563, -31.979188], //Weatherburn
+                        [115.817037, -31.979900], //Irwin St
+                        [115.817813, -31.980187], //James Oval
+                        [115.818562, -31.981437], //Tatersall
+                        [115.818438, -31.982062], //Bayliss
+                        [115.819812, -31.981063], //Cameron Hall
+                        [115.819812, -31.979563] //Beasley
+                    ]
+                }
+            }
         });
         map.addLayer({
-        'id': 'route',
-        'type': 'line',
-        'source': 'route',
-        'layout': {
-        'line-join': 'round',
-        'line-cap': 'round'
-        },
-        'paint': {
-        'line-color': '#33C9EB',
-        'line-width': 3
-        }
+            'id': 'route1',
+            'type': 'line',
+            'source': 'route1',
+            'layout': {
+                'line-join': 'round',
+                'line-cap': 'round'
+            },
+            'paint': {
+                'line-color': '#33C9EB',
+                'line-width': 3
+            }
         });
+
+        //Walk 2 line
+        map.addSource('route2', {
+                'type': 'geojson',
+                'data': {
+                    'type': 'Feature',
+                    'properties': {},
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [115.818118, -31.978412], //Queen and duke
+                            [115.818118, -31.978412], //artsbuilding
+                            [115.818607, -31.978105], //theCharioteer
+                            [115.819282, -31.977331], //octagonTheatre
+                            [115.819077, -31.977245], //blackStump
+                            [115.819083, -31.977239], //dolphinTheatre
+                            [115.820474, -31.976775], //percyGrainger
+                            [115.820009, -31.976649], //integrata
+                            [115.820008, -31.976651], //eileenJoyce
+                            [115.819028, -31.976931], //theDancerEmma
+                            [115.819341, -31.978653] //sundial
+                        ]
+                    }
+                }
+            });
+            map.addLayer({
+                'id': 'route2',
+                'type': 'line',
+                'source': 'route2',
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+                'paint': {
+                    'line-color': 'red',
+                    'line-width': 3
+                }
+            });
         });
