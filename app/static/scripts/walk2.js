@@ -56,13 +56,13 @@ new mapboxgl.Marker( { color: color2 } )
 
 
     // Create a new marker.
-    new ClickableMarker()
+    new ClickableMarker({ color: color2 })
             .setLngLat([115.817813, -31.978938])
             .onClick(() => { // onClick() is a thing now!
 
                     $.getJSON("../static/sites.json",function(sites){
-                      var bob = sites.SiteName;
-                      var safbgfgd = sites.Description;
+                      var bob = "Fox Lecture Theatre";
+                      var safbgfgd = sites.Fox_Lecture_Theatre.Description;
                       $('#Site').empty();
                       $('#Stuff').empty();
                       $('#Site').append(bob);
