@@ -29,7 +29,7 @@
                 <div class="col-xs-1 col-md-1"><button onclick="expandID('1')" id = myBtn1>Read more</button></div>
             </div>
 
-            <div id="empty" onload = >
+            <div id="empty">
 
             </div>
             
@@ -38,6 +38,7 @@
 
     </div>
     <script>
+        //Function displays more text if requested
         function expandID(id) {
             var dots = document.getElementById("dots" + id);
             var moreText = document.getElementById("more" + id);
@@ -52,12 +53,13 @@
                 btnText.innerHTML = "Read less"; 
                 moreText.style.display = "inline";
             }
-            }
+        }
 
+        //function creates a block that can display information
         function createBlock(id){
             var empty = document.getElementById('empty')
             var html = 
-                '<div class="col-xs-4 col-md-4"><h1></h1></div> \
+                '<div class="col-xs-4 col-md-4" id="id"' + id + '><h1></h1></div> \
                     <div class="col-xs-7 col-md-7"> \
                         <p> <span id = "info' + id + '"></span> \
                             <span id="dots' + id + '">...</span> \
@@ -67,11 +69,21 @@
                 <div class="col-xs-1 col-md-1"> \
                     <button onclick="expandID(' + id +')" id = myBtn' + id + '>Read more</button> \
                 </div>'
-            empty.className = "row"
-            empty.innerHTML = html
-            empty.getElementbyID('info'+id).innerHTML = '';//ADD JSON TO RELEVANT INFO
-            empty.getElementbyID('more'+id).innerHTML = '';//ADD JSON TO RELEVANT INFO
-            
+            empty.className = "row";
+            empty.id = '';
+            empty.innerHTML = html;
+            document.getElementById('info'+id).innerHTML = '';//ADD JSON TO RELEVANT INFO
+            document.getElementById('more'+id).innerHTML = '';//ADD JSON TO RELEVANT INFO
+            $('<div id="empty"></div>').insertAfter(empty);
+        }
+
+        function loadBlocks(){
+            let number_of_blocks = 5;
+            for(let i = 1; i < number_of_blocks+1; i++){
+                createBlock(i);
+                
+            }
+
         }
     </script>
 
