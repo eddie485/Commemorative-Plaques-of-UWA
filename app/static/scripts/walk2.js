@@ -1,5 +1,26 @@
 var color2 = "#e2b600"
 
+// extend mapboxGL Marker so we can pass in an onClick handler
+    class ClickableMarker extends mapboxgl.Marker {
+      // new method onClick, sets _handleClick to a function you pass in
+      onClick(handleClick) {
+        this._handleClick = handleClick;
+        return this;
+      }
+
+      // the existing _onMapClick was there to trigger a popup
+      // but we are hijacking it to run a function we define
+      _onMapClick(e) {
+        const targetElement = e.originalEvent.target;
+        const element = this._element;
+
+        if (this._handleClick && (targetElement === element || element.contains((targetElement)))) {
+          this._handleClick();
+        }
+      }
+    };
+
+
 // create the popup
 const foxLT = new mapboxgl.Popup({ offset: 25 }).setText(
     'Fox Lecture Theatre'
@@ -10,7 +31,7 @@ new mapboxgl.Marker( { color: color2 } )
     .setLngLat([115.818687, -31.978687])
     .setPopup(foxLT) // sets a popup on this marker
     .addTo(map);
-    
+
 // create the popup
 const alexanderLT = new mapboxgl.Popup({ offset: 25 }).setText(
     'Alexander Lecture Theatre'
@@ -33,20 +54,23 @@ new mapboxgl.Marker( { color: color2 } )
     .setPopup(murdochLT) // sets a popup on this marker
     .addTo(map);
 
-// create the popup
-const reidL = new mapboxgl.Popup({ offset: 25 })
-    .setHTML("<img src='../images/reid.jpg'></img>");
-    //.setHTML("<img src=https://www.freeimages.com/photo/wood-seesaw-for-4x4-training-1633319></img>")
-    //.setHTML("<img src=url('../images/reid.jpg')></img>");
-    //.setHTML(<img class="d-block w-100" src= "{{ url_for('static', filename='images/reid.jpg')}}" alt="First slide"></img>);
-    //.setHTML("<img src= {{ url_for('static', filename='images/reid.jpg')}}></img>");
-    
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.817813, -31.978938])
-    .setPopup(reidL) // sets a popup on this marker
-    .addTo(map);
+    // Create a new marker.
+    new ClickableMarker({ color: color2 })
+            .setLngLat([115.817813, -31.978938])
+            .onClick(() => { // onClick() is a thing now!
+
+                    $.getJSON("../static/sites.json",function(sites){
+                      var bob = "Fox Lecture Theatre";
+                      var safbgfgd = sites.Fox_Lecture_Theatre.Description;
+                      $('#Site').empty();
+                      $('#Stuff').empty();
+                      $('#Site').append(bob);
+                      $('#Stuff').append(safbgfgd);
+                    });
+            })
+            .addTo(map);
+
 
 // create the popup
 const rossLT = new mapboxgl.Popup({ offset: 25 }).setText(
@@ -62,7 +86,7 @@ new mapboxgl.Marker( { color: color2 } )
 // create the popup
 const weatherburnLT = new mapboxgl.Popup({ offset: 25 }).setText(
     'Weatherburn Lecture Theatre'
-    ); 
+    );
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
@@ -73,7 +97,7 @@ new mapboxgl.Marker( { color: color2 } )
 // create the popup
 const irwinSt = new mapboxgl.Popup({ offset: 25 }).setText(
     'Irwin St Building'
-    ); 
+    );
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
@@ -84,7 +108,7 @@ new mapboxgl.Marker( { color: color2 } )
 // create the popup
 const jamesOval = new mapboxgl.Popup({ offset: 25 }).setText(
     'James Oval'
-    ); 
+    );
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
@@ -128,15 +152,10 @@ new mapboxgl.Marker( { color: color2 } )
 // create the popup
 const beasleyLaw = new mapboxgl.Popup({ offset: 25 }).setText(
     'Beasley Law Building'
-    ); 
+    );
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
     .setLngLat([115.819812, -31.979563])
     .setPopup(beasleyLaw) // sets a popup on this marker
     .addTo(map);
-
-
-
-
-

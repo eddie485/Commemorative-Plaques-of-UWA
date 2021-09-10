@@ -47,7 +47,7 @@ var geolocate =
     //})
     //);
 
-map.addControl(geolocate);
-map.on('load', function() {
-    geolocate.trigger(); //<- Automatically activates geolocation
-});
+//map.addControl(geolocate);
+//map.on('load', function() {
+  //  geolocate.trigger(); //<- Automatically activates geolocation
+//});
