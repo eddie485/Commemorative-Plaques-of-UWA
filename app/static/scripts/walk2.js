@@ -1,7 +1,7 @@
 var color2 = "#e2b600"
 
-// extend mapboxGL Marker so we can pass in an onClick handler
-    class ClickableMarker extends mapboxgl.Marker {
+// extend mapboxGL class so we can edit the click function
+    class CustomMarker extends mapboxgl.Marker {
       // new method onClick, sets _handleClick to a function you pass in
       onClick(handleClick) {
         this._handleClick = handleClick;
@@ -55,21 +55,21 @@ new mapboxgl.Marker( { color: color2 } )
     .addTo(map);
 
 
-    // Create a new marker.
-    new ClickableMarker({ color: color2 })
-            .setLngLat([115.817813, -31.978938])
-            .onClick(() => { // onClick() is a thing now!
+// Create a new marker.
+new CustomMarker({ color: color2 })
+        .setLngLat([115.817813, -31.978938])
+        .onClick(() => { //when clicked, define the following function
 
-                    $.getJSON("../static/sites.json",function(sites){
-                      var bob = "Fox Lecture Theatre";
-                      var safbgfgd = sites.Alexander_Lecture_Theatre.Description;
-                      $('#Site').empty();
-                      $('#Stuff').empty();
-                      $('#Site').append(bob);
-                      $('#Stuff').append(safbgfgd);
-                    });
-            })
-            .addTo(map);
+                $.getJSON("../static/sites.json",function(sites){
+                  var bob = "Reid Library";
+                  var safbgfgd = sites.Reid_Library.Description;
+                  $('#Site').empty();
+                  $('#Stuff').empty();
+                  $('#Site').append(bob);
+                  $('#Stuff').append(safbgfgd);
+                });
+        })
+        .addTo(map);
 
 
 // create the popup

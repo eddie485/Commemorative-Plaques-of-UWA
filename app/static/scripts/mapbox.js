@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbWVtb3JhdGl2ZS1wbGFxdWVzLW9mLXV3YSIsImEiOiJja3N4Y3p4M3owYmI4MnNwMmxqcmptbnpxIn0.viaDBFBPyZe6hpYUDP7q-A';
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbWVtb3JhdGl2ZS1wbGFxdWVzLW9mLXV3YSIsImEiOiJja3N4Y3p4M3owYmI4MnNwMmxqcmptbnpxIn0.viaDBFBPyZe6hpYUDP7q-A';;
 // Display a map of UWA
 
 var satelite_map = 'mapbox://styles/mapbox/satellite-streets-v11'; //URL for satelite style map
@@ -7,6 +7,7 @@ var street_map = 'mapbox://styles/mapbox/streets-v11'; //URL for street style ma
 const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: satelite_map,
+
     center: [115.8181, -31.9789], // starting position [longitude, latitude]
     zoom: 17 // starting zoom 
 });
@@ -26,28 +27,93 @@ map.dragRotate.disable();
 map.touchZoomRotate.disableRotation();
 
 // Add geolocate control to the map.
-var geolocate =
+map.addControl(
     new mapboxgl.GeolocateControl({
-    positionOptions: {
-    enableHighAccuracy: true
+        positionOptions: {
+        enableHighAccuracy: true
     },
-
-//map.addControl(
-    //new mapboxgl.GeolocateControl({
-    //positionOptions: {
-    //enableHighAccuracy: true
-    //},
-
-    // When active the map will receive updates to the device's location as it changes.
-    //trackUserLocation: true,
+     //When active the map will receive updates to the device's location as it changes.
+    trackUserLocation: true,
     // Draw an arrow next to the location dot to indicate which direction the device is heading.
     showUserHeading: true
     })
+);
 
-    //})
-    //);
 
-//map.addControl(geolocate);
-//map.on('load', function() {
-  //  geolocate.trigger(); //<- Automatically activates geolocation
-//});
+    map.on('load', () => {
+        //Walk 1 line
+        map.addSource('route1', {
+            'type': 'geojson',
+            'data': {
+                'type': 'Feature',
+                'properties': {},
+                'geometry': {
+                    'type': 'LineString',
+                    'coordinates': [
+                        [115.818687, -31.978687], //Fox
+                        [115.818562, -31.978687], //Murdoch
+                        [115.818187, -31.978437], //Alexander
+                        [115.816937, -31.978563], //Ross
+                        [115.816563, -31.979188], //Weatherburn
+                        [115.817037, -31.979900], //Irwin St
+                        [115.817813, -31.980187], //James Oval
+                        [115.818562, -31.981437], //Tatersall
+                        [115.818438, -31.982062], //Bayliss
+                        [115.819812, -31.981063], //Cameron Hall
+                        [115.819812, -31.979563] //Beasley
+                    ]
+                }
+            }
+        });
+        map.addLayer({
+            'id': 'route1',
+            'type': 'line',
+            'source': 'route1',
+            'layout': {
+                'line-join': 'round',
+                'line-cap': 'round'
+            },
+            'paint': {
+                'line-color': '#33C9EB',
+                'line-width': 3
+            }
+        });
+
+        //Walk 2 line
+        map.addSource('route2', {
+                'type': 'geojson',
+                'data': {
+                    'type': 'Feature',
+                    'properties': {},
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [115.818118, -31.978412], //Queen and duke
+                            [115.818118, -31.978412], //artsbuilding
+                            [115.818607, -31.978105], //theCharioteer
+                            [115.819282, -31.977331], //octagonTheatre
+                            [115.819077, -31.977245], //blackStump
+                            [115.819083, -31.977239], //dolphinTheatre
+                            [115.820474, -31.976775], //percyGrainger
+                            [115.820009, -31.976649], //integrata
+                            [115.820008, -31.976651], //eileenJoyce
+                            [115.819028, -31.976931], //theDancerEmma
+                            [115.819341, -31.978653] //sundial
+                        ]
+                    }
+                }
+            });
+            map.addLayer({
+                'id': 'route2',
+                'type': 'line',
+                'source': 'route2',
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+                'paint': {
+                    'line-color': 'red',
+                    'line-width': 3
+                }
+            });
+        });
