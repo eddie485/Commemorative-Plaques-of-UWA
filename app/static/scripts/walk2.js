@@ -62,7 +62,7 @@ new mapboxgl.Marker( { color: color2 } )
 
                     $.getJSON("../static/sites.json",function(sites){
                       var bob = "Fox Lecture Theatre";
-                      var safbgfgd = sites.Fox_Lecture_Theatre.Description;
+                      var safbgfgd = sites.Alexander_Lecture_Theatre.Description;
                       $('#Site').empty();
                       $('#Stuff').empty();
                       $('#Site').append(bob);
