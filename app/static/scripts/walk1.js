@@ -1,133 +1,133 @@
 var color1 = "#27348b"
 
-// create the popup
-const queenAndDuke = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Queen and Duke'
-    );
+// extend mapboxGL class so we can edit the click function
+class CustomMarker extends mapboxgl.Marker {
+  // new method onClick, sets _handleClick to a function you pass in
+  onClick(handleClick) {
+    this._handleClick = handleClick;
+    return this;
+  }
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.818118, -31.978412])
-    .setPopup(queenAndDuke) // sets a popup on this marker
-    .addTo(map);
+  // the existing _onMapClick was there to trigger a popup
+  // but we are hijacking it to run a function we define
+  _onMapClick(e) {
+    const targetElement = e.originalEvent.target;
+    const element = this._element;
 
-// create the popup
-const artsBuilding = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Arts Building'
-    );
+    if (this._handleClick && (targetElement === element || element.contains((targetElement)))) {
+      this._handleClick();
+    }
+  }
+};
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.818118, -31.978412])
-    .setPopup(artsBuilding) // sets a popup on this marker
-    .addTo(map);
 
-// create the popup
-const theCharioteer = new mapboxgl.Popup({ offset: 25 }).setText(
-    'The Charioteer'
-    );
+new CustomMarker({ color: color1 })
+        .setLngLat([115.818118, -31.978412])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Queen_And_Duke.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.818607, -31.978105])
-    .setPopup(theCharioteer) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color1 })
+        .setLngLat([115.818118, -31.978412])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Arts_Building.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// create the popup
-const octagonTheatre = new mapboxgl.Popup({ offset: 25 }).setText(
-    'The Octagon Theatre'
-    );
+new CustomMarker({ color: color1 })
+        .setLngLat([115.818607, -31.978105])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.The_Charioteer.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819282, -31.977331])
-    .setPopup(octagonTheatre) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color1 })
+        .setLngLat([115.819282, -31.977331])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.The_Octagon_Theatre.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// create the popup
-const blackStump = new mapboxgl.Popup({ offset: 25 }).setText(
-    'The Black Stump'
-    );
+new CustomMarker({ color: color1 })
+        .setLngLat([115.819077, -31.977245])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.The_Black_Stump.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819077, -31.977245])
-    .setPopup(blackStump) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color1 })
+        .setLngLat([115.819083, -31.977239])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Dolphin_Theatre.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// create the popup
-const dolphinTheatre = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Dolphin Theatre'
-    );
+new CustomMarker({ color: color1 })
+        .setLngLat([115.820474, -31.976775])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Percy_Grainger.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819083, -31.977239])
-    .setPopup(dolphinTheatre) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color1 })
+        .setLngLat([115.820009, -31.976649])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Integrata.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// create the popup
-const percyGrainger = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Percy Grainger'
-    );
+new CustomMarker({ color: color1 })
+        .setLngLat([115.820008, -31.976651])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Eileen_Joyce.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.820474, -31.976775])
-    .setPopup(percyGrainger) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color1 })
+        .setLngLat([115.819028, -31.976931])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.The_Dancer_and_Emma.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// create the popup
-const integrata = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Integrata'
-    );
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.820009, -31.976649])
-    .setPopup(integrata) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const eileenJoyce = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Eileen Joyce'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.820008, -31.976651])
-    .setPopup(eileenJoyce) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const theDancer = new mapboxgl.Popup({ offset: 25 }).setText(
-    'The Dancer'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819028, -31.976931])
-    .setPopup(theDancer) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const emma = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Emma'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819028, -31.976931])
-    .setPopup(emma) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const sundial = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Sundial'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819341, -31.978653])
-    .setPopup(sundial) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color1 })
+        .setLngLat([115.819341, -31.978653])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Sundial.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
