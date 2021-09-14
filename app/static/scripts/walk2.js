@@ -1,61 +1,5 @@
 var color2 = "#e2b600"
 
-// extend mapboxGL class so we can edit the click function
-    class CustomMarker extends mapboxgl.Marker {
-      // new method onClick, sets _handleClick to a function you pass in
-      onClick(handleClick) {
-        this._handleClick = handleClick;
-        return this;
-      }
-
-      // the existing _onMapClick was there to trigger a popup
-      // but we are hijacking it to run a function we define
-      _onMapClick(e) {
-        const targetElement = e.originalEvent.target;
-        const element = this._element;
-
-        if (this._handleClick && (targetElement === element || element.contains((targetElement)))) {
-          this._handleClick();
-        }
-      }
-    };
-
-
-// create the popup
-const foxLT = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Fox Lecture Theatre'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.818687, -31.978687])
-    .setPopup(foxLT) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const alexanderLT = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Alexander Lecture Theatre'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.818187, -31.978437])
-    .setPopup(alexanderLT) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const murdochLT = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Murdoch Lecture Theatre'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.818562, -31.978687])
-    .setPopup(murdochLT) // sets a popup on this marker
-    .addTo(map);
-
-
-// Create a new marker.
 new CustomMarker({ color: color2 })
         .setLngLat([115.817813, -31.978938])
         .onClick(() => { //when clicked, define the following function
@@ -66,91 +10,112 @@ new CustomMarker({ color: color2 })
         })
         .addTo(map);
 
+new CustomMarker({ color: color2 })
+        .setLngLat([115.818687, -31.978687])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Fox_Lecture_Theatre.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// create the popup
-const rossLT = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Ross Lecture Theatre'
-    );
+new CustomMarker({ color: color2 })
+        .setLngLat([115.818187, -31.978437])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Alexander_Lecture_Theatre.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.816937, -31.978563])
-    .setPopup(rossLT) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color2 })
+        .setLngLat([115.818562, -31.978687])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Murdoch_Lecture_Theatre.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// create the popup
-const weatherburnLT = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Weatherburn Lecture Theatre'
-    );
+new CustomMarker({ color: color2 })
+        .setLngLat([115.816937, -31.978563])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Ross_Lecture_Theatre.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.816563, -31.979188])
-    .setPopup(weatherburnLT) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color2 })
+        .setLngLat([115.816563, -31.979188])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Weatherburn_Lecture_Theatre.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// create the popup
-const irwinSt = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Irwin St Building'
-    );
+new CustomMarker({ color: color2 })
+        .setLngLat([115.817037, -31.979900])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Irwin_St_Building.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.817037, -31.979900])
-    .setPopup(irwinSt) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color2 })
+        .setLngLat([115.817813, -31.980187])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.James_Oval.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// create the popup
-const jamesOval = new mapboxgl.Popup({ offset: 25 }).setText(
-    'James Oval'
-    );
+new CustomMarker({ color: color2 })
+        .setLngLat([115.818562, -31.981437])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Tattersall_Lecture_Theatre.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.817813, -31.980187])
-    .setPopup(jamesOval) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color2 })
+        .setLngLat([115.818438, -31.982062])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Bayliss_Building.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// create the popup
-const tattersallLT = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Tattersall Lecture Theatre'
-    );
+new CustomMarker({ color: color2 })
+        .setLngLat([115.819812, -31.981063])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Cameron_Hall.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
 
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.818562, -31.981437])
-    .setPopup(tattersallLT) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const baylissBldng = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Bayliss Building'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.818438, -31.982062])
-    .setPopup(baylissBldng) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const cameronHall = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Cameron Hall'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.819812, -31.981063])
-    .setPopup(cameronHall) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const beasleyLaw = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Beasley Law Building'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.819812, -31.979563])
-    .setPopup(beasleyLaw) // sets a popup on this marker
-    .addTo(map);
+new CustomMarker({ color: color2 })
+        .setLngLat([115.819812, -31.979563])
+        .onClick(() => { //when clicked, define the following function
+                $.getJSON("../static/sites.json",function(sites){
+                  var safbgfgd = sites.Beasley_Law_Building.Description;
+                  $("#Content").html(safbgfgd);
+                });
+        })
+        .addTo(map);
