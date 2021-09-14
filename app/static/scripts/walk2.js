@@ -6,6 +6,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Reid_Library.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -16,6 +17,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Fox_Lecture_Theatre.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -26,6 +28,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Alexander_Lecture_Theatre.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -36,6 +39,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Murdoch_Lecture_Theatre.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -46,6 +50,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Ross_Lecture_Theatre.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -56,6 +61,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Weatherburn_Lecture_Theatre.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -66,6 +72,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Irwin_St_Building.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -76,6 +83,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.James_Oval.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -86,6 +94,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Tattersall_Lecture_Theatre.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -96,6 +105,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Bayliss_Building.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -106,6 +116,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Cameron_Hall.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
@@ -116,6 +127,7 @@ new CustomMarker({ color: color2 })
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Beasley_Law_Building.Description;
                   $("#Content").html(safbgfgd);
+                  $("#Carousel").show();
                 });
         })
         .addTo(map);
