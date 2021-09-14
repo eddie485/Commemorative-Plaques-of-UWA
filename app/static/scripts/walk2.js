@@ -28,7 +28,7 @@ const foxLT = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.818651293445, -31.9787159921767])
+    .setLngLat([115.818687, -31.978687])
     .setPopup(foxLT) // sets a popup on this marker
     .addTo(map);
 
@@ -39,7 +39,7 @@ const alexanderLT = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.818487783993, -31.9783670570613])
+    .setLngLat([115.818187, -31.978437])
     .setPopup(alexanderLT) // sets a popup on this marker
     .addTo(map);
 
@@ -50,35 +50,10 @@ const murdochLT = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.818497494761, -31.9786055507042])
+    .setLngLat([115.818562, -31.978687])
     .setPopup(murdochLT) // sets a popup on this marker
     .addTo(map);
 
-    // Create a new marker.
-    new ClickableMarker({ color: color2 })
-            .setLngLat([115.817813, -31.978938])
-            .onClick(() => { // onClick() is a thing now!
-
-                    $.getJSON("../static/sites.json",function(sites){
-                      var bob = "Fox Lecture Theatre";
-                      var safbgfgd = sites.Fox_Lecture_Theatre.Description;
-                      $('#Site').empty();
-                      $('#Stuff').empty();
-                      $('#Site').append(bob);
-                      $('#Stuff').append(safbgfgd);
-                    });
-            })
-            .addTo(map);
-// create the popup
-const reid = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Reid'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.817784628967, -31.9786905168583])
-    .setPopup(reid) // sets a popup on this marker
-    .addTo(map);
 
 // Create a new marker.
 new CustomMarker({ color: color2 })
@@ -91,6 +66,7 @@ new CustomMarker({ color: color2 })
         })
         .addTo(map);
 
+
 // create the popup
 const rossLT = new mapboxgl.Popup({ offset: 25 }).setText(
     'Ross Lecture Theatre'
@@ -98,7 +74,7 @@ const rossLT = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.817100980095, -31.9785249786282])
+    .setLngLat([115.816937, -31.978563])
     .setPopup(rossLT) // sets a popup on this marker
     .addTo(map);
 
@@ -109,7 +85,7 @@ const weatherburnLT = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.816735887862, -31.9791823044732])
+    .setLngLat([115.816563, -31.979188])
     .setPopup(weatherburnLT) // sets a popup on this marker
     .addTo(map);
 
@@ -120,7 +96,7 @@ const irwinSt = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.817126494477, -31.9797999115144])
+    .setLngLat([115.817037, -31.979900])
     .setPopup(irwinSt) // sets a popup on this marker
     .addTo(map);
 
@@ -131,7 +107,7 @@ const jamesOval = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.817948589614, -31.9802256335239])
+    .setLngLat([115.817813, -31.980187])
     .setPopup(jamesOval) // sets a popup on this marker
     .addTo(map);
 
@@ -142,7 +118,7 @@ const tattersallLT = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.818596792117, -31.9812862554056])
+    .setLngLat([115.818562, -31.981437])
     .setPopup(tattersallLT) // sets a popup on this marker
     .addTo(map);
 
@@ -153,7 +129,7 @@ const baylissBldng = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.818703320593, -31.9819275631693])
+    .setLngLat([115.818438, -31.982062])
     .setPopup(baylissBldng) // sets a popup on this marker
     .addTo(map);
 
@@ -164,7 +140,7 @@ const cameronHall = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.819832699563, -31.9810696951577])
+    .setLngLat([115.819812, -31.981063])
     .setPopup(cameronHall) // sets a popup on this marker
     .addTo(map);
 
@@ -175,6 +151,6 @@ const beasleyLaw = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color2 } )
-    .setLngLat([115.81969567367, -31.9795841426999])
+    .setLngLat([115.819812, -31.979563])
     .setPopup(beasleyLaw) // sets a popup on this marker
     .addTo(map);
