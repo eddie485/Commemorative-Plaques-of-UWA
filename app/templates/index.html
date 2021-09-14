@@ -16,6 +16,14 @@
 	        <script src="{{ url_for('static', filename='scripts/walk1.js')}}"></script>
             <script src="{{ url_for('static', filename='scripts/walk2.js')}}"></script>
         </div>
+        <div id="menu">
+            <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" checked="checked">
+            <!-- See a list of Mapbox-hosted public styles at -->
+            <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
+            <label for="satellite-v9">satellite</label>
+            <input id="streets-v11" type="radio" name="rtoggle" value="streets">
+            <label for="streets-v11">streets</label>
+        </div>
         <div class="col-md-4 col-xs-1" style="background-color:white; text-align: center; line-height:500px; font-size: 40px; overflow: scroll; height:70vw">
             <div class="container" style="padding-top: 30px; padding-bottom: 15px;">
                 <h1 style="text-align: center;">
