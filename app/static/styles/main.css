@@ -136,6 +136,14 @@ footer{
     height: 100%;
 }
 
+
+#menu {
+    position: absolute;
+    background: #efefef;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 #img-text{
     position: absolute;
     z-index: 1000;
@@ -143,3 +151,4 @@ footer{
     left: 200px;
     color: whitesmoke;
   }
+
