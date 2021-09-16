@@ -92,8 +92,9 @@ footer{
 
 .parallax-img1{
     background-image: url("/static/images/winthrophall1.jpg");
+    position:relative;
 
-    min-height: 300px; 
+    min-height: 90vh; 
 
     background-attachment: fixed;
     background-position: center;
@@ -105,7 +106,7 @@ footer{
     background-image: url("/static/images/winthrophall3.jpg");
 
     min-height: 300px; 
-    height: 70vh;
+    height: 90vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -114,10 +115,10 @@ footer{
 }
 
 .parallax-img3{
-    background-image: url("/static/images/sunkengardens01.jpg");
+    background-image: url("/static/images/reid.jpg");
 
     min-height: 300px; 
-    height: 70vh;
+    height: 90vh;
     
     background-attachment: fixed;
     background-position: center;
@@ -125,11 +126,39 @@ footer{
     background-size: cover;
 }
 
+.parallax-title{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0 1px 0;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.65);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.parallax-text{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    max-width: 65vw;
+    display: inline-block;
+    margin: 0 0 1px 0;
+    padding: 10px 15px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
 
 .uwa-historical{
     padding-top: 30px;
     padding-left: 45px;
     padding-right: 45px;
+    height:fit-content;
 }
 
 #map {
@@ -143,12 +172,3 @@ footer{
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
 }
-
-#img-text{
-    position: absolute;
-    z-index: 1000;
-    top: 200px;
-    left: 200px;
-    color: whitesmoke;
-  }
-
