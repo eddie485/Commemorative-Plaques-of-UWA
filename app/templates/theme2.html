@@ -10,6 +10,7 @@
     <div class="row" style="height:70vw">
         <div class="col-md-8 col-xs-1" id="map">
             <script src="{{ url_for('static', filename='scripts/mapbox.js')}}"></script>
+            <script src="{{ url_for('static', filename='scripts/CustomMarker.js')}}"></script>
             <script src="{{ url_for('static', filename='scripts/walk2.js')}}"></script>
         </div>
         <div class="col-md-4 col-xs-1" style="background-color:white; text-align: center; line-height:500px; font-size: 40px; overflow: scroll; height:70vw">
@@ -37,10 +38,10 @@
                   </div>
             </div>
             <div class="line-divider"></div>
-            <div class="container" style="font-size: 15px; line-height: 150%; padding-top: 15px;">
-                <h1>Walk 2</h1>
+            <div id = "Content" class="container" style="font-size: 15px; line-height: 150%; padding-top: 15px;">
+                <h1 id = "Site">Walk 2</h1>
                 <br>
-                <p>
+                <p id = "Stuff">
                     Winthrop Hall measures 135 feet long by 60 feet wide with a height from floor to ceiling of 50 feet. The Hall features a Clock Tower, a glazed terracotta gryphon’s frieze that circles the building just under the roof eaves, an undercroft and a reflection pool at its front.
 
                     It seats 1069 people in the body of the Hall and 150 or more on the dais. The Hall, as well as other Hackett Memorial Buildings, is permanently entered into the Register of Heritage Places.

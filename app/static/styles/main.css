@@ -1,3 +1,7 @@
+body, html{
+    height:100%;
+}
+
 h1 {
     text-align: left;
     font-family: "novel-pro",Georgia,Garamond,serif;         /* header font from UWA website*/
@@ -14,11 +18,11 @@ p, pre{
 
 footer{
     background-color: rgba(39,52,139,255);
-    margin-top: auto;
+    bottom:0;
 }
 
-.flex-fill { 
-    min-height: 100%;   
+.flex-fill {
+    min-height: 100%;
     height: 100%;
 }
 
@@ -31,7 +35,7 @@ footer{
     color: whitesmoke;
 }
 
-.nav-link, .dropdown-item{    
+.nav-link, .dropdown-item{
     color: whitesmoke;
     text-decoration: none;
     height: 100%;
@@ -45,6 +49,10 @@ footer{
 
 .navbar-brand{
     color:whitesmoke;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .carousel-item {
@@ -82,7 +90,64 @@ footer{
     background-color: rgba(39,52,139,255);
 }
 
+.parallax-img1{
+    background-image: url("/static/images/winthrophall1.jpg");
+
+    min-height: 300px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-img2{
+    background-image: url("/static/images/winthrophall3.jpg");
+
+    min-height: 300px;
+    height: 70vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-img3{
+    background-image: url("/static/images/sunkengardens01.jpg");
+
+    min-height: 300px;
+    height: 70vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.uwa-historical{
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
 #map {
     height: 100%;
 }
 
+
+#menu {
+    position: absolute;
+    background: #efefef;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#img-text{
+    position: absolute;
+    z-index: 1000;
+    top: 200px;
+    left: 200px;
+    color: whitesmoke;
+  }

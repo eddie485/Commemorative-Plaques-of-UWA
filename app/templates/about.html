@@ -1,38 +1,53 @@
 {%extends "base.html"%}
 
 {%block head%}
-<style>
-    .flex-fill { 
-        min-height: 100%;   
-        height: 100%;
-    }
-    h1, p, pre{
-        text-align: justify;
-        font-family: 'Times New Roman', Times, serif;
-    }
-</style>
 {%endblock%}
 
 {%block body%}
 
-<div class="container-fluid " style="background-color: gainsboro; font-size: 15px; padding-top: 15px;">
-    <div class="row">
-    <div class="col-sm-6">
-        <h1>UWA Historical Society</h1>
-        <p>
-            encourage appreciation of University history amongst staff, students, graduates and the community
-            create a fellowship of persons interested in the history of the campus
-            promote University projects of an historical nature
-            contribute to the development of the University's historical record
-            collect and catalogue historical University artefacts
-            encourage historical displays of University material
-            improve access to University historical resources staff and research students. 
+<h1 id="img-text">COMMEMORATIVE PLAQUES ON CAMPUS</h1>
+<div class="parallax-img1" style="height: 70vh">
+</div>
+<div class="container">
+    <div class="uwa-historical" style="height:90vh">
+        <h1 style="text-align: center;"> THE UWA HISTORICAL SOCIETY </h1>
+        <br>
+        <p>The UWA Historical Society commenced in 2008 from the initiatives of a small group
+             led by Prof Reg Appleyard and the then Heritage Officer, Shobha Cameron. It received 
+             founding financial assistance from the Convocation of UWA graduates, and the support 
+             of Vice-Chancellor Prof. Alan Robson. The first event was a public lecture by Robert 
+             French, the Chief Justice of the High Court of Australia. He recalled his ‘Halycon Days‘ as a student at UWA. 
         </p>
-    </div>
-    <div class="col-sm-6" style ="padding-bottom: 15px;"> 
-        <img class="d-block w-30" src= "{{ url_for('static', filename='images/book.jpg')}}">
-    </div>
+        <p>Further distinguished graduates and staff offered Annual Lectures in the lead-up to the
+            University Centenary celebrations. The Society has conducted seminars on ‘The Founding 
+            Professors’ and numerous ‘walking tours’ of the historical architectural features of the 
+            Crawley Campus, together with associated publications.
+       </p>      
+       <p>An extensive professional quality Oral History program has been vigorously pursued. A number
+            of initiatives such as an annual ceremony to mark Remembrance Day, in conjunction with the 
+            University Regiment, the renewal of the WW1 Honour Board , and an Online WW2 Nominal Roll have 
+            received modest but helpful Grants.
+       </p>
+       <p>From small leaflets commemorating the Old Dolphin Theatre, Anniversaries of the Sunken Garden 
+            Amphitheatre, the Octagon and New Fortune theatres, more substantial publications have been 
+            created by the small group of volunteers. ‘Personalities and Places on the Crawley Campus’ has 
+            already needed a reprint.
+       </p> 
+       <p>The University Archivist is an ex-officio member of the annually elected working Committee. 
+            The membership fee is modest and open to all interested in the Society’s aims.
+        </p>
+        <p>Please check the website for further information.<br>
+            <a href='https://www.web.uwa.edu.au/uwahs'>UWAHS website</a>
+            
+       </p>
     </div>
 </div>
+<div class="parallax-img2">
+    <div class="container">
+        <!-- <h1> WEBSITE NAME </h1> -->
+    </div>
+</div>
+
+<div class="parallax-img2"></div>
 
 {%endblock%}
