@@ -121,8 +121,12 @@
         })
         
         function fillDiv(title, description,id){
+            let CHAR_LIMIT = 50
+            let less = description.slice(0,CHAR_LIMIT);
+            let more = description.slice(CHAR_LIMIT);
             $('#title'+id).append(title);
-            $('#info'+id).append(description);
+            $('#info'+id).append(less);
+            $('#more' +id).append(more);
         }
         
     </script>
