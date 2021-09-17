@@ -131,18 +131,6 @@ p, pre{
     background-size: cover;
 }
 
-.parallax-img2{
-    background-image: url("/static/images/winthrophall3.jpg");
-
-    min-height: 300px; 
-    height: 90vh;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .parallax-img3{
     background-image: url("/static/images/reid.jpg");
 
@@ -169,22 +157,8 @@ p, pre{
     transform: translate(-50%, -50%)
 }
 
-.parallax-text{
-    color: whitesmoke;
-    text-align: center;
-    font-weight: bold;
-    max-width: 65vw;
-    display: inline-block;
-    margin: 0 0 1px 0;
-    padding: 10px 15px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
 .uwa-historical{
-    padding-top: 30px;
+    padding-top: 60px;
     padding-left: 45px;
     padding-right: 45px;
     height:fit-content;
