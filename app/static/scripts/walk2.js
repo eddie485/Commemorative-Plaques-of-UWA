@@ -1,7 +1,8 @@
 var color2 = "#e2b600"
 
+
 new CustomMarker({ color: color2 })
-        .setLngLat([115.817813, -31.978938])
+        .setLngLat([115.817784628967, -31.9786905168583])
         .onClick(() => { //when clicked, define the following function
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Reid_Library.Description;
@@ -21,6 +22,7 @@ new CustomMarker({ color: color2 })
                 });
         })
         .addTo(map);
+
 
 new CustomMarker({ color: color2 })
         .setLngLat([115.818187, -31.978437])
@@ -49,17 +51,6 @@ new CustomMarker({ color: color2 })
         .onClick(() => { //when clicked, define the following function
                 $.getJSON("../static/sites.json",function(sites){
                   var safbgfgd = sites.Ross_Lecture_Theatre.Description;
-                  $("#Content").html(safbgfgd);
-                  $("#Carousel").show();
-                });
-        })
-        .addTo(map);
-
-new CustomMarker({ color: color2 })
-        .setLngLat([115.816563, -31.979188])
-        .onClick(() => { //when clicked, define the following function
-                $.getJSON("../static/sites.json",function(sites){
-                  var safbgfgd = sites.Weatherburn_Lecture_Theatre.Description;
                   $("#Content").html(safbgfgd);
                   $("#Carousel").show();
                 });

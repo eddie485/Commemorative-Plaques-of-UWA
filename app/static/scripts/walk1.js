@@ -1,7 +1,5 @@
 var color1 = "#27348b"
 
-
-
 new CustomMarker({ color: color1 })
         .setLngLat([115.818118, -31.978412])
         .onClick(() => { //when clicked, define the following function
