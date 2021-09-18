@@ -7,7 +7,7 @@ const queenAndDuke = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.818118, -31.978412])
+    .setLngLat([115.818189729916, -31.9782788741746])
     .setPopup(queenAndDuke) // sets a popup on this marker
     .addTo(map);
 
@@ -18,7 +18,7 @@ const artsBuilding = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.818118, -31.978412])
+    .setLngLat([115.818447335079, -31.9783623411497])
     .setPopup(artsBuilding) // sets a popup on this marker
     .addTo(map);
 
@@ -29,7 +29,7 @@ const theCharioteer = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.818607, -31.978105])
+    .setLngLat([115.818551982921, -31.9781293694534])
     .setPopup(theCharioteer) // sets a popup on this marker
     .addTo(map);
 
@@ -40,7 +40,7 @@ const octagonTheatre = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819282, -31.977331])
+    .setLngLat([115.819117490495, -31.9774211351355])
     .setPopup(octagonTheatre) // sets a popup on this marker
     .addTo(map);
 
@@ -51,7 +51,7 @@ const blackStump = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819077, -31.977245])
+    .setLngLat([115.818981014125, -31.9774659015759])
     .setPopup(blackStump) // sets a popup on this marker
     .addTo(map);
 
@@ -62,9 +62,21 @@ const dolphinTheatre = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819083, -31.977239])
+    .setLngLat([115.819353630895, -31.9769529928087])
     .setPopup(dolphinTheatre) // sets a popup on this marker
     .addTo(map);
+
+// create the popup
+const sommerville = new mapboxgl.Popup({ offset: 25 }).setText(
+    'Sommerville Auditorium'
+    );
+
+// Create a new marker.
+new mapboxgl.Marker( { color: color1 } )
+    .setLngLat([115.819837680999, -31.9769150133679])
+    .setPopup(sommerville) // sets a popup on this marker
+    .addTo(map);
+
 
 // create the popup
 const percyGrainger = new mapboxgl.Popup({ offset: 25 }).setText(
@@ -73,19 +85,8 @@ const percyGrainger = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.820474, -31.976775])
+    .setLngLat([115.820423923079, -31.9766986366639])
     .setPopup(percyGrainger) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const integrata = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Integrata'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.820009, -31.976649])
-    .setPopup(integrata) // sets a popup on this marker
     .addTo(map);
 
 // create the popup
@@ -95,30 +96,19 @@ const eileenJoyce = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.820008, -31.976651])
+    .setLngLat([115.820103985951, -31.9766370620526])
     .setPopup(eileenJoyce) // sets a popup on this marker
     .addTo(map);
 
 // create the popup
-const theDancer = new mapboxgl.Popup({ offset: 25 }).setText(
-    'The Dancer'
+const theDancerAndEmma = new mapboxgl.Popup({ offset: 25 }).setText(
+    'The Dancer & Emma'
     );
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
     .setLngLat([115.819028, -31.976931])
-    .setPopup(theDancer) // sets a popup on this marker
-    .addTo(map);
-
-// create the popup
-const emma = new mapboxgl.Popup({ offset: 25 }).setText(
-    'Emma'
-    );
-
-// Create a new marker.
-new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819028, -31.976931])
-    .setPopup(emma) // sets a popup on this marker
+    .setPopup(theDancerAndEmma) // sets a popup on this marker
     .addTo(map);
 
 // create the popup
@@ -128,6 +118,6 @@ const sundial = new mapboxgl.Popup({ offset: 25 }).setText(
 
 // Create a new marker.
 new mapboxgl.Marker( { color: color1 } )
-    .setLngLat([115.819341, -31.978653])
+    .setLngLat([115.819170196618, -31.9786215907417])
     .setPopup(sundial) // sets a popup on this marker
     .addTo(map);
