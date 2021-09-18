@@ -99,7 +99,7 @@
 
           "Longitude": 115.818118,
           "Latitude": -31.978412,
-          "Description": "<h1>Queen and Duke Trees</h1><p><b>Queen and Duke Trees:</b> a pair of Ficus hillii was planted by Her Majesty Queen Elizabeth II and Prince Philip, the Duke of Edinburgh on their visit in 1963, UWA’s Jubilee year. The Queen's first visit to the University was in 1954, the first time a reigning monarch of Australia had set foot on Australian soil. In that year the Queen and the Duke of Edinburgh attended a ball at UWA hosted by Chancellor Gillett and Vice Chancellor Prescott. It was held outdoors on Whitfeld Court as the current polio epidemic meant ‘no handshaking’. The Queen visited again in 1963 when, with then Chancellor Sir Alex Reid, she greeted Colombo Plan students during the Golden Jubilee celebrations. The two trees were planted by Her Majesty Queen Elizabeth II and Prince Philip, Duke of Edinburgh in the Great Court adjacent to the Tropical Grove. The Ceremonial silver spades used were duly preserved. The Duke’s tree did not survive but a replacement was planted several years later. In 2000, Her Majesty opened the Collaborative Training and Education Centre - one of the world's most sophisticated medical skills laboratories - next to the School of Anatomy and Human Biology, and in 2011 the royal couple were in Perth attending the Commonwealth Heads of Government Meeting.</p> ",
+          "Description": "<h1>Queen and Duke Trees</h1><p><b>Queen and Duke Trees:</b> a pair of <i>Ficus hillii</i> was planted by Her Majesty Queen Elizabeth II and Prince Philip, the Duke of Edinburgh on their visit in 1963, UWA’s Jubilee year. The Queen's first visit to the University was in 1954, the first time a reigning monarch of Australia had set foot on Australian soil. In that year the Queen and the Duke of Edinburgh attended a ball at UWA hosted by Chancellor Gillett and Vice Chancellor Prescott. It was held outdoors on Whitfeld Court as the current polio epidemic meant ‘no handshaking’. The Queen visited again in 1963 when, with then Chancellor Sir Alex Reid, she greeted Colombo Plan students during the Golden Jubilee celebrations. The two trees were planted by Her Majesty Queen Elizabeth II and Prince Philip, Duke of Edinburgh in the Great Court adjacent to the Tropical Grove. The Ceremonial silver spades used were duly preserved. The Duke’s tree did not survive but a replacement was planted several years later. In 2000, Her Majesty opened the Collaborative Training and Education Centre - one of the world's most sophisticated medical skills laboratories - next to the School of Anatomy and Human Biology, and in 2011 the royal couple were in Perth attending the Commonwealth Heads of Government Meeting.</p> ",
           "Type": "Plaque",
           "FilePath": "..."
     },
@@ -107,7 +107,7 @@
 
           "Longitude": 115.818118,
           "Latitude": -31.978412,
-          "Description": "This is a site",
+          "Description": "Arts buildingThis is a site",
           "Type": "Plaque",
           "FilePath": "..."
     },
@@ -143,6 +143,15 @@
           "Type": "Plaque",
           "FilePath": "..."
     },
+
+    "Somerville_Auditorium" : {
+
+      "Longitude": 115.819083,
+      "Latitude": -31.977239,
+      "Description": "Sommerville AuditoriumThis is a site ",
+      "Type": "Plaque",
+      "FilePath": "..."
+},
     "Percy_Grainger" : {
 
           "Longitude": 115.820474,
