@@ -1,9 +1,6 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29tbWVtb3JhdGl2ZS1wbGFxdWVzLW9mLXV3YSIsImEiOiJja3N4Y3p4M3owYmI4MnNwMmxqcmptbnpxIn0.viaDBFBPyZe6hpYUDP7q-A';;
 // Display a map of UWA
 
-//var satelite_map = 'mapbox://styles/mapbox/satellite-streets-v11'; //URL for satelite style map
-//var street_map = 'mapbox://styles/mapbox/streets-v11'; //URL for street style map
-
 const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL,
@@ -39,48 +36,6 @@ map.addControl(
     })
 );
 
-map.on('load', () => {
-    //ionic walk
-    map.addSource('iconic', {
-        'type': 'geojson',
-        'data': '../static/scripts/iconic.geojson'
-    });
-
-    map.addLayer({
-        'id': 'iconic',
-        'type': 'line',
-        'source': 'iconic',
-        'layout': {
-            'line-join': 'round',
-            'line-cap': 'round'
-        },
-        'paint': {
-            'line-color': '#33C9EB',
-            'line-width': 4
-        }
-    });
-
-    map.addSource('music', {
-        'type': 'geojson',
-        'data': '../static/scripts/music.geojson'
-        });
-
-    map.addLayer({
-        'id': 'music',
-        'type': 'line',
-        'source': 'music',
-        'layout': {
-            'line-join': 'round',
-            'line-cap': 'round'
-        },
-        'paint': {
-            'line-color': 'red',
-            'line-width': 4
-        }
-    });
-
-});
-
 map.on('style.load', function () {
   // Triggered when `setStyle` is called.
   map.addSource('music', {
@@ -97,7 +52,7 @@ map.on('style.load', function () {
           'line-cap': 'round'
       },
       'paint': {
-          'line-color': 'red',
+          'line-color': 'rgba(39,52,139,255)',
           'line-width': 4
       }
   });
@@ -115,7 +70,7 @@ map.on('style.load', function () {
           'line-cap': 'round'
       },
       'paint': {
-          'line-color': '#33C9EB',
+          'line-color': '#e2b600',
           'line-width': 4
       }
   });
