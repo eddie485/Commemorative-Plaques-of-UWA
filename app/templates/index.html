@@ -11,13 +11,12 @@
     <div class="row" style="height:70vw">
         <div class="col-md-8 col-xs-1" id="map">
             <script src="{{ url_for('static', filename='scripts/mapbox.js')}}"></script>
+            <script src="{{ url_for('static', filename='scripts/CustomMarker.js')}}"></script>
 	        <script src="{{ url_for('static', filename='scripts/walk1.js')}}"></script>
             <script src="{{ url_for('static', filename='scripts/walk2.js')}}"></script>
         </div>
         <div id="menu">
             <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" checked="checked">
-            <!-- See a list of Mapbox-hosted public styles at -->
-            <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
             <label for="satellite-v9">satellite</label>
             <input id="streets-v11" type="radio" name="rtoggle" value="streets">
             <label for="streets-v11">streets</label>
@@ -31,7 +30,7 @@
             <div class="line-divider"></div>
             <div class="container" style="font-size: 15px; line-height: 150%; padding-top: 15px;">
                 <p>
-                    This is an interactive map website showcasing the myriad of unique locations within the University of Western Australia. 
+                    This is an interactive map website showcasing the myriad of unique locations within the University of Western Australia.
                     Most of the locations have specific plaques dedicated to preserving the history behind them for many years to come.
                     Each location is categorised based on a theme that they fit into, this is can be seen through their icon colours.
                 </p>
@@ -43,17 +42,13 @@
 
             </div>
             <div class="container-fluid" style="font-size: 15px; line-height: 150%; padding-top: 15px;">
-                <a href="{{ url_for('walk1') }}" class="btn btn-info" role="button">Theme 1</a>
+                <a href="{{ url_for('walk1') }}" class="btn btn-info" role="button">Arts Through Time</a>
                 <br>
-                <a href="{{ url_for('walk2') }}" class="btn btn-info" role="button">Theme 2</a>
-                <br>
-                <a href="{{ url_for('walk2') }}" class="btn btn-info" role="button">Theme 3</a>
-                <br>
-                <a href="{{ url_for('walk2') }}" class="btn btn-info" role="button">Change Map Style</a>
+                <a href="{{ url_for('walk2') }}" class="btn btn-info" role="button">Distinguished UWA Personalities</a>
             </div>
         </div>
     </div>
-    
+
 
 
 </div>

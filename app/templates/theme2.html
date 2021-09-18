@@ -10,10 +10,14 @@
     <div class="row" style="height:70vw">
         <div class="col-md-8 col-xs-1" id="map">
             <script src="{{ url_for('static', filename='scripts/mapbox.js')}}"></script>
+            <script src="{{ url_for('static', filename='scripts/CustomMarker.js')}}"></script>
             <script src="{{ url_for('static', filename='scripts/walk2.js')}}"></script>
+            <script> map.on('style.load', () => {
+              map.setLayoutProperty('music', 'visibility', 'none');
+            });</script>
         </div>
         <div class="col-md-4 col-xs-1" style="background-color:white; text-align: center; line-height:500px; font-size: 40px; overflow: scroll; height:70vw">
-            <div class="container" style="padding-top: 30px; padding-bottom: 15px;">
+            <div id = "Carousel" class="container" style="padding-top: 30px; padding-bottom: 15px;">
                 <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">  <!--data interval false stops slides from moving without user permission-->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -36,19 +40,32 @@
                     </a>
                   </div>
             </div>
+            <script> $("#Carousel").hide(); </script>
             <div class="line-divider"></div>
-            <div id = "Content" class="container" style="font-size: 15px; line-height: 150%; padding-top: 15px;">
-                <h1 id = "Site">Walk 2</h1>
-                <br>
-                <p id = "Stuff">
-                    Winthrop Hall measures 135 feet long by 60 feet wide with a height from floor to ceiling of 50 feet. The Hall features a Clock Tower, a glazed terracotta gryphon’s frieze that circles the building just under the roof eaves, an undercroft and a reflection pool at its front.
+            <div class="container" id = "Content" style="font-size: 15px; line-height: 150%; padding-top: 15px;">
+              <div class="container" style="padding-top: 30px; padding-bottom: 15px;">
+                <br><br><br><br><br>
+                  <h1 style="text-align: center;">
+                      DISTINGUISHED UWA PERSONALITIES
+                  </h1>
+              </div>
+              <div class="line-divider"></div>
+              <div class="container" style="font-size: 15px; line-height: 150%; padding-top: 15px;">
+                  <br><br><br>
+                  <p>
+                      THEME DESCRIPTION
+                  </p>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                      sunt in culpa qui officia deserunt mollit anim id est laborum
 
-                    It seats 1069 people in the body of the Hall and 150 or more on the dais. The Hall, as well as other Hackett Memorial Buildings, is permanently entered into the Register of Heritage Places.
+                      <br><br>CLICK ON AN ICON TO START
+                  </p>
 
-                    At its highest point Winthrop Hall’s clock tower measures 150 feet. As well as the clock, it has six rooms that originally accommodated staff and research students.
-
-                </p>
+              </div>
             </div>
+
         </div>
     </div>
 </div>
