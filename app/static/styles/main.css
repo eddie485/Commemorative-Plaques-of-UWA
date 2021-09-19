@@ -2,6 +2,12 @@ body, html{
     height:100%;
 }
 
+body {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     text-align: left;
     font-family: "novel-pro",Georgia,Garamond,serif;         /* header font from UWA website*/
@@ -14,36 +20,6 @@ p, pre{
     letter-spacing: normal;
     -webkit-font-smoothing: antialiased;
     line-height: 24px;
-}
-
-.footer { 
-    width:100%; 
-    background-color:#e8e8eb; 
-    min-height:250px; 
-    padding:10px 0px 0px 0px;
-}
-.pt2 { padding-top:10px; 
-    margin-bottom:10px;
-}
-.footer p { 
-    font-size:12px; 
-    color:rgb(88, 88, 88); 
-    padding-bottom:0px; 
-    margin-bottom:8px;
-}
-.footer_list { 
-    margin:0px ; 
-    list-style-type:none ; 
-    font-size:12px; 
-    padding:0px 0px 0px 0px ; 
-}
-
-.footer_list li a{ 
-    color:rgb(87, 85, 85);
-}
-.footer_list li a:hover{ 
-    color:#fff; 
-    text-decoration:none;
 }
 
 .padding-right { padding-right:10px; }
@@ -166,8 +142,9 @@ p, pre{
 
 #map {
     height: 100%;
+    flex: 1;
+    padding: 20px;
 }
-
 
 #menu {
     position: absolute;
@@ -175,3 +152,37 @@ p, pre{
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
 }
+
+.footer { 
+    flex-shrink: 0;
+    padding: 20px;
+    bottom: 0px;
+    width:100%; 
+    background-color:#e8e8eb; 
+    padding:10px 0px 0px 0px;
+}
+.pt2 { padding-top:10px; 
+    margin-bottom:10px;
+}
+.footer p { 
+    font-size:12px; 
+    color:rgb(88, 88, 88); 
+    padding-bottom:0px; 
+    margin-bottom:8px;
+}
+.footer_list { 
+    margin:0px; 
+    list-style-type:none; 
+    font-size:12px; 
+    padding:0px 0px 0px 0px; 
+    overflow: scroll;
+}
+
+.footer_list li a{ 
+    color:rgb(87, 85, 85);
+}
+.footer_list li a:hover{ 
+    color:#fff; 
+    text-decoration:none;
+}
+
