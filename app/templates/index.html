@@ -7,7 +7,7 @@
 {%endblock%}
 {%block body%}
 
-<div class="container-fluid">
+
     <div class="row" style="height:70vw">
         <div class="col-md-8 col-xs-1" id="map">
             <script src="{{ url_for('static', filename='scripts/mapbox.js')}}"></script>
@@ -21,7 +21,7 @@
             <input id="streets-v11" type="radio" name="rtoggle" value="streets">
             <label for="streets-v11">streets</label>
         </div>
-        <div class="col-md-4 col-xs-1" style="background-color:white; text-align: center; line-height:500px; font-size: 40px; overflow: scroll; height:70vw">
+        <div class="col-md-4 col-xs-1" style="background-color:white; text-align: center; line-height:500px; font-size: 40px;">
             <div class="container" style="padding-top: 30px; padding-bottom: 15px;">
                 <h1 style="text-align: center;">
                     WELCOME TO UWA PLAQUES
@@ -47,10 +47,58 @@
                 <a href="{{ url_for('walk2') }}" class="btn btn-info" role="button">Distinguished UWA Personalities</a>
             </div>
         </div>
+        <footer class="footer text-left">
+            <div class="container bottom_border">
+                <div class="row">
+                    <div class=" col-xs-2 col-sm-4 col-md col-sm-4  col-12 col">
+                        <h6 class="pt2">The University of Western Australia</h6>
+                        <ul class="footer_list">
+                            <li><a href="https://www.uwa.edu.au">> UWA Home</a></li>
+                            <li><a href="https://www.uwa.edu.au/study">> Future UWA Students</a></li>
+                            <li><a href="https://www.uwa.edu.au/students">> Current UWA Students</a></li>
+                            <li><a href="https://www.uwa.edu.au/staff">> UWA Staff</a></li>
+                            <li><a href="https://www.uwa.edu.au/business-industry/overview">> Business and Industry</a></li>
+                            <li><a href="https://alumni.uwa.edu.au">> Alumni and Friends</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/engage/media">> Media</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-xs-2 col-sm-4 col-md  col-6 col">
+                        <h6 class="pt2">The UWA Historical Society</h6>
+                        <ul class="footer_list">
+                            <li><a href="https://www.web.uwa.edu.au/uwahs/historical-society">> UWA Historical Society</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/uwahs/events">> Events</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/uwahs/oral-histories">> Oral histories</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/uwahs/projects">> Projects</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/uwahs/publications">> Publications</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/uwahs/past-events">> Past Events</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/uwahs/contact">> Contact UWAHS</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-xs-2 col-sm-4 col-md  col-6 col">
+                        <h6 class="pt2">University Information</h6>
+                        <ul class="footer_list">
+                            <li><a href="https://www.web.uwa.edu.au/accessibility">> Accessibility</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/contact/map">> Campus Map</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/contact">> Contact UWA</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/indigenous">> Indigenous Commitment</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/privacy">> Privacy at UWA</a></li>
+                            <li><a href="https://www.web.uwa.edu.au/disclaimer-copyright/">> Terms of use</a></li>
+                        </ul>
+                    </div>
+                    <div class=" col-xs-2 col-sm-4 col-md  col-12 col">
+                        <h6 class="pt2">This Page</h6>
+                        <ul class="footer_list">
+                            <li><p>Website Feedback:</p><a href="mailto:uwahs@uwa.edu.au">uwahs@uwa.edu.au</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <p class="text-center">Designed by Team 32 - CITS3200</p>
+            </div>
+        </footer>
     </div>
 
 
-
-</div>
 
 {%endblock%}
