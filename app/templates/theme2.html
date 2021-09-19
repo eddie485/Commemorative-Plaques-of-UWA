@@ -20,13 +20,13 @@
             <div id = "Carousel" class="container" style="padding-top: 30px; padding-bottom: 15px;">
                 <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">  <!--data interval false stops slides from moving without user permission-->
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active" id ="image1">
                             <img class="d-block w-100" src= "{{ url_for('static', filename='images/winthrophall1.jpg')}}" alt="First slide">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" id ="image2">
                             <img class="d-block w-100" src="{{ url_for('static', filename='images/winthrophall2.jpg')}}" alt="Second slide">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" id ="image3">
                             <img class="d-block w-100" src="{{ url_for('static', filename='images/winthrophall3.jpg')}}" alt="Third slide">
                         </div>
                     </div>
