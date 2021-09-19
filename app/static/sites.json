@@ -5,7 +5,7 @@
         "Latitude": -31.978938,
         "Description": "<h1>Reid Library</h1><p><b>Sir Alexander James Reid</b>, [1889 - 1968]. C.M.G., I.S.O., B.A., Hon. LL.D., FASA., arrived in Western Australia from Glasgow in 1909 and gained his BA in 1924 at UWA. He was in the University Dramatic Society and maintained his interest in the performing arts. Reid joined the Public Service as a messenger boy in 1911 and rose to be Under-Treasurer in 1934.  He joined the University Senate in 1944, was Pro-Chancellor, 1948-1956, and Chancellor, 1956-1962. Reid’s Chancellorship coincided with post-war reconstruction and increased funding from State and Commonwealth governments. With a broad network of influential connections his financial acumen was much appreciated. <br><br>Reid served on many organisations including the Workers’ Home Board (later the State Housing Commission), Royal Perth Hospital Board, State Electricity Commission and the Boards of Chamberlain Industries and Wundowie Charcoal and Steel. He represented UWA on the Murray Committee on Australian Universities, in 1957 and variously served as Chairman of the Festival of Perth Board, Director of the Australian Elizabethan Theatre Trust and a Board Member of the WA National Theatre Company at the Playhouse.</p>",
         "Type": "Plaque",
-        "FilePath": "../static/images/reid.jpg"
+        "FilePath": "..."
   },
   "Fox_Lecture_Theatre" : {
 
@@ -67,7 +67,7 @@
 
           "Longitude": 115.818562,
           "Latitude": -31.981437,
-          "Description": "<h1>Tattersall Lecture Theatre</h1><p><b>George Tattersall</b>, [1881- 1943]. B.Sc., M.Sc., graduated from University College, Nottingham in 1897, First Class Honours in Chemistry. In 1903, he won an 1851 Exhibition Research Scholarship and studied at Manchester University gaining M.Sc. in 1906. He became an Associate of the British Institute of Chemistry of Great Britain and Ireland in 1903 and a Fellow in 1907.Tattersall came to Perth as Assistant Lecturer in Mathematics and Physics at the Technical School in 1909, subsequently becoming Head of the Department. In 1913, he was appointed Assistant to the Professor of Mathematics and Physics at UWA. He was Acting Professor of Chemistry at UWA in 1917 while Professor Wilsmore was in England on WW1 Research. When the latter returned, Tattersall became Lecturer, then Assistant Professor in 1920 and Associate Professor of Organic Chemistry from 1922 to 1943. A foundation member of the Australian Chemical Institute and Honorary Secretary of the WA Branch, Tattersall was Honorary Secretary of the WA Branch of the British Association of University Teachers from 1921 to 1923 and nominally until 1933. He was an Associate Member of the Australian National Research Council and one of the inaugural Fellows in 1937.</p>",
+          "Description": "This is a site",
           "Type": "Plaque",
           "FilePath": "..."
     },
