@@ -10,12 +10,12 @@ const map = new mapboxgl.Map({
 });
 
 // Set bounds to UWA, Crawley Campus.
-const bounds = [
-    [115.8081, -31.9889], // [west, south]
-    [115.8281, -31.9729]  // [east, north]
-];
-// Set the map's max bounds.
-map.setMaxBounds(bounds);
+// const bounds = [
+//     [115.8081, -31.9889], // [west, south]
+//     [115.8281, -31.9729]  // [east, north]
+// ];
+// // Set the map's max bounds.
+// map.setMaxBounds(bounds);
 
 // disable map rotation using right click + drag
 map.dragRotate.disable();
