@@ -8,8 +8,8 @@
 {%block body%}
 
 <div class="container-fluid">
-    <div class="row" style="height:70vw">
-        <div class="col-md-8 col-xs-1" id="map">
+    <div class="row" style="height:80vw; display: flex;">
+        <div class="col-md-8 col-xs-1" id="map" style= "clear: both; display:flex; flex-direction: column;">
             <script src="{{ url_for('static', filename='scripts/mapbox.js')}}"></script>
             <script src="{{ url_for('static', filename='scripts/CustomMarker.js')}}"></script>
 	        <script src="{{ url_for('static', filename='scripts/walk1.js')}}"></script>
@@ -21,7 +21,7 @@
             <input id="streets-v11" type="radio" name="rtoggle" value="streets">
             <label for="streets-v11">streets</label>
         </div>
-        <div class="col-md-4 col-xs-1" style="background-color:white; text-align: center; line-height:500px; font-size: 40px; overflow: scroll; height:70vw">
+        <div class="col-md-4 col-xs-1" style="background-color:white; text-align: center; line-height:500px; font-size: 40px; overflow: scroll; height:80vw; clear: both; display:flex; flex-direction: column">
             <div class="container" style="padding-top: 30px; padding-bottom: 15px;">
                 <h1 style="text-align: center;">
                     WELCOME TO UWA PLAQUES
@@ -48,9 +48,6 @@
             </div>
         </div>
     </div>
-
-
-
 </div>
 
 {%endblock%}
