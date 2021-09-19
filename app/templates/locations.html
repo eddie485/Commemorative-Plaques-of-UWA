@@ -6,21 +6,40 @@
         background-color: #ede7d3;
     }
 
-    #more1{
+    .more{
         display: none;
+    }
+
+    .container{
+        padding: 5px;
+        text-align: center;
+    }
+
+    .content{
+        margin: 5px;
+    }
+
+    .mybtn {
+        cursor: pointer;
+        color: azure;
+        background-color: #27348b;
+        outline: none;
+        max-width: 90%;
     }
 </style>
 
 {%endblock%}
 
 {%block body%}
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: #ececec;">
         
-        <div class="container">
-            <div style = "margin: 25px;">
+        <div class="container" style="background-color: #e2b600;">
+
+            <div style = "margin: 25px; padding: 5px;">
                 <h1>LOCATIONS OF INTEREST</h1>
             </div>
-            
+            <!--
+                TEMPLATE
             <div class="row">
                 <div class="col-xs-4 col-md-4"><h1>Winthrop Hall</h1></div>
                 <div class="col-xs-7 col-md-7"><p>Some information about Winthrop Hall<span id="dots1">...</span>
@@ -28,9 +47,9 @@
                 </p></div>
                 <div class="col-xs-1 col-md-1"><button onclick="expandID('1')" id = myBtn1>Read more</button></div>
             </div>
-
-            <div id="empty" onload="loadBlocks()">
-
+            -->
+            <div class = "content">
+                <div id="empty" onload="loadBlocks()"></div>
             </div>
             
         
@@ -57,23 +76,21 @@
 
         //function creates a block that can display information
         function createBlock(id){
-            var empty = document.getElementById('empty')
+            var empty = document.getElementById('empty');
             var html = 
-                '<div class="col-xs-4 col-md-4" id="id"' + id + '><h1 id="title' + id + '"></h1></div> \
+                '<div class="col-xs-4 col-md-4" id="id"' + id + '><img class="portrait" src = {{ url_for("static", filename="images/winthrophall1.jpg")}}></img></div> \
                     <div class="col-xs-7 col-md-7"> \
                         <p> <span id = "info' + id + '"></span> \
                             <span id="dots' + id + '">...</span> \
-                            <span id="more' + id + '"></span> \
+                            <span id="more' + id + '" class = "more"></span> \
                         </p> \
                     </div> \
                 <div class="col-xs-1 col-md-1"> \
-                    <button onclick="expandID(' + id +')" id = myBtn' + id + '>Read more</button> \
+                    <button onclick="expandID(' + id +')" id = myBtn' + id + ' class="mybtn">Read more</button> \
                 </div>'
             empty.className = "row";
             empty.id = '';
             empty.innerHTML = html;
-            document.getElementById('info'+id).innerHTML = '';//ADD JSON TO RELEVANT INFO
-            document.getElementById('more'+id).innerHTML = '';//ADD JSON TO RELEVANT INFO
             $('<div id="empty"></div>').insertAfter(empty);
         }
 
@@ -100,7 +117,7 @@
             fillDiv("Murdoch Lecture Theatre",sites.Murdoch_Lecture_Theatre.Description,3);
             fillDiv("Reid Library",sites.Reid_Library.Description,4);
             fillDiv("Ross Lecture Theatre",sites.Ross_Lecture_Theatre.Description,5);
-            fillDiv("Weatherburn Lecture Theatre",sites.Weatherburn_Lecture_Theatre,6);
+            fillDiv("Weatherburn Lecture Theatre",sites.Weatherburn_Lecture_Theatre.Description,6);
             fillDiv("Irwin St Building",sites.Irwin_St_Building.Description,7);
             fillDiv("James Oval", sites.James_Oval.Description,8);
             fillDiv("Tattersall Lecture Theatre",sites.Tattersall_Lecture_Theatre.Description,9);
@@ -114,17 +131,21 @@
             fillDiv("The Black Stump",sites.The_Black_Stump.Description,17);
             fillDiv("Dolphin Theatre",sites.Dolphin_Theatre.Description,18);
             fillDiv("Percy Grainger",sites.Percy_Grainger.Description,19);
-            fillDiv("Sommerville",sites.Integrata.Description,20);
+            fillDiv("Sommerville",sites.Somerville_Auditorium.Description,20);
             fillDiv("Eileen Joyce",sites.Eileen_Joyce.Description,21);
-            fillDiv("The Dancer",sites.The_Dancer.Description,22);
+            fillDiv("The Dancer and Emma",sites.The_Dancer_and_Emma.Description,22);
             fillDiv("Sundial",sites.Sundial.Description,23);
         })
         
-        function fillDiv(title, description,id){
-            let CHAR_LIMIT = 50
-            let less = description.slice(0,CHAR_LIMIT);
-            let more = description.slice(CHAR_LIMIT);
-            $('#title'+id).append(title);
+        function fillDiv(portrait, description,id){
+            let CHAR_LIMIT = 150;
+            
+            let filesource = '/static/images/' + portrait;
+            console.log(filesource);
+            let my_desc = description.replace("<p>","").replace("</p>","");
+            let less = my_desc.slice(0,CHAR_LIMIT);
+            let more = my_desc.slice(CHAR_LIMIT);
+            //$('#portrait'+id).setAttribute("src", filesource);
             $('#info'+id).append(less);
             $('#more' +id).append(more);
         }
