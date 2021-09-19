@@ -15,12 +15,12 @@
 
 {%block body%}
     <div class="container-fluid">
-        
+
         <div class="container">
             <div style = "margin: 25px;">
                 <h1>LOCATIONS OF INTEREST</h1>
             </div>
-            
+
             <div class="row">
                 <div class="col-xs-4 col-md-4"><h1>Winthrop Hall</h1></div>
                 <div class="col-xs-7 col-md-7"><p>Some information about Winthrop Hall<span id="dots1">...</span>
@@ -32,8 +32,8 @@
             <div id="empty" onload="loadBlocks()">
 
             </div>
-            
-        
+
+
         </div>
 
     </div>
@@ -46,11 +46,11 @@
 
             if (dots.style.display === "none") {
                 dots.style.display = "inline";
-                btnText.innerHTML = "Read more"; 
+                btnText.innerHTML = "Read more";
                 moreText.style.display = "none";
             } else {
                 dots.style.display = "none";
-                btnText.innerHTML = "Read less"; 
+                btnText.innerHTML = "Read less";
                 moreText.style.display = "inline";
             }
         }
@@ -58,7 +58,7 @@
         //function creates a block that can display information
         function createBlock(id){
             var empty = document.getElementById('empty')
-            var html = 
+            var html =
                 '<div class="col-xs-4 col-md-4" id="id"' + id + '><h1 id="title' + id + '"></h1></div> \
                     <div class="col-xs-7 col-md-7"> \
                         <p> <span id = "info' + id + '"></span> \
@@ -77,16 +77,16 @@
             $('<div id="empty"></div>').insertAfter(empty);
         }
 
-        
-        
+
+
         function loadBlocks(){
-            
+
             let number_of_blocks = 23;
-            
+
             for(let i = 1; i < number_of_blocks+1; i++){
                 createBlock(i);
             }
-            
+
 
         }
         //LOAD THE DIVS WHERE THE INFO WILL GO
@@ -119,12 +119,12 @@
             fillDiv("The Dancer",sites.The_Dancer.Description,22);
             fillDiv("Sundial",sites.Sundial.Description,23);
         })
-        
+
         function fillDiv(title, description,id){
             $('#title'+id).append(title);
             $('#info'+id).append(description);
         }
-        
-    </script>
 
+    </script>
+    {% include "footer.html" %}
 {%endblock%}
