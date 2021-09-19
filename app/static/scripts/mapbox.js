@@ -10,6 +10,7 @@ const map = new mapboxgl.Map({
 });
 
 // Set bounds to UWA, Crawley Campus.
+
 const bounds = [
     [115.8081, -31.9889], // [west, south]
     [115.8281, -31.9729]  // [east, north]
