@@ -155,3 +155,7 @@ footer{
     max-width: 85%;
     max-height: 85%;
 }
+
+.content .row{
+    margin-top: 15px;
+}

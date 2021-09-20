@@ -4,6 +4,7 @@
 <style>
     .row{
         background-color: #ede7d3;
+        padding: 10px;
     }
 
     .more{
@@ -11,20 +12,18 @@
     }
 
     .container{
-        padding: 5px;
+        padding: 10px;
         text-align: center;
     }
 
-    .content{
-        margin: 5px;
-    }
+
 
     .mybtn {
         cursor: pointer;
         color: azure;
         background-color: #27348b;
         outline: none;
-        max-width: 90%;
+        max-width: 100%;
     }
 </style>
 
@@ -112,7 +111,7 @@
         //FILL THEM WITH DATA
         $.getJSON("../static/sites.json",function fillData(sites){
             console.log('inside here');
-            fillDiv("Fox Lecture Theatre",sites.Fox_Lecture_Theatre.Description,1);
+            fillDiv("Fox1.jpg",sites.Fox_Lecture_Theatre.Description,1);
             fillDiv("Alexander Lecture Theatre",sites.Alexander_Lecture_Theatre.Description,2);
             fillDiv("Murdoch Lecture Theatre",sites.Murdoch_Lecture_Theatre.Description,3);
             fillDiv("Reid Library",sites.Reid_Library.Description,4);
@@ -145,7 +144,7 @@
             let my_desc = description.replace("<p>","").replace("</p>","");
             let less = my_desc.slice(0,CHAR_LIMIT);
             let more = my_desc.slice(CHAR_LIMIT);
-            //$('#portrait'+id).setAttribute("src", filesource);
+            $('#portrait'+id).setAttribute("src", filesource);
             $('#info'+id).append(less);
             $('#more' +id).append(more);
         }
