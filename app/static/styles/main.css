@@ -152,8 +152,7 @@ footer{
     color: whitesmoke;
   }
 .portrait {
-    max-width: 85%;
-    max-height: 85%;
+    max-width: 100%;
 }
 
 .content .row{

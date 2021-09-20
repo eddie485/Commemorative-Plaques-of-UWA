@@ -77,7 +77,7 @@
         function createBlock(id){
             var empty = document.getElementById('empty');
             var html = 
-                '<div class="col-xs-4 col-md-4" id="id"' + id + '><img class="portrait" src = {{ url_for("static", filename="images/winthrophall1.jpg")}}></img></div> \
+                '<div class="col-xs-4 col-md-4" id="id"' + id + '><img id="portrait' + id + '" class="portrait" src = {{ url_for("static", filename="images/winthrophall1.jpg")}}></img></div> \
                     <div class="col-xs-7 col-md-7"> \
                         <p> <span id = "info' + id + '"></span> \
                             <span id="dots' + id + '">...</span> \
@@ -115,24 +115,24 @@
             fillDiv("Alexander Lecture Theatre",sites.Alexander_Lecture_Theatre.Description,2);
             fillDiv("Murdoch Lecture Theatre",sites.Murdoch_Lecture_Theatre.Description,3);
             fillDiv("Reid Library",sites.Reid_Library.Description,4);
-            fillDiv("Ross Lecture Theatre",sites.Ross_Lecture_Theatre.Description,5);
-            fillDiv("Weatherburn Lecture Theatre",sites.Weatherburn_Lecture_Theatre.Description,6);
-            fillDiv("Irwin St Building",sites.Irwin_St_Building.Description,7);
-            fillDiv("James Oval", sites.James_Oval.Description,8);
-            fillDiv("Tattersall Lecture Theatre",sites.Tattersall_Lecture_Theatre.Description,9);
-            fillDiv("Bayliss Building",sites.Bayliss_Building.Description,10);
-            fillDiv("Cameron Hall",sites.Cameron_Hall.Description,11);
-            fillDiv("Beasley Law Building",sites.Beasley_Law_Building.Description,12);
-            fillDiv("Queen And Duke",sites.Queen_And_Duke.Description,13);
+            fillDiv("Ross1.jpg",sites.Ross_Lecture_Theatre.Description,5);
+            fillDiv("Weatherburn1.jpg",sites.Weatherburn_Lecture_Theatre.Description,6);
+            fillDiv("Irwin_Street1.jpg",sites.Irwin_St_Building.Description,7);
+            fillDiv("James_Oval1.jpg", sites.James_Oval.Description,8);
+            fillDiv("Tattersall1.jpg",sites.Tattersall_Lecture_Theatre.Description,9);
+            fillDiv("Bayliss1.jpg",sites.Bayliss_Building.Description,10);
+            fillDiv("Cameron_Hall1.jpg",sites.Cameron_Hall.Description,11);
+            fillDiv("Beasley1.jpg",sites.Beasley_Law_Building.Description,12);
+            fillDiv("Queen_and_Duke1.jpg",sites.Queen_And_Duke.Description,13);
             fillDiv("Arts Building",sites.Arts_Building.Description,14);
             fillDiv("The Charioteer",sites.The_Charioteer.Description,15);
-            fillDiv("The Octagon Theatre",sites.The_Octagon_Theatre.Description,16);
-            fillDiv("The Black Stump",sites.The_Black_Stump.Description,17);
-            fillDiv("Dolphin Theatre",sites.Dolphin_Theatre.Description,18);
-            fillDiv("Percy Grainger",sites.Percy_Grainger.Description,19);
-            fillDiv("Sommerville",sites.Somerville_Auditorium.Description,20);
-            fillDiv("Eileen Joyce",sites.Eileen_Joyce.Description,21);
-            fillDiv("The Dancer and Emma",sites.The_Dancer_and_Emma.Description,22);
+            fillDiv("Octagon1.jpg",sites.The_Octagon_Theatre.Description,16);
+            fillDiv("The_Black_Stump1.jpg",sites.The_Black_Stump.Description,17);
+            fillDiv("Dolphin_Theatre1.jpg",sites.Dolphin_Theatre.Description,18);
+            fillDiv("Percy_Grainger1.jpg",sites.Percy_Grainger.Description,19);
+            fillDiv("Sommerville1.jpg",sites.Somerville_Auditorium.Description,20);
+            fillDiv("Eileen_Joyce1.jpg",sites.Eileen_Joyce.Description,21);
+            fillDiv("The_Dancer_and_Emma1.jpg",sites.The_Dancer_and_Emma.Description,22);
             fillDiv("Sundial",sites.Sundial.Description,23);
         })
         
@@ -144,7 +144,7 @@
             let my_desc = description.replace("<p>","").replace("</p>","");
             let less = my_desc.slice(0,CHAR_LIMIT);
             let more = my_desc.slice(CHAR_LIMIT);
-            $('#portrait'+id).setAttribute("src", filesource);
+            $('#portrait'+id).attr("src", filesource);
             $('#info'+id).append(less);
             $('#more' +id).append(more);
         }
