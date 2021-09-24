@@ -36,7 +36,7 @@ map.addControl(
     })
 );
 
-map.on('style.load', function () {
+map.on('styledata', function () {
   // Triggered when `setStyle` is called.
   map.addSource('music', {
       'type': 'geojson',
