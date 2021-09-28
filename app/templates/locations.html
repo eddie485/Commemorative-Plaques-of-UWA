@@ -101,7 +101,8 @@
                         </p> \
                     </div> \
                 <div class="col-xs-1 col-md-1"> \
-                    <button onclick="expandID(' + id +')" id = myBtn' + id + ' class="btn btn-info" style="width:80%">Read more</button> \
+                    <button onclick="expandID(' + id +')" id = myBtn' + id + ' class="btn btn-info" style="max-width:100%">Read more</button> \
+                    <button id = find' + id + ' class = "btn btn-info" style = "max-width: 100%;">Find on Map</button> \
                 </div>'
             empty.className = "row";
             empty.id = '';
@@ -120,7 +121,7 @@
             }
             
         }
-        
+
         //LOAD THE DIVS WHERE THE INFO WILL GO
         loadBlocks();
 
