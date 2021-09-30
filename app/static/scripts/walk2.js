@@ -8,10 +8,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.Reid_Library.Description;
                   var picture1 = '/static/images/'+sites.Reid_Library.FilePath1;
                   var picture2 = '/static/images/'+sites.Reid_Library.FilePath2;
+                  var picture3 = '/static/images/'+sites.Reid_Library.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3) 
                   $("#Carousel").show();
                 });
         })
@@ -24,10 +25,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.Fox_Lecture_Theatre.Description;
                   var picture1 = '/static/images/'+sites.Fox_Lecture_Theatre.FilePath1;
                   var picture2 = '/static/images/'+sites.Fox_Lecture_Theatre.FilePath2;
+                  var picture3 = '/static/images/'+sites.Fox_Lecture_Theatre.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3) 
                   $("#Carousel").show();
                 });
         })
@@ -41,10 +43,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.Alexander_Lecture_Theatre.Description;
                   var picture1 = '/static/images/'+sites.Alexander_Lecture_Theatre.FilePath1;
                   var picture2 = '/static/images/'+sites.Alexander_Lecture_Theatre.FilePath2;
+                  var picture3 = '/static/images/'+sites.Alexander_Lecture_Theatre.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3) 
                   $("#Carousel").show();
                 });
         })
@@ -57,10 +60,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.Murdoch_Lecture_Theatre.Description;
                   var picture1 = '/static/images/'+sites.Murdoch_Lecture_Theatre.FilePath1;
                   var picture2 = '/static/images/'+sites.Murdoch_Lecture_Theatre.FilePath2;
+                  var picture3 = '/static/images/'+sites.Murdoch_Lecture_Theatre.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3) 
                   $("#Carousel").show();
                 });
         })
@@ -73,10 +77,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.Ross_Lecture_Theatre.Description;
                   var picture1 = '/static/images/'+sites.Ross_Lecture_Theatre.FilePath1;
                   var picture2 = '/static/images/'+sites.Ross_Lecture_Theatre.FilePath2;
+                  var picture3 = '/static/images/'+sites.Ross_Lecture_Theatre.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3) 
                   $("#Carousel").show();
                 });
         })
@@ -89,10 +94,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.Weatherburn_Lecture_Theatre.Description;
                   var picture1 = '/static/images/'+sites.Weatherburn_Lecture_Theatre.FilePath1;
                   var picture2 = '/static/images/'+sites.Weatherburn_Lecture_Theatre.FilePath2;
+                  var picture3 = '/static/images/'+sites.Weatherburn_Lecture_Theatre.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3) 
                   $("#Carousel").show();
                 });
         })
@@ -106,10 +112,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.Irwin_St_Building.Description;
                   var picture1 = '/static/images/'+sites.Irwin_St_Building.FilePath1;
                   var picture2 = '/static/images/'+sites.Irwin_St_Building.FilePath2;
+                  var picture3 = '/static/images/'+sites.Irwin_St_Building.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3) 
                   $("#Carousel").show();
                 });
         })
@@ -122,10 +129,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.James_Oval.Description;
                   var picture1 = '/static/images/'+sites.James_Oval.FilePath1;
                   var picture2 = '/static/images/'+sites.James_Oval.FilePath2;
+                  var picture3 = '/static/images/'+sites.James_Oval.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3) 
                   $("#Carousel").show();
                 });
         })
@@ -138,10 +146,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.Tattersall_Lecture_Theatre.Description;
                   var picture1 = '/static/images/'+sites.Tattersall_Lecture_Theatre.FilePath1;
                   var picture2 = '/static/images/'+sites.Tattersall_Lecture_Theatre.FilePath2;
+                  var picture3 = '/static/images/'+sites.Tattersall_Lecture_Theatre.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3) 
                   $("#Carousel").show();
                 });
         })
@@ -154,10 +163,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.Bayliss_Building.Description;
                   var picture1 = '/static/images/'+sites.Bayliss_Building.FilePath1;
                   var picture2 = '/static/images/'+sites.Bayliss_Building.FilePath2;
+                  var picture3 = '/static/images/'+sites.Bayliss_Building.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3) 
                   $("#Carousel").show();
                 });
         })
@@ -170,10 +180,11 @@ new CustomMarker({ color: color2 })
                   var description = sites.Cameron_Hall.Description;
                   var picture1 = '/static/images/'+sites.Cameron_Hall.FilePath1;
                   var picture2 = '/static/images/'+sites.Cameron_Hall.FilePath2;
+                  var picture3 = '/static/images/'+sites.Cameron_Hall.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3)
                   $("#Carousel").show();
                 });
         })
@@ -187,10 +198,11 @@ new CustomMarker({ color: color2 })
                   
                   var picture1 = '/static/images/'+sites.Beasley_Law_Building.FilePath1;
                   var picture2 = '/static/images/'+sites.Beasley_Law_Building.FilePath2;
+                  var picture3 = '/static/images/'+sites.Beasley_Law_Building.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture2) //just pic2 for now
+                  $("#image3").attr("src", picture3)
                   $("#Carousel").show();
                 });
         })
