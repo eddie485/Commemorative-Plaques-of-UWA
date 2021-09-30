@@ -1,5 +1,29 @@
 var color1 = "#e2b600"
 
+$.getJSON("../static/sites.json",function(sites){
+    // create a HTML element for each feature
+    const el = document.createElement('div');
+    el.className = 'marker';
+    // make a marker for each feature and add it to the map
+    new CustomMarker(el)
+    .setLngLat([115.818189729916, -31.9782788741746])
+    .onClick(() => { //when clicked, define the following function
+            $.getJSON("../static/sites.json",function(sites){
+              var description = sites.Queen_And_Duke.Description;
+              var picture1 = '/static/images/'+sites.Queen_And_Duke.FilePath1;
+              var picture2 = '/static/images/'+sites.Queen_And_Duke.FilePath2;
+              $("#Content").html(description);
+              $("#image1").attr("src", picture1)
+              $("#image2").attr("src", picture2)
+              $("#image3").attr("src", picture2) //just pic2 for now
+              $("#Content").html(description);
+              $("#Carousel").show();
+            });
+    })
+    .addTo(map);
+});
+
+
 new CustomMarker({ color: color1 })
         .setLngLat([115.818189729916, -31.9782788741746])
         .onClick(() => { //when clicked, define the following function
