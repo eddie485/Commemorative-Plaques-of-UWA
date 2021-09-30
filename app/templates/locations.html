@@ -3,7 +3,7 @@
 {%block head%}
 <style>
     .row{
-        
+
         background-color: #ececec;
     }
 
@@ -16,13 +16,13 @@
     }
 
     .header {
-        
-        padding: 25px; 
+
+        padding: 25px;
         background-color: #e2b600;
     }
 
     .header h1{
-        
+
         text-align: center;
     }
 
@@ -46,13 +46,13 @@
 
 {%block body%}
     <div class = "header">
-        <h1>LOCATIONS OF INTEREST</h1>
+        <h1>List of Locations</h1>
     </div>
     <div class="container-fluid" style="background-color: #ececec;">
-        
+
         <div class="container">
 
-            
+
             <!--
                 TEMPLATE
             <div class="row">
@@ -66,8 +66,8 @@
             <div class = "content">
                 <div id="empty" onload="loadBlocks()"></div>
             </div>
-            
-        
+
+
         </div>
 
     </div>
@@ -80,11 +80,11 @@
 
             if (dots.style.display === "none") {
                 dots.style.display = "inline";
-                btnText.innerHTML = "Read more"; 
+                btnText.innerHTML = "Read more";
                 moreText.style.display = "none";
             } else {
                 dots.style.display = "none";
-                btnText.innerHTML = "Read less"; 
+                btnText.innerHTML = "Read less";
                 moreText.style.display = "inline";
             }
         }
@@ -92,8 +92,8 @@
         //function creates a block that can display information
         function createBlock(id){
             var empty = document.getElementById('empty');
-            var html = 
-                '<div class="col-xs-4 col-md-4" id="id"' + id + '><img id="portrait' + id + '" class="portrait" src = {{ url_for("static", filename="images/winthrophall1.jpg")}}></img></div> \
+            var html =
+                '<div class="col-xs-4 col-md-4" id="id"' + id + '><img id="portrait' + id + '" class="portrait"></img></div> \
                     <div class="col-xs-7 col-md-7"> \
                         <p> <span id = "info' + id + '"></span> \
                             <span id="dots' + id + '">...</span> \
@@ -101,7 +101,8 @@
                         </p> \
                     </div> \
                 <div class="col-xs-1 col-md-1"> \
-                    <button onclick="expandID(' + id +')" id = myBtn' + id + ' class="mybtn">Read more</button> \
+                    <button onclick="expandID(' + id +')" id = myBtn' + id + ' class="btn btn-info" style="max-width:100%">Read more</button> \
+                    <button id = find' + id + ' class = "btn btn-info" style = "max-width: 100%;">Find on Map</button> \
                 </div>'
             empty.className = "row";
             empty.id = '';
@@ -109,52 +110,53 @@
             $('<div id="empty"></div>').insertAfter(empty);
         }
 
-        
-        
+
+
         function loadBlocks(){
-            
+
             let number_of_blocks = 23;
-            
+
             for(let i = 1; i < number_of_blocks+1; i++){
                 createBlock(i);
             }
-            
 
         }
+
         //LOAD THE DIVS WHERE THE INFO WILL GO
         loadBlocks();
 
         //FILL THEM WITH DATA
         $.getJSON("../static/sites.json",function fillData(sites){
             console.log('inside here');
-            fillDiv(sites.Fox_Lecture_Theatre.FilePath1, sites.Fox_Lecture_Theatre.Description,1);
-            fillDiv(sites.Alexander_Lecture_Theatre.FilePath1,sites.Alexander_Lecture_Theatre.Description,2);
-            fillDiv(sites.Murdoch_Lecture_Theatre.FilePath1,sites.Murdoch_Lecture_Theatre.Description,3);
-            fillDiv(sites.Reid_Library.FilePath1,sites.Reid_Library.Description,4);
-            fillDiv(sites.Ross_Lecture_Theatre.FilePath1,sites.Ross_Lecture_Theatre.Description,5);
-            fillDiv(sites.Weatherburn_Lecture_Theatre.FilePath3,sites.Weatherburn_Lecture_Theatre.Description,6);
-            fillDiv(sites.Irwin_St_Building.FilePath1,sites.Irwin_St_Building.Description,7);
-            fillDiv(sites.James_Oval.FilePath1, sites.James_Oval.Description,8);
-            fillDiv(sites.Tattersall_Lecture_Theatre.FilePath1,sites.Tattersall_Lecture_Theatre.Description,9);
-            fillDiv(sites.Bayliss_Building.FilePath1,sites.Bayliss_Building.Description,10);
-            fillDiv(sites.Cameron_Hall.FilePath1,sites.Cameron_Hall.Description,11);
-            fillDiv(sites.Beasley_Law_Building.FilePath1,sites.Beasley_Law_Building.Description,12);
-            fillDiv(sites.Queen_And_Duke.FilePath1,sites.Queen_And_Duke.Description,13);
-            fillDiv(sites.Arts_Building.FilePath1,sites.Arts_Building.Description,14);
-            fillDiv(sites.The_Charioteer.FilePath1,sites.The_Charioteer.Description,15);
-            fillDiv(sites.The_Octagon_Theatre.FilePath1,sites.The_Octagon_Theatre.Description,16);
-            fillDiv(sites.The_Black_Stump.FilePath1,sites.The_Black_Stump.Description,17);
-            fillDiv(sites.Dolphin_Theatre.FilePath1,sites.Dolphin_Theatre.Description,18);
-            fillDiv(sites.Percy_Grainger.FilePath1,sites.Percy_Grainger.Description,19);
+            fillDiv(sites.Alexander_Lecture_Theatre.FilePath1,sites.Alexander_Lecture_Theatre.Description,1);
+            fillDiv(sites.Arts_Building.FilePath1,sites.Arts_Building.Description,2);
+            fillDiv(sites.Bayliss_Building.FilePath1,sites.Bayliss_Building.Description,3);
+            fillDiv(sites.Beasley_Law_Building.FilePath1,sites.Beasley_Law_Building.Description,4);
+            fillDiv(sites.The_Black_Stump.FilePath1,sites.The_Black_Stump.Description,5);
+            fillDiv(sites.Cameron_Hall.FilePath1,sites.Cameron_Hall.Description,6);
+            fillDiv(sites.The_Charioteer.FilePath1,sites.The_Charioteer.Description,7);
+            fillDiv(sites.The_Dancer_and_Emma.FilePath1,sites.The_Dancer_and_Emma.Description,8);
+            fillDiv(sites.Dolphin_Theatre.FilePath1,sites.Dolphin_Theatre.Description,9);
+            fillDiv(sites.Eileen_Joyce.FilePath1,sites.Eileen_Joyce.Description,10);
+            fillDiv(sites.Fox_Lecture_Theatre.FilePath1, sites.Fox_Lecture_Theatre.Description,11);
+            fillDiv(sites.Irwin_St_Building.FilePath1,sites.Irwin_St_Building.Description,12);
+            fillDiv(sites.James_Oval.FilePath1, sites.James_Oval.Description,13);
+            fillDiv(sites.Murdoch_Lecture_Theatre.FilePath1,sites.Murdoch_Lecture_Theatre.Description,14);
+            fillDiv(sites.The_Octagon_Theatre.FilePath1,sites.The_Octagon_Theatre.Description,15);
+            fillDiv(sites.Percy_Grainger.FilePath1,sites.Percy_Grainger.Description,16);
+            fillDiv(sites.Queen_And_Duke.FilePath1,sites.Queen_And_Duke.Description,17);
+            fillDiv(sites.Reid_Library.FilePath1,sites.Reid_Library.Description,18);
+            fillDiv(sites.Ross_Lecture_Theatre.FilePath1,sites.Ross_Lecture_Theatre.Description,19);
             fillDiv(sites.Somerville_Auditorium.FilePath1,sites.Somerville_Auditorium.Description,20);
-            fillDiv(sites.Eileen_Joyce.FilePath1,sites.Eileen_Joyce.Description,21);
-            fillDiv(sites.The_Dancer_and_Emma.FilePath1,sites.The_Dancer_and_Emma.Description,22);
-            fillDiv(sites.Sundial.FilePath1,sites.Sundial.Description,23);
+            fillDiv(sites.Sundial.FilePath1,sites.Sundial.Description,21);
+            fillDiv(sites.Tattersall_Lecture_Theatre.FilePath1,sites.Tattersall_Lecture_Theatre.Description,22);
+            fillDiv(sites.Weatherburn_Lecture_Theatre.FilePath1,sites.Weatherburn_Lecture_Theatre.Description,23);
+
         })
-        
+
         function fillDiv(portrait, description,id){
             let CHAR_LIMIT = 150;
-            
+            //the id given is based on their alphabetical order
             let filesource = '/static/images/' + portrait;
             console.log(filesource);
             let my_desc = description.replace("<p>","").replace("</p>","");
@@ -164,7 +166,7 @@
             $('#info'+id).append(less);
             $('#more' +id).append(more);
         }
-        
-    </script>
 
+    </script>
+    {% include "footer.html" %}
 {%endblock%}
