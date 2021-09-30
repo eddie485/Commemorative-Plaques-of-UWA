@@ -26,9 +26,6 @@
                         <div class="carousel-item" >
                             <img class="d-block w-100" id ="image2" src="{{ url_for('static', filename='images/winthrophall2.jpg')}}" alt="Second slide">
                         </div>
-                        <div class="carousel-item" >
-                            <img class="d-block w-100" id ="image3" src="{{ url_for('static', filename='images/winthrophall3.jpg')}}" alt="Third slide">
-                        </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -65,8 +62,14 @@
                   </p>
 
               </div>
+            
             </div>
-
+            <div class="container-fluid" style="font-size: 15px; line-height: 150%; padding-top: 15px; padding-bottom: 30px;">
+                <button class="btn btn-infro">Start Walk</button>
+                <button class="btn btn-info">Previous Location</a>
+                <br>
+                <button class="btn btn-info">Next Location</a>
+            </div>
         </div>
         {% include "footer.html" %}
     </div>

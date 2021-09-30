@@ -15,7 +15,7 @@ const bounds = [
     [115.8281, -31.9729]  // [east, north]
 ];
 // Set the map's max bounds.
-//map.setMaxBounds(bounds);
+map.setMaxBounds(bounds);
 
 // disable map rotation using right click + drag
 map.dragRotate.disable();
@@ -74,6 +74,15 @@ map.on('styledata', function () {
           'line-width': 4
       }
   });
+  map.setFeatureState(
+    {
+      'source': 'music',
+      'id': 'music'
+    },
+    {
+      hover: true
+    }
+  );
 });
 
 document.addEventListener("DOMContentLoaded", function(){
