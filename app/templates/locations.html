@@ -3,7 +3,7 @@
 {%block head%}
 <style>
     .row{
-        
+
         background-color: #ececec;
     }
 
@@ -16,13 +16,13 @@
     }
 
     .header {
-        
-        padding: 25px; 
+
+        padding: 25px;
         background-color: #e2b600;
     }
 
     .header h1{
-        
+
         text-align: center;
     }
 
@@ -49,10 +49,10 @@
         <h1>List of Locations</h1>
     </div>
     <div class="container-fluid" style="background-color: #ececec;">
-        
+
         <div class="container">
 
-            
+
             <!--
                 TEMPLATE
             <div class="row">
@@ -66,8 +66,8 @@
             <div class = "content">
                 <div id="empty" onload="loadBlocks()"></div>
             </div>
-            
-        
+
+
         </div>
 
     </div>
@@ -80,11 +80,11 @@
 
             if (dots.style.display === "none") {
                 dots.style.display = "inline";
-                btnText.innerHTML = "Read more"; 
+                btnText.innerHTML = "Read more";
                 moreText.style.display = "none";
             } else {
                 dots.style.display = "none";
-                btnText.innerHTML = "Read less"; 
+                btnText.innerHTML = "Read less";
                 moreText.style.display = "inline";
             }
         }
@@ -92,7 +92,7 @@
         //function creates a block that can display information
         function createBlock(id){
             var empty = document.getElementById('empty');
-            var html = 
+            var html =
                 '<div class="col-xs-4 col-md-4" id="id"' + id + '><img id="portrait' + id + '" class="portrait"></img></div> \
                     <div class="col-xs-7 col-md-7"> \
                         <p> <span id = "info' + id + '"></span> \
@@ -110,16 +110,16 @@
             $('<div id="empty"></div>').insertAfter(empty);
         }
 
-        
-        
+
+
         function loadBlocks(){
-            
+
             let number_of_blocks = 23;
-            
+
             for(let i = 1; i < number_of_blocks+1; i++){
                 createBlock(i);
             }
-            
+
         }
 
         //LOAD THE DIVS WHERE THE INFO WILL GO
@@ -151,9 +151,9 @@
             fillDiv(sites.Sundial.FilePath1,sites.Sundial.Description,21);
             fillDiv(sites.Tattersall_Lecture_Theatre.FilePath1,sites.Tattersall_Lecture_Theatre.Description,22);
             fillDiv(sites.Weatherburn_Lecture_Theatre.FilePath1,sites.Weatherburn_Lecture_Theatre.Description,23);
-            
+
         })
-        
+
         function fillDiv(portrait, description,id){
             let CHAR_LIMIT = 150;
             //the id given is based on their alphabetical order
@@ -166,7 +166,7 @@
             $('#info'+id).append(less);
             $('#more' +id).append(more);
         }
-        
-    </script>
 
+    </script>
+    {% include "footer.html" %}
 {%endblock%}
