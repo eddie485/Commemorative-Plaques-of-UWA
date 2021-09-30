@@ -92,6 +92,7 @@ p, pre{
     position: relative;
     max-width:100%;
     max-height:100%;
+    object-fit: contain;
 }
 .line-divider {
     width: 100%;
@@ -120,7 +121,7 @@ p, pre{
 }
 
 .parallax-img1{
-    background-image: url("/static/images/winthrophall1.jpg");
+    background-image: url("/static/images/students1920s.jpg");
     position:relative;
 
     min-height: 90vh; 
@@ -132,7 +133,7 @@ p, pre{
 }
 
 .parallax-img3{
-    background-image: url("/static/images/reid.jpg");
+    background-image: url("/static/images/Aerial.jpg");
 
     min-height: 300px; 
     height: 90vh;
