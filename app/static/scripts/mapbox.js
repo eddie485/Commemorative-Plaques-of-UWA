@@ -31,6 +31,8 @@ map.addControl(
     },
      //When active the map will receive updates to the device's location as it changes.
     trackUserLocation: true,
+    //When false it will not draw the degree of error around the devices location, not covering any icons.
+    showAccuracyCircle: false,
     // Draw an arrow next to the location dot to indicate which direction the device is heading.
     showUserHeading: true
     })
