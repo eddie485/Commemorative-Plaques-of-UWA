@@ -76,6 +76,24 @@ map.on('styledata', function () {
           'line-width': 4
       }
   });
+  map.addSource('bilya', {
+    'type': 'geojson',
+    'data': '../static/scripts/bilya.geojson'
+    });
+
+    map.addLayer({
+        'id': 'bilya',
+        'type': 'line',
+        'source': 'bilya',
+        'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        'paint': {
+            'line-color': '#e2b600',
+            'line-width': 4
+        }
+    });
 });
 
 document.addEventListener("DOMContentLoaded", function(){
