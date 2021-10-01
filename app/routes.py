@@ -23,5 +23,9 @@ def walk1():
 def walk2():
     return render_template("theme2.html", title="Theme 2")
 
+@app.route("/theme3")
+def walk3():
+    return render_template("theme3.html", title="Theme 3")
+
 if __name__=="__main__":
     app.run(debug=True)
