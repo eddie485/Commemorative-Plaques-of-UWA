@@ -40,21 +40,22 @@ map.addControl(
 
 map.on('styledata', function () {
     // Triggered when `setStyle` is called.
-    map.addSource('music', {
+    
+    map.addSource('iconic', {
         'type': 'geojson',
-        'data': '../static/scripts/music.geojson'
-        });
+        'data': '../static/scripts/iconic.geojson'
+    });
   
     map.addLayer({
-        'id': 'music',
+        'id': 'iconic',
         'type': 'line',
-        'source': 'music',
+        'source': 'iconic',
         'layout': {
             'line-join': 'round',
             'line-cap': 'round'
         },
         'paint': {
-            'line-color': 'rgba(39,52,139,255)',
+            'line-color': '#e2b600',
             'line-width': 4
         }
     });
