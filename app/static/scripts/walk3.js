@@ -46,7 +46,7 @@ $.getJSON("../static/sites.json",function(sites){
             .addTo(map);
 
     const el3 = document.createElement('div');
-    el3.className = 'marker marker1';
+    el3.className = 'marker marker2';
     // make a marker for each feature and add it to the map
     new CustomMarker(el3)
             .setLngLat([115.819967824128, -31.9829062327725])
@@ -68,7 +68,7 @@ $.getJSON("../static/sites.json",function(sites){
 
 
     const el4 = document.createElement('div');
-    el4.className = 'marker marker2';
+    el4.className = 'marker marker1';
     // make a marker for each feature and add it to the map
     new CustomMarker(el4)
             .setLngLat([115.820325263026, -31.9828828069579])
