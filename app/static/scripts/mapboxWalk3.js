@@ -40,12 +40,12 @@ map.addControl(
 
 map.on('styledata', function () {
     // Triggered when `setStyle` is called.
-    
+
     map.addSource('bilya', {
       'type': 'geojson',
       'data': '../static/scripts/bilya.geojson'
       });
-  
+
       map.addLayer({
           'id': 'bilya',
           'type': 'line',
@@ -55,7 +55,7 @@ map.on('styledata', function () {
               'line-cap': 'round'
           },
           'paint': {
-              'line-color': '#e2b600',
+              'line-color': 'rgba(39,52,139,255)',
               'line-width': 4
           }
     });

@@ -3,7 +3,7 @@ var color2 = "#27348b"
 $.getJSON("../static/sites.json",function(sites){
     // create a HTML element for each feature
     const el1 = document.createElement('div');
-    el1.className = 'marker marker1';
+    el1.className = 'marker marker4';
     // make a marker for each feature and add it to the map
     new CustomMarker(el1)
             .setLngLat([115.817784628967, -31.9786905168583])
@@ -41,7 +41,7 @@ $.getJSON("../static/sites.json",function(sites){
             .addTo(map);
 
     const el3 = document.createElement('div');
-    el3.className = 'marker marker1';
+    el3.className = 'marker marker3';
     // make a marker for each feature and add it to the map
     new CustomMarker(el3)
             .setLngLat([115.818487783993, -31.9783670570613])
@@ -60,7 +60,7 @@ $.getJSON("../static/sites.json",function(sites){
             .addTo(map);
 
     const el4 = document.createElement('div');
-    el4.className = 'marker marker1';
+    el4.className = 'marker marker2';
     // make a marker for each feature and add it to the map
     new CustomMarker(el4)
             .setLngLat([115.818497494761, -31.9786055507042])
@@ -80,7 +80,7 @@ $.getJSON("../static/sites.json",function(sites){
 
 
             const el5 = document.createElement('div');
-            el5.className = 'marker marker1';
+            el5.className = 'marker marker5';
             // make a marker for each feature and add it to the map
             new CustomMarker(el5)
                     .setLngLat([115.817100980095, -31.9785249786282])
@@ -99,7 +99,7 @@ $.getJSON("../static/sites.json",function(sites){
                     .addTo(map);
 
             const el6 = document.createElement('div');
-            el6.className = 'marker marker1';
+            el6.className = 'marker marker6';
             // make a marker for each feature and add it to the map
             new CustomMarker(el6)
                     .setLngLat([115.816735887862, -31.9791823044732])
@@ -118,7 +118,7 @@ $.getJSON("../static/sites.json",function(sites){
                     .addTo(map);
 
             const el7 = document.createElement('div');
-            el7.className = 'marker marker1';
+            el7.className = 'marker marker7';
             // make a marker for each feature and add it to the map
             new CustomMarker(el7)
                     .setLngLat([115.817126494477, -31.9797999115144])
@@ -139,7 +139,7 @@ $.getJSON("../static/sites.json",function(sites){
 
 
             const el8 = document.createElement('div');
-            el8.className = 'marker marker1';
+            el8.className = 'marker marker8';
             // make a marker for each feature and add it to the map
             new CustomMarker(el8)
                     .setLngLat([115.817948589614, -31.9802256335239])
@@ -158,7 +158,7 @@ $.getJSON("../static/sites.json",function(sites){
                     .addTo(map);
 
             const el9 = document.createElement('div');
-            el9.className = 'marker marker1';
+            el9.className = 'marker marker9';
             // make a marker for each feature and add it to the map
             new CustomMarker(el9)
                     .setLngLat([115.818596792117, -31.9812862554056])
@@ -178,7 +178,7 @@ $.getJSON("../static/sites.json",function(sites){
 
 
             const el10 = document.createElement('div');
-            el10.className = 'marker marker1';
+            el10.className = 'marker marker10';
             // make a marker for each feature and add it to the map
             new CustomMarker(el10)
                     .setLngLat([115.818703320593, -31.9819275631693])
@@ -198,7 +198,7 @@ $.getJSON("../static/sites.json",function(sites){
 
 
             const el11 = document.createElement('div');
-            el11.className = 'marker marker1';
+            el11.className = 'marker marker11';
             // make a marker for each feature and add it to the map
             new CustomMarker(el11)
                     .setLngLat([115.819832699563, -31.9810696951577])
@@ -217,7 +217,7 @@ $.getJSON("../static/sites.json",function(sites){
                     .addTo(map);
 
             const el12 = document.createElement('div');
-            el12.className = 'marker marker1';
+            el12.className = 'marker marker12';
             new CustomMarker(el12)
                     .setLngLat([115.81969567367, -31.9795841426999])
                     .onClick(() => { //when clicked, define the following function

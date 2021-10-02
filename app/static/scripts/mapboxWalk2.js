@@ -40,12 +40,12 @@ map.addControl(
 
 map.on('styledata', function () {
     // Triggered when `setStyle` is called.
-    
+
     map.addSource('iconic', {
         'type': 'geojson',
         'data': '../static/scripts/iconic.geojson'
     });
-  
+
     map.addLayer({
         'id': 'iconic',
         'type': 'line',
@@ -55,7 +55,7 @@ map.on('styledata', function () {
             'line-cap': 'round'
         },
         'paint': {
-            'line-color': '#e2b600',
+            'line-color': 'rgba(39,52,139,255)',
             'line-width': 4
         }
     });
