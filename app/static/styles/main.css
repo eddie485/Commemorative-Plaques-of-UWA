@@ -16,33 +16,110 @@ p, pre{
     line-height: 24px;
 }
 
-.footer { 
-    width:100%; 
-    background-color:#e8e8eb; 
-    min-height:250px; 
-    padding:10px 0px 0px 0px;
+.marker {
+    background-image: url("/static/images/spritesheets.png");
+    background-repeat: no-repeat;
+    display: block;
 }
-.pt2 { padding-top:10px; 
-    margin-bottom:10px;
-}
-.footer p { 
-    font-size:12px; 
-    color:rgb(88, 88, 88); 
-    padding-bottom:0px; 
-    margin-bottom:8px;
-}
-.footer_list { 
-    margin:0px ; 
-    list-style-type:none ; 
-    font-size:12px; 
-    padding:0px 0px 0px 0px ; 
+.marker1 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -5px;
 }
 
-.footer_list li a{ 
+.marker10 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -92px;
+}
+
+.marker11 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -179px;
+}
+
+.marker12 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -266px;
+}
+
+.marker2 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -353px;
+}
+
+.marker3 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -440px;
+}
+
+.marker4 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -527px;
+}
+
+.marker5 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -614px;
+}
+
+.marker6 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -701px;
+}
+
+.marker7 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -788px;
+}
+
+.marker8 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -875px;
+}
+
+.marker9 {
+    width: 50px;
+    height: 77px;
+    background-position: -5px -962px;
+}
+
+.footer {
+    width:100%;
+    background-color:#e8e8eb;
+    min-height:250px;
+    padding:10px 0px 0px 0px;
+}
+.pt2 { padding-top:10px;
+    margin-bottom:10px;
+}
+.footer p {
+    font-size:12px;
+    color:rgb(88, 88, 88);
+    padding-bottom:0px;
+    margin-bottom:8px;
+}
+.footer_list {
+    margin:0px ;
+    list-style-type:none ;
+    font-size:12px;
+    padding:0px 0px 0px 0px ;
+}
+
+.footer_list li a{
     color:rgb(87, 85, 85);
 }
-.footer_list li a:hover{ 
-    color:#fff; 
+.footer_list li a:hover{
+    color:#fff;
     text-decoration:none;
 }
 
@@ -124,7 +201,7 @@ p, pre{
     background-image: url("/static/images/students1920s.jpg");
     position:relative;
 
-    min-height: 90vh; 
+    min-height: 90vh;
 
     background-attachment: fixed;
     background-position: center;
@@ -135,9 +212,9 @@ p, pre{
 .parallax-img3{
     background-image: url("/static/images/Aerial.jpg");
 
-    min-height: 300px; 
+    min-height: 300px;
     height: 90vh;
-    
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
