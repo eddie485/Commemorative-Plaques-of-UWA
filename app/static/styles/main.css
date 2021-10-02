@@ -249,7 +249,7 @@ p, pre{
 
 #menu {
     position: absolute;
-    background: #efefef;
-    padding: 10px;
+    background: rgba(169, 169, 169, 0.7);
+    padding: 5px;
     font-family: 'Open Sans', sans-serif;
 }
