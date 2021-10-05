@@ -5,8 +5,8 @@ const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL,
 
-    center: [115.8195, -31.9833], // starting position [longitude, latitude]
-    zoom: 17.5 // starting zoom
+    center: [115.8198, -31.9826], // starting position [longitude, latitude]
+    zoom: 17 // starting zoom
 });
 
 // Set bounds to UWA, Crawley Campus.
