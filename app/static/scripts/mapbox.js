@@ -5,8 +5,8 @@ const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/satellite-streets-v11', // style URL,
 
-    center: [115.8181, -31.9789], // starting position [longitude, latitude]
-    zoom: 17 // starting zoom
+    center: [115.8181, -31.9805], // starting position [longitude, latitude]
+    zoom: 16.3 // starting zoom
 });
 
 // Set bounds to UWA, Crawley Campus.
@@ -31,59 +31,12 @@ map.addControl(
     },
      //When active the map will receive updates to the device's location as it changes.
     trackUserLocation: true,
+    //When false it will not draw the degree of error around the devices location, not covering any icons.
+    showAccuracyCircle: false,
     // Draw an arrow next to the location dot to indicate which direction the device is heading.
     showUserHeading: true
     })
 );
-
-map.on('styledata', function () {
-  // Triggered when `setStyle` is called.
-  map.addSource('music', {
-      'type': 'geojson',
-      'data': '../static/scripts/music.geojson'
-      });
-
-  map.addLayer({
-      'id': 'music',
-      'type': 'line',
-      'source': 'music',
-      'layout': {
-          'line-join': 'round',
-          'line-cap': 'round'
-      },
-      'paint': {
-          'line-color': 'rgba(39,52,139,255)',
-          'line-width': 4
-      }
-  });
-  map.addSource('iconic', {
-      'type': 'geojson',
-      'data': '../static/scripts/iconic.geojson'
-  });
-
-  map.addLayer({
-      'id': 'iconic',
-      'type': 'line',
-      'source': 'iconic',
-      'layout': {
-          'line-join': 'round',
-          'line-cap': 'round'
-      },
-      'paint': {
-          'line-color': '#e2b600',
-          'line-width': 4
-      }
-  });
-  map.setFeatureState(
-    {
-      'source': 'music',
-      'id': 'music'
-    },
-    {
-      hover: true
-    }
-  );
-});
 
 document.addEventListener("DOMContentLoaded", function(){
     const layerList = document.getElementById('menu');

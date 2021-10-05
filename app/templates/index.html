@@ -11,9 +11,6 @@
     <div class="row" style="height:70vw">
         <div class="col-md-8 col-xs-1" id="map">
             <script src="{{ url_for('static', filename='scripts/mapbox.js')}}"></script>
-            <script src="{{ url_for('static', filename='scripts/CustomMarker.js')}}"></script>
-	        <script src="{{ url_for('static', filename='scripts/walk1.js')}}"></script>
-            <script src="{{ url_for('static', filename='scripts/walk2.js')}}"></script>
         </div>
         <div id="menu">
             <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" checked="checked">
@@ -22,9 +19,12 @@
             <label for="streets-v11">streets</label>
         </div>
         <div class="col-md-4 col-xs-1" style="background-color:white; text-align: center; line-height:500px; font-size: 40px;">
+          <div class="container" style="padding-top: 100px; padding-bottom: 15px;">
+
+          </div>
             <div class="container" style="padding-top: 30px; padding-bottom: 15px;">
                 <h1 style="text-align: center;">
-                    WELCOME TO UWA PLAQUES
+                    WELCOME TO <br>UWA PLAQUES
                 </h1>
             </div>
             <div class="line-divider"></div>
@@ -45,6 +45,8 @@
                 <a href="{{ url_for('walk1') }}" class="btn btn-info" role="button">Arts Through Time</a>
                 <br>
                 <a href="{{ url_for('walk2') }}" class="btn btn-info" role="button">Distinguished UWA Personalities</a>
+                <br>
+                <a href="{{ url_for('walk3') }}" class="btn btn-info" role="button">Bilya Marlee</a>
             </div>
         </div>
         {% include "footer.html" %}
