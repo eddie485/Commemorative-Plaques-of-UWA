@@ -69,12 +69,11 @@
 
                       <br><br>Click below or choose any icon from the map to start
                   </p>
-
+                  <button class="btn btn-info" id="start" onclick="startWalk()" style="display:block; margin-left: auto; margin-right: auto;">Start Walk</button>
               </div>
-            
+
             </div>
             <div class="container-fluid" style="font-size: 15px; line-height: 150%; padding-top: 15px; padding-bottom: 30px;">
-                <button class="btn btn-info" id="start" onclick="startWalk()" style="display:block; margin-left: auto; margin-right: auto;">Start Walk</button>
                 <button class="btn btn-info" id="next" onclick="prevLoc()" style="display:none; margin-left: auto; margin-right: auto;">Next Location</button>
                 <button class="btn btn-info" id="prev" onclick="nxtLoc()" style="display:none; margin-left: auto; margin-right: auto;">Previous Location</button>
             </div>
@@ -84,7 +83,7 @@
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
 
-                    document.getElementsByClassName("el1").trigger("click");
+                    document.getElementById("marker1").click();
                 }
             </script>
         </div>

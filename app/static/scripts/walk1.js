@@ -4,6 +4,7 @@ $.getJSON("../static/sites.json",function(sites){
     // create a HTML element for each feature
     const el1 = document.createElement('div');
     el1.className = 'marker marker1';
+    el1.id = "marker1"                                                 //id for previous/next button clicking
     // make a marker for each feature and add it to the map
     new CustomMarker(el1)
     .setLngLat([115.818189729916, -31.9782788741746])
