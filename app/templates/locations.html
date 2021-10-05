@@ -154,11 +154,14 @@
         })
         
         function fillDiv(portrait, description,id){
-            let CHAR_LIMIT = 150;
-            
+            let CHAR_LIMIT = 350;
+            //the id given is based on their alphabetical order
             let filesource = '/static/images/' + portrait;
             console.log(filesource);
             let my_desc = description.replace("<p>","").replace("</p>","");
+            while(my_desc[CHAR_LIMIT] != " "){
+                CHAR_LIMIT += 1;
+            }
             let less = my_desc.slice(0,CHAR_LIMIT);
             let more = my_desc.slice(CHAR_LIMIT);
             $('#portrait'+id).attr("src", filesource);
