@@ -48,4 +48,7 @@ document.addEventListener("DOMContentLoaded", function(){
             map.setStyle('mapbox://styles/mapbox/' + layerId);
         };
     };
+    setTimeout(function() {
+        $(".mapboxgl-ctrl-geolocate").click();
+    },5000);
 });
