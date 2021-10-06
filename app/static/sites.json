@@ -6,10 +6,10 @@
         "Label1":"1983P Academic Staff - 1931 - Sinclaire Collot~ke Graebner Vanzetti Soloman Fowler Alexander Wood Murdoch Weatherburn Ross Fox",
         "Label2":"",
         "Label3":"",
-        "FilePath1": "Fox1.jpg", 
+        "FilePath1": "Fox1.jpg",
         "FilePath2": "Fox2.jpg",
         "FilePath3": "Fox3.jpg"
-    },  
+    },
     "Murdoch_Lecture_Theatre" : {
 
           "Order": 14,
@@ -17,9 +17,9 @@
           "Label1":"2260P Professor Walter Murdoch sitting at his desk taken in South Perth in 1950",
           "Label2":"Murdoch NAA 2012.129",
           "Label3":"",
-          "FilePath1": "Murdoch1.jpg", 
+          "FilePath1": "Murdoch1.JPG",
           "FilePath2": "Murdoch2.png",
-          "FilePath3": "Murdoch3.jpg"
+          "FilePath3": "Murdoch3.JPG"
     },
     "Alexander_Lecture_Theatre" : {
 
@@ -28,8 +28,8 @@
           "Label1":"6943P ALEXANDER, PROFESSOR FRED PROFESSOR FRED ALEXANDER AT OPENING OF ALEXANDER LECTURE THEATRE IN THE ARTS BUILDING - 6944P",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Alexander1.jpg", 
-          "FilePath2": "Alexander2.jpg",
+          "FilePath1": "Alexander1.JPG",
+          "FilePath2": "Alexander2.JPG",
           "FilePath3": ""
     },
     "Reid_Library" : {
@@ -39,9 +39,9 @@
         "Label1":"280P Reid Library - 1966",
         "Label2":"4450P Aerial views of several buildings on campus - from the Great Court",
         "Label3":"",
-        "FilePath1": "reid1.jpg",
-        "FilePath2": "reid2.jpg",
-        "FilePath3": "reid3.jpg"
+        "FilePath1": "Reid1.JPG",
+        "FilePath2": "Reid2.JPG",
+        "FilePath3": "Reid3.JPG"
   },
     "Ross_Lecture_Theatre" : {
 
@@ -50,7 +50,7 @@
           "Label1":"1983P Academic Staff - 1931 - Sinclaire Collot~ke Graebner Vanzetti Soloman Fowler Alexander Wood Murdoch Weatherburn Ross Fox",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Ross1.jpg", 
+          "FilePath1": "Ross1.jpg",
           "FilePath2": "Ross2.jpg",
           "FilePath3": "Ross3.jpeg"
     },
@@ -61,7 +61,7 @@
           "Label1":"1989P Professor C Weatherburn - 1928",
           "Label2":"1846P Engineering block",
           "Label3":"",
-          "FilePath1": "Weatherburn1.jpg", 
+          "FilePath1": "Weatherburn1.JPG",
           "FilePath2": "Weatherburn2.jpg",
           "FilePath3": "Weatherburn3.jpg"
     },
@@ -72,7 +72,7 @@
           "Label1":"43P Irwin Street - Tin Pot Alley - circa 1922",
           "Label2":"1898P Interior of Irwin Street Buildings - Physics and Maths Lecture Theatre - circa 1920",
           "Label3":"",
-          "FilePath1": "Irwin_Street1.jpg", 
+          "FilePath1": "Irwin_Street1.jpg",
           "FilePath2": "Irwin_Street2.jpg",
           "FilePath3": "Irwin_Street3.jpg"
     },
@@ -83,7 +83,7 @@
           "Label1":"2048P Sir Walter James",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "James_Oval1.jpg", 
+          "FilePath1": "James_Oval1.jpg",
           "FilePath2": "James_Oval2.jpeg",
           "FilePath3": "James_Oval3.jpeg"
     },
@@ -94,7 +94,7 @@
           "Label1":"2064P Portrait - Professor G Tattersall",
           "Label2":"1897P First Broadcasting Advisory Committee - ~oss, Professor N T M Wilsmore, Professor H E Whitfeld, Professor Robert Cameron",
           "Label3":"",
-          "FilePath1": "Tattersall1.jpg", 
+          "FilePath1": "Tattersall1.jpg",
           "FilePath2": "Tattersall2.jpg",
           "FilePath3": "Tattersall3.jpg"
     },
@@ -105,7 +105,7 @@
           "Label1":"1988P Professor N S Bayliss - 1937",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Bayliss1.jpg", 
+          "FilePath1": "Bayliss1.jpg",
           "FilePath2": "Bayliss2.jpeg",
           "FilePath3": "Bayliss3.jpg"
     },
@@ -116,7 +116,7 @@
           "Label1":"4303P Engineering Building - 1938",
           "Label2":"Cameron Hall 1930",
           "Label3":"5820P View from St George s towards Engineering Building showing Riley Oval area and Hackett Drive - no date - circa 1930  s",
-          "FilePath1": "Cameron_Hall1.jpg", 
+          "FilePath1": "Cameron_Hall1.jpg",
           "FilePath2": "Cameron_Hall2.jpg",
           "FilePath3": "Cameron_Hall3.jpg"
     },
@@ -127,7 +127,7 @@
           "Label1":"2051P Professor F R Beasley - 1927",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Beasley1.jpg", 
+          "FilePath1": "Beasley1.jpg",
           "FilePath2": "Beasley2.jpg",
           "FilePath3": "Beasley3.jpeg"
     },
@@ -138,7 +138,7 @@
           "Label1":"2167P Queen Elizabeth II with Chancellor E W Gillett and Vice Chancellor S L Prescott behind - royal tour - 1954 29 March 1954",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Queen_and_duke1.jpg", 
+          "FilePath1": "Queen_and_duke1.jpg",
           "FilePath2": "Queen_and_duke2.jpg",
           "FilePath3": "Queen_and_duke3.jpg"
     },
@@ -149,8 +149,8 @@
           "Label1":"536P Arts Building - 22 December 1966",
           "Label2":"200P Arts Building - 6 September 1966",
           "Label3":"",
-          "FilePath1": "arts1.jpg", 
-          "FilePath2": "arts2.jpg",
+          "FilePath1": "arts1.JPG",
+          "FilePath2": "arts2.JPG",
           "FilePath3": "arts3.png"
     },
     "The_Charioteer" : {
@@ -160,8 +160,8 @@
           "Label1":"",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "thecharioteer.jpg", 
-          "FilePath2": "thecharioteer2.jpg",
+          "FilePath1": "theCharioteer.JPG",
+          "FilePath2": "theCharioteer2.JPG",
           "FilePath3": ""
     },
     "The_Octagon_Theatre" : {
@@ -171,7 +171,7 @@
           "Label1":"",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Octagon1.jpeg", 
+          "FilePath1": "Octagon1.jpeg",
           "FilePath2": "Octagon2.jpeg",
           "FilePath3": "Octagon3.jpg"
     },
@@ -182,7 +182,7 @@
           "Label1":"",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Black_Stump1.jpg", 
+          "FilePath1": "Black_Stump1.jpg",
           "FilePath2": "Black_Stump2.jpg",
           "FilePath3": "Black_Stump3.jpeg"
     },
@@ -193,7 +193,7 @@
           "Label1":"",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Dolphin_Theatre1.jpeg", 
+          "FilePath1": "Dolphin_Theatre1.jpeg",
           "FilePath2": "Dolphin_Theatre2.jpg",
           "FilePath3": ""
     },
@@ -205,7 +205,7 @@
             "Label1":"2060P Mr William Somerville - 1926",
             "Label2":"4431P Somerville Auditorium in early 1940's",
             "Label3":"5410P Set and audience - Performance Richard III - Somerville Auditorium - 1950's",
-            "FilePath1": "Sommerville1.jpg", 
+            "FilePath1": "Sommerville1.jpg",
             "FilePath2": "Sommerville2.jpg",
             "FilePath3": "Sommerville3.jpg"
 },
@@ -216,7 +216,7 @@
           "Label1":"Percy Grainger c1920, Frederick Morse, New York, Courtesy Callaway Collection, UWA.",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Percy_Grainger1.jpg", 
+          "FilePath1": "Percy_Grainger1.jpg",
           "FilePath2": "Percy_Grainger2.jpg",
           "FilePath3": "Percy_Grainger3.jpeg"
     },
@@ -227,7 +227,7 @@
           "Label1":"12376P JOYCE, DOCTOR EILEEN PRESENTATION OF RAR~E ON EXTENDED LOAN TO MUSIC DEPARTMENT , BY DOCTOR EILEEN JOYCE - 12377P-12387P",
           "Label2":"18999P GRADUATION CEREMONY 1979  Sir Alexander [Alex] Reid, Dame Joan Hammond, Doctor Eileen Joyce, Sir Lawrence Jackson",
           "Label3":"",
-          "FilePath1": "Eileen_Joyce1.jpg", 
+          "FilePath1": "Eileen_Joyce1.jpg",
           "FilePath2": "Eileen_Joyce2.jpg",
           "FilePath3": "Eileen_Joyce3.jpeg"
     },
@@ -238,7 +238,7 @@
           "Label1":"59900P Sculpture The Dancer - Artist Greg James sits poised amongst the ivy in Jackson Court",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "The_Dancer_and_Emma1.jpg", 
+          "FilePath1": "The_Dancer_and_Emma1.jpg",
           "FilePath2": "The_Dancer_and_Emma2.jpeg",
           "FilePath3": "The_Dancer_and_Emma3.jpeg"
     },
@@ -249,9 +249,9 @@
           "Label1":"",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Sundial1.jpg", 
-          "FilePath2": "Sundial2.jpg",
-          "FilePath3": "Sundial3.jpg"
+          "FilePath1": "sundial1.JPG",
+          "FilePath2": "sundial2.JPG",
+          "FilePath3": "sundial3.JPG"
     },
     "Agriculture_Department" : {
 
@@ -260,7 +260,7 @@
             "Label1":"",
             "Label2":"",
             "Label3":"",
-            "FilePath1": "Agriculture1.jpg", 
+            "FilePath1": "Agriculture1.jpg",
             "FilePath2": "Agriculture2.jpeg",
             "FilePath3": ""
       },
@@ -271,10 +271,10 @@
             "Label1":"",
             "Label2":"",
             "Label3":"",
-            "FilePath1": "Bilya1.jpeg", 
+            "FilePath1": "Bilya1.jpeg",
             "FilePath2": "Bilya2.jpeg",
             "FilePath3": "Bilya3.jpeg"
-      },    
+      },
       "Prescott_Court" : {
 
             "Order": 26,
@@ -282,10 +282,10 @@
             "Label1":"",
             "Label2":"",
             "Label3":"",
-            "FilePath1": "Prescott1.jpeg", 
+            "FilePath1": "Prescott1.jpeg",
             "FilePath2": "Prescott2.jpeg",
             "FilePath3": "Prescott3.jpeg"
-      },    
+      },
       "Underwood" : {
 
             "Order": 25,
@@ -293,7 +293,7 @@
             "Label1":"",
             "Label2":"",
             "Label3":"",
-            "FilePath1": "", 
+            "FilePath1": "",
             "FilePath2": "",
             "FilePath3": ""
       }

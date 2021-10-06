@@ -282,7 +282,7 @@ p, pre{
 }
 
 .parallax-img1{
-    background-image: url("/static/images/students1920s.jpg");
+    background-image: url("/static/images/students1920s.JPG");
     position:relative;
 
     min-height: 90vh;
@@ -294,7 +294,7 @@ p, pre{
 }
 
 .parallax-img3{
-    background-image: url("/static/images/Aerial.jpg");
+    background-image: url("/static/images/Aerial.JPG");
 
     min-height: 300px;
     height: 90vh;
