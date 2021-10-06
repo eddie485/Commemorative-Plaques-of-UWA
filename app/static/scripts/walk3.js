@@ -1,13 +1,15 @@
 var color1 = "#e2b600"
+var currentMarker = "";
 
 
 $.getJSON("../static/sites.json",function(sites){
     // create a HTML element for each feature
-    const el1 = document.createElement('div');
-    el1.className = 'marker marker4';
-    el1.style.marginTop = '-'+(36/2)+'px';
+    const el4 = document.createElement('div');
+    el4.className = 'marker marker4';
+    el4.id = "marker4";
+    el4.style.marginTop = '-'+(36/2)+'px';
     // make a marker for each feature and add it to the map
-    new CustomMarker(el1)
+    new CustomMarker(el4)
             .setLngLat([115.820092788849, -31.9824709476961])
             .onClick(() => { //when clicked, define the following function
                     $.getJSON("../static/sites.json",function(sites){
@@ -21,16 +23,27 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image3").attr("src", picture3)
                       $("#Content").html(description);
                       $("#Carousel").show();
-                      el1.style.marginTop = '-'+(66/2)+'px';
+                      if(currentMarker == "")
+                      {
+                        currentMarker = "marker4";
+                        $('#marker4').removeClass("marker marker4").addClass('marker marker4b');
+                      }
+                      else
+                      {
+                        $('#' + currentMarker).removeClass("marker" + " " + currentMarker+"b").addClass("marker"+ " "+ currentMarker);
+                        currentMarker = "marker4";
+                        $('#marker4').removeClass("marker marker4").addClass('marker marker4b');
+                      }
                     });
             })
             .addTo(map);
 
-    const el2 = document.createElement('div');
-    el2.className = 'marker marker3';
-    el2.style.marginTop = '-'+(36/2)+'px';
+    const el3 = document.createElement('div');
+    el3.className = 'marker marker3';
+    el3.id = "marker3";
+    el3.style.marginTop = '-'+(36/2)+'px';
     // make a marker for each feature and add it to the map
-    new CustomMarker(el2)
+    new CustomMarker(el3)
             .setLngLat([115.819063839072, -31.9825061941557])
             .onClick(() => { //when clicked, define the following function
                     $.getJSON("../static/sites.json",function(sites){
@@ -44,15 +57,27 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image3").attr("src", picture3)
                       $("#Content").html(description);
                       $("#Carousel").show();
+                      if(currentMarker == "")
+                      {
+                        currentMarker = "marker3";
+                        $('#marker3').removeClass("marker marker3").addClass('marker marker3b');
+                      }
+                      else
+                      {
+                        $('#' + currentMarker).removeClass("marker" + " " + currentMarker+"b").addClass("marker"+ " "+ currentMarker);
+                        currentMarker = "marker3";
+                        $('#marker3').removeClass("marker marker3").addClass('marker marker3b');
+                      }
                     });
             })
             .addTo(map);
 
-    const el3 = document.createElement('div');
-    el3.className = 'marker marker2';
-    el3.style.marginTop = '-'+(36/2)+'px';
+    const el2 = document.createElement('div');
+    el2.className = 'marker marker2';
+    el2.id = "marker2";
+    el2.style.marginTop = '-'+(36/2)+'px';
     // make a marker for each feature and add it to the map
-    new CustomMarker(el3)
+    new CustomMarker(el2)
             .setLngLat([115.819967824128, -31.9829062327725])
             .onClick(() => { //when clicked, define the following function
                     $.getJSON("../static/sites.json",function(sites){
@@ -66,16 +91,28 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image3").attr("src", picture3)
                       $("#Content").html(description);
                       $("#Carousel").show();
+                      if(currentMarker == "")
+                      {
+                        currentMarker = "marker2";
+                        $('#marker2').removeClass("marker marker2").addClass('marker marker2b');
+                      }
+                      else
+                      {
+                        $('#' + currentMarker).removeClass("marker" + " " + currentMarker+"b").addClass("marker"+ " "+ currentMarker);
+                        currentMarker = "marker2";
+                        $('#marker2').removeClass("marker marker2").addClass('marker marker2b');
+                      }
                     });
             })
             .addTo(map);
 
 
-    const el4 = document.createElement('div');
-    el4.className = 'marker marker1';
-    el4.style.marginTop = '-'+(36/2)+'px';
+    const el1 = document.createElement('div');
+    el1.className = 'marker marker1';
+    el1.id = "marker1";
+    el1.style.marginTop = '-'+(36/2)+'px';
     // make a marker for each feature and add it to the map
-    new CustomMarker(el4)
+    new CustomMarker(el1)
             .setLngLat([115.820325263026, -31.9828828069579])
             .onClick(() => { //when clicked, define the following function
                     $.getJSON("../static/sites.json",function(sites){
@@ -89,6 +126,17 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image3").attr("src", picture3)
                       $("#Content").html(description);
                       $("#Carousel").show();
+                      if(currentMarker == "")
+                      {
+                        currentMarker = "marker1";
+                        $('#marker1').removeClass("marker marker1").addClass('marker marker1b');
+                      }
+                      else
+                      {
+                        $('#' + currentMarker).removeClass("marker" + " " + currentMarker+"b").addClass("marker"+ " "+ currentMarker);
+                        currentMarker = "marker1";
+                        $('#marker1').removeClass("marker marker1").addClass('marker marker1b');
+                      }
                     });
             })
             .addTo(map);
