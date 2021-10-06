@@ -17,81 +17,154 @@ p, pre{
 }
 
 .marker {
-    background-image: url("/static/images/spritesheets.png");
+    background-image: url("/static/images/spritesheets2.png");
     background-repeat: no-repeat;
     display: block;
 }
 .marker1 {
-    width: 50px;
-    height: 77px;
+    width: 25px;
+    height: 36px;
     background-position: -5px -5px;
 }
 
 .marker10 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -92px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -51px;
+}
+
+.marker10b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -97px;
 }
 
 .marker11 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -179px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -143px;
+}
+
+.marker11b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -189px;
 }
 
 .marker12 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -266px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -235px;
+}
+
+.marker12b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -281px;
+}
+
+.marker1b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -327px;
 }
 
 .marker2 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -353px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -373px;
+}
+
+.marker2b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -419px;
 }
 
 .marker3 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -440px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -465px;
+}
+
+.marker3b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -511px;
 }
 
 .marker4 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -527px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -557px;
+}
+
+.marker4b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -603px;
 }
 
 .marker5 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -614px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -649px;
+}
+
+.marker5b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -695px;
 }
 
 .marker6 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -701px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -741px;
+}
+
+.marker6b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -787px;
 }
 
 .marker7 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -788px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -833px;
+}
+
+.marker7b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -879px;
 }
 
 .marker8 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -875px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -925px;
+}
+
+.marker8b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -971px;
 }
 
 .marker9 {
-    width: 50px;
-    height: 77px;
-    background-position: -5px -962px;
+    width: 25px;
+    height: 36px;
+    background-position: -5px -1017px;
 }
+
+.marker9b {
+    width: 25px;
+    height: 36px;
+    background-position: -5px -1063px;
+}
+
 
 .footer {
     width:100%;

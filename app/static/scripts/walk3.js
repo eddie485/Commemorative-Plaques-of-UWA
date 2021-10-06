@@ -5,6 +5,7 @@ $.getJSON("../static/sites.json",function(sites){
     // create a HTML element for each feature
     const el1 = document.createElement('div');
     el1.className = 'marker marker4';
+    el1.style.marginTop = '-'+(36/2)+'px';
     // make a marker for each feature and add it to the map
     new CustomMarker(el1)
             .setLngLat([115.820092788849, -31.9824709476961])
@@ -20,12 +21,14 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image3").attr("src", picture3)
                       $("#Content").html(description);
                       $("#Carousel").show();
+                      el1.style.marginTop = '-'+(66/2)+'px';
                     });
             })
             .addTo(map);
 
     const el2 = document.createElement('div');
     el2.className = 'marker marker3';
+    el2.style.marginTop = '-'+(36/2)+'px';
     // make a marker for each feature and add it to the map
     new CustomMarker(el2)
             .setLngLat([115.819063839072, -31.9825061941557])
@@ -47,6 +50,7 @@ $.getJSON("../static/sites.json",function(sites){
 
     const el3 = document.createElement('div');
     el3.className = 'marker marker2';
+    el3.style.marginTop = '-'+(36/2)+'px';
     // make a marker for each feature and add it to the map
     new CustomMarker(el3)
             .setLngLat([115.819967824128, -31.9829062327725])
@@ -69,6 +73,7 @@ $.getJSON("../static/sites.json",function(sites){
 
     const el4 = document.createElement('div');
     el4.className = 'marker marker1';
+    el4.style.marginTop = '-'+(36/2)+'px';
     // make a marker for each feature and add it to the map
     new CustomMarker(el4)
             .setLngLat([115.820325263026, -31.9828828069579])
