@@ -4,6 +4,7 @@
     <title>Distinguished Personalities</title>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <script src=" {{ url_for('static', filename='scripts/buttons.js')}} "></script>
 {%endblock%}
 {%block body%}
 <div class="container-fluid">
@@ -57,17 +58,22 @@
               </div>
               <div class="line-divider"></div>
               <div class="container" style="font-size: 15px; line-height: 150%; padding-top: 15px;">
-                  <br><br><br>
-                  <p>
+                <br><br><br>
+                <p>
                     This walk features several significant and historical locations within the Crawley Campus of the University of Western Australia. Nearly all locations
                     have been named after distinguished UWA personalities who were alive between the late 1800s until the late 1900s.
 
                     Most people featured on the walk have made significant academic or administrative contributions to the university and are held in high regard by
                     university alumni, staff, students, and the general public.
 
-                      <br><br>CLICK ON AN ICON TO START
-                  </p>
+                    <br><br>Click below or choose any icon from the map to start
+                </p>
+                <button class="btn btn-info" id="start" onClick="startWalk()" style="display:block; margin-left: auto; margin-right: auto;">Start Walk</button>
               </div>
+            </div>
+            <div class="container-fluid" id = "locButtons" style="font-size: 15px; line-height: 150%; padding-top: 15px; padding-bottom: 30px;">
+                <button class="btn btn-info" id="next" onClick="changeLoc(1, 11)" style="display:none; margin-left: auto; margin-right: auto;">Next Location</button>
+                <button class="btn btn-info" id="prev" onClick="changeLoc(2)" style="display:none; margin-left: auto; margin-right: auto;">Previous Location</button>
             </div>
         </div>
         {% include "footer.html" %}
