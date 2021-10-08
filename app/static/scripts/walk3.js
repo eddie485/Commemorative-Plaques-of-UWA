@@ -56,9 +56,9 @@ $.getJSON("../static/sites.json",function(sites){
                       var picture2 = '/static/images/'+sites.Prescott_Court.FilePath2;
                       var picture3 = '/static/images/'+sites.Prescott_Court.FilePath3;
                       $("#Content").html(description);
-                      $("#image1").attr("src", picture1)
-                      $("#image2").attr("src", picture2)
-                      $("#image3").attr("src", picture3)
+                      $("#image1").attr("src", picture1);
+                      $("#image2").attr("src", picture2);
+                      $("#image3").attr("src", picture3);
                       $("#Content").html(description);
                       $("#Carousel").show();
                       if(currentMarker == "")
@@ -94,9 +94,9 @@ $.getJSON("../static/sites.json",function(sites){
                       var picture2 = '/static/images/'+sites.Agriculture_Department.FilePath2;
                       var picture3 = '/static/images/'+sites.Agriculture_Department.FilePath3;
                       $("#Content").html(description);
-                      $("#image1").attr("src", picture1)
-                      $("#image2").attr("src", picture2)
-                      $("#image3").attr("src", picture3)
+                      $("#image1").attr("src", picture1);
+                      $("#image2").attr("src", picture2);
+                      $("#image3").attr("src", picture3);
                       $("#Content").html(description);
                       $("#Carousel").show();
                       if(currentMarker == "")

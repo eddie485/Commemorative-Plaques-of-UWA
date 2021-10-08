@@ -405,6 +405,7 @@ $.getJSON("../static/sites.json",function(sites){
                     document.getElementById("prev").style.display = "block";
             })
             .addTo(map);
+        });
         // function getParameterByName(name, url = window.location.href) {
         //   name = name.replace(/[\[\]]/g, '\\$&');
         //   var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -416,4 +417,4 @@ $.getJSON("../static/sites.json",function(sites){
         //   if(getParameterByName('markerStart') == 3)
         //   {
         //     document.getElementById("marker3").click();
-        //   } // "lorem"
+        //   } // "lorem // 

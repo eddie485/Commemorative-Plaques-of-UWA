@@ -33,12 +33,12 @@ $.getJSON("../static/sites.json",function(sites){
                         $('#marker4').removeClass("marker marker4").addClass('marker marker4b');
                       }
                     });
-                    count = 4;
-                    console.log(count);
-                    document.getElementById("next").style.display = "block";
-                    document.getElementById("prev").style.display = "block";
+                count = 4;
+                console.log(count);
+                document.getElementById("next").style.display = "block";
+                document.getElementById("prev").style.display = "block";
             })
-            .addTo(map);
+                .addTo(map);
 
     const el1 = document.createElement('div');
     el1.className = 'marker marker1';
@@ -69,11 +69,11 @@ $.getJSON("../static/sites.json",function(sites){
                         $('#marker1').removeClass("marker marker1").addClass('marker marker1b');
                       }
                     });
-            })
             count = 1;
             console.log(count);
             document.getElementById("next").style.display = "block";
             document.getElementById("prev").style.display = "none";
+        })
             .addTo(map);
 
     const el3 = document.createElement('div');
@@ -436,3 +436,4 @@ $.getJSON("../static/sites.json",function(sites){
                             document.getElementById("prev").style.display = "block";
                     })
                     .addTo(map);
+                });
