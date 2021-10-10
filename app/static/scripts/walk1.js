@@ -88,6 +88,7 @@ $.getJSON("../static/sites.json",function(sites){
     el3.style.marginTop = '-'+(36/2)+'px';
     // make a marker for each feature and add it to the map
     new CustomMarker(el3)
+    .setLngLat([115.818551982921, -31.9781293694534])
     .onClick(() => { //when clicked, define the following function
       $.getJSON("../static/sites.json",function(sites){
         var description = sites.The_Charioteer.Description;
