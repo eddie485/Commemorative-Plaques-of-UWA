@@ -79,6 +79,10 @@
             </div>
         </div>
         {% include "footer.html" %}
+        <script>
+            //for some reason it won't actually click on the markers. And won't wait for a timeout either
+            $(document).ready(clickParam());
+        </script>
     </div>
 </div>
 {%endblock%}

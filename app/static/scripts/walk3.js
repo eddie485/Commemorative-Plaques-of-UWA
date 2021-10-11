@@ -164,24 +164,5 @@ function clickParam(){
   const myParam = urlParams.get('marker');
   
   console.log("marker" + myParam);
-    $("#marker"+myParam).click();
-  /* if(myParam == '1'){
-    console.log("marker" + myParam);
-    $("#marker1").click();
-  }
-  if(myParam == '2'){
-    console.log("marker" + myParam);
-    $("#marker2").click();
-  }
-  if(myParam == '3'){
-    console.log("marker" + myParam);
-    $("#marker3").click();
-  }
-  if(myParam == '4'){
-    console.log("marker" + myParam);
-    $("#marker4").click();
-  }
-  */
+  $("#marker"+myParam).click();
 }
-
-clickParam();
