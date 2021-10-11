@@ -371,5 +371,12 @@ $.getJSON("../static/sites.json",function(sites){
         //     document.getElementById("marker3").click();
         //   } // "lorem"
 
+        function clickParam(){
+          const urlParams = new URLSearchParams(window.location.search);
+          const myParam = urlParams.get('markerStart');
 
+          console.log("markerStart" + myParam);
+          $("#marker"+myParam).click();
+        }
+        clickParam();
 });
