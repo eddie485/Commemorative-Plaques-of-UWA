@@ -416,8 +416,10 @@ $.getJSON("../static/sites.json",function(sites){
                     document.getElementById("prev").style.display = "block";
             })
             .addTo(map);
+
+            clickParam();
         });
-        
+
 function clickParam(){
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('marker');
