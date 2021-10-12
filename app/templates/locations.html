@@ -90,6 +90,19 @@
             }
         }
 
+        //FIND ON MAP BUTTON FUNCTION
+        function findID(id){
+            if (id < 12){
+                window.location.replace("theme1?marker="+id);
+            }
+            else if (id >= 12 && id <24){
+                window.location.replace("theme2?marker="+(id-12));
+            }
+            else {
+                window.location.replace("theme3?marker="+(id-23));
+            }
+        }
+
         //function creates a block that can display information
         function createBlock(id){
             var empty = document.getElementById('empty');
@@ -103,6 +116,7 @@
                     </div> \
                 <div class="col-xs-1 col-md-1"> \
                     <button onclick="expandID(' + id +')" id = myBtn' + id + ' class="mybtn">Read more</button> \
+                    <button onclick="findID(' + id +')" id = findBtn' + id + ' class="mybtn">Find on map</button> \
                 </div>'
             empty.className = "row";
             empty.id = '';
@@ -128,29 +142,31 @@
         //FILL THEM WITH DATA
         $.getJSON("../static/sites.json",function fillData(sites){
             console.log('inside here');
-            fillDiv(sites.Fox_Lecture_Theatre.FilePath1, sites.Fox_Lecture_Theatre.Description,1);
-            fillDiv(sites.Alexander_Lecture_Theatre.FilePath1,sites.Alexander_Lecture_Theatre.Description,2);
-            fillDiv(sites.Murdoch_Lecture_Theatre.FilePath1,sites.Murdoch_Lecture_Theatre.Description,3);
-            fillDiv(sites.Reid_Library.FilePath1,sites.Reid_Library.Description,4);
-            fillDiv(sites.Ross_Lecture_Theatre.FilePath1,sites.Ross_Lecture_Theatre.Description,5);
-            fillDiv(sites.Weatherburn_Lecture_Theatre.FilePath1,sites.Weatherburn_Lecture_Theatre.Description,6);
-            fillDiv(sites.Irwin_St_Building.FilePath1,sites.Irwin_St_Building.Description,7);
-            fillDiv(sites.James_Oval.FilePath1, sites.James_Oval.Description,8);
-            fillDiv(sites.Tattersall_Lecture_Theatre.FilePath1,sites.Tattersall_Lecture_Theatre.Description,9);
-            fillDiv(sites.Bayliss_Building.FilePath1,sites.Bayliss_Building.Description,10);
-            fillDiv(sites.Cameron_Hall.FilePath1,sites.Cameron_Hall.Description,11);
-            fillDiv(sites.Beasley_Law_Building.FilePath1,sites.Beasley_Law_Building.Description,12);
-            fillDiv(sites.Queen_And_Duke.FilePath1,sites.Queen_And_Duke.Description,13);
-            fillDiv(sites.Arts_Building.FilePath1,sites.Arts_Building.Description,14);
-            fillDiv(sites.The_Charioteer.FilePath1,sites.The_Charioteer.Description,15);
-            fillDiv(sites.The_Octagon_Theatre.FilePath1,sites.The_Octagon_Theatre.Description,16);
-            fillDiv(sites.The_Black_Stump.FilePath1,sites.The_Black_Stump.Description,17);
-            fillDiv(sites.Dolphin_Theatre.FilePath1,sites.Dolphin_Theatre.Description,18);
-            fillDiv(sites.Percy_Grainger.FilePath1,sites.Percy_Grainger.Description,19);
-            fillDiv(sites.Somerville_Auditorium.FilePath1,sites.Somerville_Auditorium.Description,20);
-            fillDiv(sites.Eileen_Joyce.FilePath1,sites.Eileen_Joyce.Description,21);
-            fillDiv(sites.The_Dancer_and_Emma.FilePath1,sites.The_Dancer_and_Emma.Description,22);
-            fillDiv(sites.Sundial.FilePath1,sites.Sundial.Description,23);
+            fillDiv(sites.Queen_And_Duke.FilePath1,sites.Queen_And_Duke.Description,1);
+            fillDiv(sites.Arts_Building.FilePath1,sites.Arts_Building.Description,2);
+            fillDiv(sites.The_Charioteer.FilePath1,sites.The_Charioteer.Description,3);
+            fillDiv(sites.The_Octagon_Theatre.FilePath1,sites.The_Octagon_Theatre.Description,4);
+            fillDiv(sites.The_Black_Stump.FilePath1,sites.The_Black_Stump.Description,5);
+            fillDiv(sites.Dolphin_Theatre.FilePath1,sites.Dolphin_Theatre.Description,6);
+            fillDiv(sites.Percy_Grainger.FilePath1,sites.Percy_Grainger.Description,7);
+            fillDiv(sites.Somerville_Auditorium.FilePath1,sites.Somerville_Auditorium.Description,8);
+            fillDiv(sites.Eileen_Joyce.FilePath1,sites.Eileen_Joyce.Description,9);
+            fillDiv(sites.The_Dancer_and_Emma.FilePath1,sites.The_Dancer_and_Emma.Description,10);
+            fillDiv(sites.Sundial.FilePath1,sites.Sundial.Description,11);
+
+            fillDiv(sites.Fox_Lecture_Theatre.FilePath1, sites.Fox_Lecture_Theatre.Description,12);
+            fillDiv(sites.Alexander_Lecture_Theatre.FilePath1,sites.Alexander_Lecture_Theatre.Description,14);
+            fillDiv(sites.Murdoch_Lecture_Theatre.FilePath1,sites.Murdoch_Lecture_Theatre.Description,13);
+            fillDiv(sites.Reid_Library.FilePath1,sites.Reid_Library.Description,15);
+            fillDiv(sites.Ross_Lecture_Theatre.FilePath1,sites.Ross_Lecture_Theatre.Description,16);
+            fillDiv(sites.Weatherburn_Lecture_Theatre.FilePath1,sites.Weatherburn_Lecture_Theatre.Description,17);
+            fillDiv(sites.Irwin_St_Building.FilePath1,sites.Irwin_St_Building.Description,18);
+            fillDiv(sites.James_Oval.FilePath1, sites.James_Oval.Description,19);
+            fillDiv(sites.Tattersall_Lecture_Theatre.FilePath1,sites.Tattersall_Lecture_Theatre.Description,20);
+            fillDiv(sites.Bayliss_Building.FilePath1,sites.Bayliss_Building.Description,21);
+            fillDiv(sites.Cameron_Hall.FilePath1,sites.Cameron_Hall.Description,22);
+            fillDiv(sites.Beasley_Law_Building.FilePath1,sites.Beasley_Law_Building.Description,23);
+            
             fillDiv(sites.Bilya_Marlee.FilePath1,sites.Bilya_Marlee.Description,24);
             fillDiv(sites.Agriculture_Department.FilePath1,sites.Agriculture_Department.Description,25);
             fillDiv(sites.Prescott_Court.FilePath1,sites.Prescott_Court.Description,26);
