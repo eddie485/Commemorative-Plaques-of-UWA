@@ -157,6 +157,7 @@ $.getJSON("../static/sites.json",function(sites){
             })
             .addTo(map);
 
+            clickParam();
 });
 
 function clickParam(){
