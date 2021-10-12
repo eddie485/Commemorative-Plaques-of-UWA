@@ -448,3 +448,11 @@ $.getJSON("../static/sites.json",function(sites){
                     })
                     .addTo(map);
                 });
+
+function clickParam(){
+  const urlParams = new URLSearchParams(window.location.search);
+  const myParam = urlParams.get('marker');
+  
+  console.log("marker" + myParam);
+  $("#marker"+myParam).click();
+}                
