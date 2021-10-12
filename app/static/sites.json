@@ -46,7 +46,7 @@
     "Ross_Lecture_Theatre" : {
 
           "Order": 17,
-          "Description": "<h1>5. Ross Lecture Theatre</h1><p><b>Alexander David Ross</b>, [1883 – 1966].C.B.E., B.Sc., M.A., M.Sc., D.Sc., Hon. LL.D., FRAS., FRSE., F Inst P., born in Glasgow,  studied at London and Glasgow Universities, and was Research Scholar at Göttingen University, 1908 and 1909. He lectured in Natural Philosophy at Glasgow University, 1909-1912 and was awarded the <a href=https://en.wikipedia.org/wiki/Kelvin_Gold_Medal>Kelvin Medal</a> in 1914. Ross was appointed Foundation Professor of Mathematics and Physics and gave the first lecture at the new University in Perth Western Australia on 31 March 1913. He repeated this lecture to celebrate the 50TH Jubilee. When the departments separated in 1929, he continued as Professor of Physics until his retirement. Physics Department was recognised internationally. <br><br>Ross researched at Watheroo Magnetic Observatory and was influential in selecting Wallal in North West WA, to observe the solar eclipse in 1922. During WW2, he was Deputy Director of Camouflage and Consulting Physicist to the Royal Australian Navy. Ross served as Vice-Chancellor, Senator, Dean of several faculties, and Chairman of various Boards.He travelled widely giving Extension Lectures and was a great supporter of the arts. Orchestral and Choral music in Perth owed much to his patronage and organising ability. </p>",
+          "Description": "<h1>5. Ross Lecture Theatre</h1><p><<b>Alexander David Ross</b>, [1883 – 1966].C.B.E., B.Sc., M.A., M.Sc., D.Sc., Hon. LL.D., FRAS., FRSE., F Inst P., born in Glasgow,  studied at London and Glasgow Universities, and was Research Scholar at Göttingen University, 1908 and 1909. He lectured in Natural Philosophy at Glasgow University, 1909-1912 and was awarded the <a href=https://en.wikipedia.org/wiki/Kelvin_Gold_Medal>Kelvin Medal</a> in 1914. Ross was appointed Foundation Professor of Mathematics and Physics and gave the first lecture at the new University in Perth Western Australia on 31 March 1913. He repeated this lecture to celebrate the 50TH Jubilee. When the departments separated in 1929, he continued as Professor of Physics until his retirement. Physics Department was recognised internationally. <br><br>Ross researched at Watheroo Magnetic Observatory and was influential in selecting Wallal in North West WA, to observe the solar eclipse in 1922. During WW2, he was Deputy Director of Camouflage and Consulting Physicist to the Royal Australian Navy. Ross served as Vice-Chancellor, Senator, Dean of several faculties, and Chairman of various Boards.He travelled widely giving Extension Lectures and was a great supporter of the arts. Orchestral and Choral music in Perth owed much to his patronage and organising ability. </p>",
           "Label1":"1983P Academic Staff - 1931 - Sinclaire Collot~ke Graebner Vanzetti Soloman Fowler Alexander Wood Murdoch Weatherburn Ross Fox",
           "Label2":"",
           "Label3":"",
@@ -293,9 +293,9 @@
             "Label1":"",
             "Label2":"",
             "Label3":"",
-            "FilePath1": "underwood1.jpg",
-            "FilePath2": "underwood2.jpg",
-            "FilePath3": "underwood3.jpg"
+            "FilePath1": "Underwood1.jpg",
+            "FilePath2": "Underwood2.jpg",
+            "FilePath3": "Underwood3.jpg"
       }
 
 }
