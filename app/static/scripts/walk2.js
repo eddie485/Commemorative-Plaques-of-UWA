@@ -447,6 +447,8 @@ $.getJSON("../static/sites.json",function(sites){
                             document.getElementById("prev").style.display = "block";
                     })
                     .addTo(map);
+
+                    clickParam();
                 });
 
 function clickParam(){
