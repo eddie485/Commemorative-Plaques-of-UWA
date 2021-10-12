@@ -195,7 +195,7 @@
           "Label3":"",
           "FilePath1": "Dolphin_Theatre1.jpeg",
           "FilePath2": "Dolphin_Theatre2.jpg",
-          "FilePath3": ""
+          "FilePath3": "Dolphin_Theatre3.jpg"
     },
 
     "Somerville_Auditorium" : {
@@ -229,7 +229,7 @@
           "Label3":"",
           "FilePath1": "Eileen_Joyce1.jpg",
           "FilePath2": "Eileen_Joyce2.jpg",
-          "FilePath3": "Eileen_Joyce3.jpeg"
+          "FilePath3": "Eileen_Joyce3.png"
     },
     "The_Dancer_and_Emma" : {
 
@@ -278,12 +278,12 @@
       "Prescott_Court" : {
 
             "Order": 26,
-            "Description": "<h1>3. Prescott Court</h1><p>Sir Stanley Lewis Prescott, O.B.E., B.Sc., M.Sc., Hon. LL.D., (1910- 1978) Born at Tetbury, Gloucestershire and educated at Tetbury Grammar School he attended the Victoria University of Manchester. In 1936, he was appointed Professor of Physiology at the Cheeloo (Shantung Christian) University, Tsinan, China. During the Japanese invasion in 1938 he was Superintendent of the Tsinan Hospital. The family moved to Sydney in 1941 and Prescott was commissioned in the RAAF as a Junior Intelligence Officer. As Squadron Leader he joined No. 1 Flying Personnel Research Unit in Melbourne which dealt with aviation medicine. After discharge, Prescott was appointed Master of Ormond College, University of Melbourne, and then in 1953, UWA Vice-Chancellor.</p><p>Prescott oversaw the creation of new faculties in medicine, architecture, economics and commerce, and attracting Commonwealth and State funding to enable a substantial building programme for an Arts building and new Library. One of Prescott’s significant decisions was to request a revised masterplan of the proposed buildings to reflect the style of the existing structures thus unifying buildings across the campus. He served on the Commission of Enquiry on the University of Malaya, 1957, the Nanyang University Commission, 1959, and the Royal Perth Hospital Board. He chaired the Australian Vice-Chancellors’ Committee, 1962-1964, and the Murdoch University Planning Board, 1971-1973.</p>",
+            "Description": "<h1>3. Prescott Court</h1><p><b>Sir Stanley Lewis Prescott</b>, O.B.E., B.Sc., M.Sc., Hon. LL.D., (1910- 1978) Born at Tetbury, Gloucestershire and educated at Tetbury Grammar School he attended the Victoria University of Manchester. In 1936, he was appointed Professor of Physiology at the Cheeloo (Shantung Christian) University, Tsinan, China. During the Japanese invasion in 1938 he was Superintendent of the Tsinan Hospital. The family moved to Sydney in 1941 and Prescott was commissioned in the RAAF as a Junior Intelligence Officer. As Squadron Leader he joined No. 1 Flying Personnel Research Unit in Melbourne which dealt with aviation medicine. After discharge, Prescott was appointed Master of Ormond College, University of Melbourne, and then in 1953, UWA Vice-Chancellor.</p><p>Prescott oversaw the creation of new faculties in medicine, architecture, economics and commerce, and attracting Commonwealth and State funding to enable a substantial building programme for an Arts building and new Library. One of Prescott’s significant decisions was to request a revised masterplan of the proposed buildings to reflect the style of the existing structures thus unifying buildings across the campus. He served on the Commission of Enquiry on the University of Malaya, 1957, the Nanyang University Commission, 1959, and the Royal Perth Hospital Board. He chaired the Australian Vice-Chancellors’ Committee, 1962-1964, and the Murdoch University Planning Board, 1971-1973.</p>",
             "Label1":"",
             "Label2":"",
             "Label3":"",
-            "FilePath1": "Prescott1.jpeg",
-            "FilePath2": "Prescott2.jpeg",
+            "FilePath1": "Prescott1.jpg",
+            "FilePath2": "Prescott2.jpg",
             "FilePath3": "Prescott3.jpeg"
       },
       "Underwood" : {
@@ -293,9 +293,9 @@
             "Label1":"",
             "Label2":"",
             "Label3":"",
-            "FilePath1": "",
-            "FilePath2": "",
-            "FilePath3": ""
+            "FilePath1": "underwood1.jpg",
+            "FilePath2": "underwood2.jpg",
+            "FilePath3": "underwood3.jpg"
       }
 
 }
