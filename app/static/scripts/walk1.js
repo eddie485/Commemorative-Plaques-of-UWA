@@ -205,7 +205,7 @@ $.getJSON("../static/sites.json",function(sites){
                   var description = sites.Dolphin_Theatre.Description;
                   var picture1 = '/static/images/'+sites.Dolphin_Theatre.FilePath1;
                   var picture2 = '/static/images/'+sites.Dolphin_Theatre.FilePath2;
-                  var picture2 = '/static/images/'+sites.Dolphin_Theatre.FilePath3;
+                  var picture3 = '/static/images/'+sites.Dolphin_Theatre.FilePath3;
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)

@@ -6,8 +6,8 @@
         "Label1":"1983P Academic Staff - 1931 - Sinclaire Collot~ke Graebner Vanzetti Soloman Fowler Alexander Wood Murdoch Weatherburn Ross Fox",
         "Label2":"",
         "Label3":"",
-        "FilePath1": "Fox1.jpg",
-        "FilePath2": "Fox2.jpg",
+        "FilePath1": "Fox1.JPG",
+        "FilePath2": "Fox2.JPG",
         "FilePath3": "Fox3.jpg"
     },
     "Murdoch_Lecture_Theatre" : {
@@ -30,7 +30,7 @@
           "Label3":"",
           "FilePath1": "Alexander1.JPG",
           "FilePath2": "Alexander2.JPG",
-          "FilePath3": ""
+          "FilePath3": "Alexander3.JPG"
     },
     "Reid_Library" : {
 
@@ -41,7 +41,7 @@
         "Label3":"",
         "FilePath1": "Reid1.JPG",
         "FilePath2": "Reid2.JPG",
-        "FilePath3": "Reid3.JPG"
+        "FilePath3": "Reid3.jpg"
   },
     "Ross_Lecture_Theatre" : {
 
@@ -50,7 +50,7 @@
           "Label1":"1983P Academic Staff - 1931 - Sinclaire Collot~ke Graebner Vanzetti Soloman Fowler Alexander Wood Murdoch Weatherburn Ross Fox",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Ross1.jpg",
+          "FilePath1": "Ross1.JPG",
           "FilePath2": "Ross2.jpg",
           "FilePath3": "Ross3.jpeg"
     },
@@ -62,7 +62,7 @@
           "Label2":"1846P Engineering block",
           "Label3":"",
           "FilePath1": "Weatherburn1.JPG",
-          "FilePath2": "Weatherburn2.jpg",
+          "FilePath2": "Weatherburn2.JPG",
           "FilePath3": "Weatherburn3.jpg"
     },
     "Irwin_St_Building" : {
@@ -72,8 +72,8 @@
           "Label1":"43P Irwin Street - Tin Pot Alley - circa 1922",
           "Label2":"1898P Interior of Irwin Street Buildings - Physics and Maths Lecture Theatre - circa 1920",
           "Label3":"",
-          "FilePath1": "Irwin_Street1.jpg",
-          "FilePath2": "Irwin_Street2.jpg",
+          "FilePath1": "Irwin_Street1.JPG",
+          "FilePath2": "Irwin_Street2.JPG",
           "FilePath3": "Irwin_Street3.jpg"
     },
     "James_Oval" : {
@@ -83,7 +83,7 @@
           "Label1":"2048P Sir Walter James",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "James_Oval1.jpg",
+          "FilePath1": "James_Oval1.JPG",
           "FilePath2": "James_Oval2.jpeg",
           "FilePath3": "James_Oval3.jpeg"
     },
@@ -94,8 +94,8 @@
           "Label1":"2064P Portrait - Professor G Tattersall",
           "Label2":"1897P First Broadcasting Advisory Committee - ~oss, Professor N T M Wilsmore, Professor H E Whitfeld, Professor Robert Cameron",
           "Label3":"",
-          "FilePath1": "Tattersall1.jpg",
-          "FilePath2": "Tattersall2.jpg",
+          "FilePath1": "Tattersall1.JPG",
+          "FilePath2": "Tattersall2.JPG",
           "FilePath3": "Tattersall3.jpg"
     },
     "Bayliss_Building" : {
@@ -105,7 +105,7 @@
           "Label1":"1988P Professor N S Bayliss - 1937",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Bayliss1.jpg",
+          "FilePath1": "Bayliss1.JPG",
           "FilePath2": "Bayliss2.jpeg",
           "FilePath3": "Bayliss3.jpg"
     },
@@ -116,9 +116,9 @@
           "Label1":"4303P Engineering Building - 1938",
           "Label2":"Cameron Hall 1930",
           "Label3":"5820P View from St George s towards Engineering Building showing Riley Oval area and Hackett Drive - no date - circa 1930  s",
-          "FilePath1": "Cameron_Hall1.jpg",
+          "FilePath1": "Cameron_Hall1.JPG",
           "FilePath2": "Cameron_Hall2.jpg",
-          "FilePath3": "Cameron_Hall3.jpg"
+          "FilePath3": "Cameron_Hall3.JPG"
     },
     "Beasley_Law_Building" : {
 
@@ -127,7 +127,7 @@
           "Label1":"2051P Professor F R Beasley - 1927",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Beasley1.jpg",
+          "FilePath1": "Beasley1.JPG",
           "FilePath2": "Beasley2.jpg",
           "FilePath3": "Beasley3.jpeg"
     },
@@ -138,7 +138,7 @@
           "Label1":"2167P Queen Elizabeth II with Chancellor E W Gillett and Vice Chancellor S L Prescott behind - royal tour - 1954 29 March 1954",
           "Label2":"",
           "Label3":"",
-          "FilePath1": "Queen_and_duke1.jpg",
+          "FilePath1": "Queen_and_duke1.JPG",
           "FilePath2": "Queen_and_duke2.jpg",
           "FilePath3": "Queen_and_duke3.jpg"
     },
@@ -162,7 +162,7 @@
           "Label3":"",
           "FilePath1": "theCharioteer.JPG",
           "FilePath2": "theCharioteer2.JPG",
-          "FilePath3": ""
+          "FilePath3": "theCharioteer3.JPG"
     },
     "The_Octagon_Theatre" : {
 
@@ -195,7 +195,7 @@
           "Label3":"",
           "FilePath1": "Dolphin_Theatre1.jpeg",
           "FilePath2": "Dolphin_Theatre2.jpg",
-          "FilePath3": ""
+          "FilePath3": "Dolphin_Theatre3.JPG"
     },
 
     "Somerville_Auditorium" : {
@@ -205,9 +205,9 @@
             "Label1":"2060P Mr William Somerville - 1926",
             "Label2":"4431P Somerville Auditorium in early 1940's",
             "Label3":"5410P Set and audience - Performance Richard III - Somerville Auditorium - 1950's",
-            "FilePath1": "Sommerville1.jpg",
-            "FilePath2": "Sommerville2.jpg",
-            "FilePath3": "Sommerville3.jpg"
+            "FilePath1": "Sommerville1.JPG",
+            "FilePath2": "Sommerville2.JPG",
+            "FilePath3": "Sommerville3.JPG"
 },
     "Percy_Grainger" : {
 
@@ -227,9 +227,9 @@
           "Label1":"12376P JOYCE, DOCTOR EILEEN PRESENTATION OF RAR~E ON EXTENDED LOAN TO MUSIC DEPARTMENT , BY DOCTOR EILEEN JOYCE - 12377P-12387P",
           "Label2":"18999P GRADUATION CEREMONY 1979  Sir Alexander [Alex] Reid, Dame Joan Hammond, Doctor Eileen Joyce, Sir Lawrence Jackson",
           "Label3":"",
-          "FilePath1": "Eileen_Joyce1.jpg",
-          "FilePath2": "Eileen_Joyce2.jpg",
-          "FilePath3": "Eileen_Joyce3.jpeg"
+          "FilePath1": "Eileen_Joyce1.JPG",
+          "FilePath2": "Eileen_Joyce2.JPG",
+          "FilePath3": "Eileen_Joyce3.png"
     },
     "The_Dancer_and_Emma" : {
 
@@ -245,7 +245,7 @@
     "Sundial" : {
 
           "Order": 11,
-          "Description": "<h1>11. Sundial</h1><p><u>Hours to Sunset</u> is a glass mosaic sundial 8m wide by 4.6m high mounted on the west wall of the UWA Club to celebrate the University of Western Australia's 100th year. Normally we measure time relative to midday, when the sun is highest in the sky. This sundial measures time relative to sunset and indicates how many hours of daylight remain.<br><br>Shaun Tan’s ‘Hours to Sunset’ was the gift of Convocation and the Hawaiian group, to the Centenial  of the UWA.  Dr Peter Kovesi from the Centre for Explortaion Targeting calculated the shadow lines required and Shaun transformed them into a fantastical art work with colours representing the West Australian coastal landscape. \n Tan is a UWA graduate with Honours in Fine Arts and Literature. He is an Academy Award winner for his work ‘The Lost Thing’ and holds many awards for his contribution to children and young peoples’ literature. <br><br>He used traditional Venetian glass making methods combined with modern industrial techinques. The sundial image was scanned and reproduced as a pixellated image used to establish sheets to produce 337500 tessara.  A number of people assisted by adding the tiles as the work progressed. The little courtyard with the Golden Eggs is gently lit at night. <br><br> A gnomon, projecting horizontally from the top centre point of the sundial, casts a shadow on the wall. During the course of the afternoon the tip of the gnomon's shadow will move from the bottom of the wall up to the top until, at sunset, it is level with the gnomon. The left hand curve of the sundial's markings plots the path of the Sun's shadow during the summer solstice, the middle line is the path during the equinox, and the curve on the right shows its path at the winter solstice. The hour lines are angled to account for the different length of day between summer and winter. <br><br>This project originated when Susan Marie, then Director of University Extension Services, and Board member of the UWA Club, commissioned Shaun Tan to create a west-facing sundial.  Ian Middleton, artisan tiler, executed the work. Susan Marie was the project coordinator. For more information visit <a href='//www.culturalprecinct.uwa.edu.au/about/hours-to-sunset'>here</a> </p>",
+          "Description": "<h1>11. Sundial</h1><p><b>Hours to Sunset</b> is a glass mosaic sundial 8m wide by 4.6m high mounted on the west wall of the UWA Club to celebrate the University of Western Australia's 100th year. Normally we measure time relative to midday, when the sun is highest in the sky. This sundial measures time relative to sunset and indicates how many hours of daylight remain.<br><br>Shaun Tan’s ‘Hours to Sunset’ was the gift of Convocation and the Hawaiian group, to the Centenial  of the UWA.  Dr Peter Kovesi from the Centre for Explortaion Targeting calculated the shadow lines required and Shaun transformed them into a fantastical art work with colours representing the West Australian coastal landscape. \n Tan is a UWA graduate with Honours in Fine Arts and Literature. He is an Academy Award winner for his work ‘The Lost Thing’ and holds many awards for his contribution to children and young peoples’ literature. <br><br>He used traditional Venetian glass making methods combined with modern industrial techinques. The sundial image was scanned and reproduced as a pixellated image used to establish sheets to produce 337500 tessara.  A number of people assisted by adding the tiles as the work progressed. The little courtyard with the Golden Eggs is gently lit at night. <br><br> A gnomon, projecting horizontally from the top centre point of the sundial, casts a shadow on the wall. During the course of the afternoon the tip of the gnomon's shadow will move from the bottom of the wall up to the top until, at sunset, it is level with the gnomon. The left hand curve of the sundial's markings plots the path of the Sun's shadow during the summer solstice, the middle line is the path during the equinox, and the curve on the right shows its path at the winter solstice. The hour lines are angled to account for the different length of day between summer and winter. <br><br>This project originated when Susan Marie, then Director of University Extension Services, and Board member of the UWA Club, commissioned Shaun Tan to create a west-facing sundial.  Ian Middleton, artisan tiler, executed the work. Susan Marie was the project coordinator. For more information visit <a href='//www.culturalprecinct.uwa.edu.au/about/hours-to-sunset'>here</a> </p>",
           "Label1":"",
           "Label2":"",
           "Label3":"",
@@ -262,12 +262,12 @@
             "Label3":"",
             "FilePath1": "Agriculture1.jpg",
             "FilePath2": "Agriculture2.jpeg",
-            "FilePath3": ""
+            "FilePath3": "Agriculture3.jpeg"
       },
       "Bilya_Marlee" : {
 
             "Order": 28,
-            "Description": "<h1>1. Bilya Marlee School of Indigenous Studies, 2020</h1><p>Designed by renowned architect and UWA graduate the late Kerry Hill AO, the new Bilya Marlee (River of the Swan) building stands as a reminder of the valuable knowledge systems that WA’s Aboriginal people have to share with the world.</p><p>The building also incorportes the Centre for Aboriginal Medical and Dental Health and the Poche Centre for Indigenous Health.</p><p>Building design was inspired by the swan’s nest – a place of fertility, birth, parenting and teaching that offered a safe haven until an individual was ready to go out and create their own nest.</p><p>Indigenous programs started formally at UWA in 1988 aiming to get Aboriginal people into education and produce qualified people, including lawyers and doctors, to assist Aboriginal communities and to contribute to the State and the country.</p><p>Designed to fit into the landscape Bilya Marlee sends the message that learning is not just indoors.</p><p>According to Noongar man, UWA’s Dr Richard Walley, the building pays homage to the fact that it is sitting on traditional Whadjuk Noongar land and the importance of the Swan River in Noongar culture, stories and knowledge.</p><p>The building’s main courtyard is topped by a canopy of mature marri trees, preserved from the original site, with landscaping of local flora, inspired by the Wadjuk Six Seasons. The alluvial colours of the Swan River (Derbal Yerrigan) and the back swan (marlee) form the colour palette.</p>",
+            "Description": "<h1>1. Bilya Marlee  School of Indigenous Studies, 2020</h1><p>Designed by renowned architect and UWA graduate the late Kerry Hill AO, the new Bilya Marlee (River of the Swan) building stands as a reminder of the valuable knowledge systems that WA’s Aboriginal people have to share with the world.<br<br>The building also incorportes the Centre for Aboriginal Medical and Dental Health and the Poche Centre for Indigenous Health.<br><br>Building design was inspired by the swan’s nest – a place of fertility, birth, parenting and teaching that offered a safe haven until an individual was ready to go out and create their own nest.<br><br>Indigenous programs started formally at UWA in 1988 aiming to get Aboriginal people into education and produce qualified people, including lawyers and doctors, to assist Aboriginal communities and to contribute to the State and the country.<br><br>Designed to fit into the landscape Bilya Marlee sends the message that learning is not just indoors.<br><br>According to Noongar man, UWA’s Dr Richard Walley, the building pays homage to the fact that it is sitting on traditional Whadjuk Noongar land and the importance of the Swan River in Noongar culture, stories and knowledge.<br><br>The building’s main courtyard is topped by a canopy of mature marri trees, preserved from the original site, with landscaping of local flora, inspired by the Wadjuk Six Seasons. The alluvial colours of the Swan River (Derbal Yerrigan) and the back swan (marlee) form the colour palette.</p>",
             "Label1":"",
             "Label2":"",
             "Label3":"",
@@ -278,12 +278,12 @@
       "Prescott_Court" : {
 
             "Order": 26,
-            "Description": "<h1>3. Prescott Court</h1><p>Sir Stanley Lewis Prescott, O.B.E., B.Sc., M.Sc., Hon. LL.D., (1910- 1978) Born at Tetbury, Gloucestershire and educated at Tetbury Grammar School he attended the Victoria University of Manchester. In 1936, he was appointed Professor of Physiology at the Cheeloo (Shantung Christian) University, Tsinan, China. During the Japanese invasion in 1938 he was Superintendent of the Tsinan Hospital. The family moved to Sydney in 1941 and Prescott was commissioned in the RAAF as a Junior Intelligence Officer. As Squadron Leader he joined No. 1 Flying Personnel Research Unit in Melbourne which dealt with aviation medicine. After discharge, Prescott was appointed Master of Ormond College, University of Melbourne, and then in 1953, UWA Vice-Chancellor.</p><p>Prescott oversaw the creation of new faculties in medicine, architecture, economics and commerce, and attracting Commonwealth and State funding to enable a substantial building programme for an Arts building and new Library. One of Prescott’s significant decisions was to request a revised masterplan of the proposed buildings to reflect the style of the existing structures thus unifying buildings across the campus. He served on the Commission of Enquiry on the University of Malaya, 1957, the Nanyang University Commission, 1959, and the Royal Perth Hospital Board. He chaired the Australian Vice-Chancellors’ Committee, 1962-1964, and the Murdoch University Planning Board, 1971-1973.</p>",
+            "Description": "<h1>3. Prescott Court</h1><p><b>Sir Stanley Lewis Prescott</b>, O.B.E., B.Sc., M.Sc., Hon. LL.D., (1910- 1978) Born at Tetbury, Gloucestershire and educated at Tetbury Grammar School he attended the Victoria University of Manchester. In 1936, he was appointed Professor of Physiology at the Cheeloo (Shantung Christian) University, Tsinan, China. During the Japanese invasion in 1938 he was Superintendent of the Tsinan Hospital. The family moved to Sydney in 1941 and Prescott was commissioned in the RAAF as a Junior Intelligence Officer. As Squadron Leader he joined No. 1 Flying Personnel Research Unit in Melbourne which dealt with aviation medicine. After discharge, Prescott was appointed Master of Ormond College, University of Melbourne, and then in 1953, UWA Vice-Chancellor.<br><br>Prescott oversaw the creation of new faculties in medicine, architecture, economics and commerce, and attracting Commonwealth and State funding to enable a substantial building programme for an Arts building and new Library. One of Prescott’s significant decisions was to request a revised masterplan of the proposed buildings to reflect the style of the existing structures thus unifying buildings across the campus. He served on the Commission of Enquiry on the University of Malaya, 1957, the Nanyang University Commission, 1959, and the Royal Perth Hospital Board. He chaired the Australian Vice-Chancellors’ Committee, 1962-1964, and the Murdoch University Planning Board, 1971-1973.</p>",
             "Label1":"",
             "Label2":"",
             "Label3":"",
-            "FilePath1": "Prescott1.jpeg",
-            "FilePath2": "Prescott2.jpeg",
+            "FilePath1": "Prescott1.jpg",
+            "FilePath2": "Prescott2.jpg",
             "FilePath3": "Prescott3.jpeg"
       },
       "Underwood" : {
