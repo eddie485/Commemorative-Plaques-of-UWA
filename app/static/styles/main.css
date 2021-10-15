@@ -244,6 +244,13 @@ p, pre{
     max-height:100%;
     object-fit: contain;
 }
+
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
 .line-divider {
     width: 100%;
     height: 1px;
