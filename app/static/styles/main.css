@@ -245,6 +245,7 @@ p, pre{
     object-fit: contain;
 }
 
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   filter: invert(1);        /* Makes it easier to see carousel previous and next arrows by inverting the colours */
