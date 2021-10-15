@@ -9,7 +9,7 @@ h1 {
 
 p, pre{
     text-align: justify;
-    font-family: "TTNormsPro",Helvetica,Arial,sans-serif;    /* font from UWA website*/
+    font-family: "TTNormsPro",Arial,sans-serif;    /* font from UWA website*/
     font-weight: 400;
     letter-spacing: normal;
     -webkit-font-smoothing: antialiased;
@@ -245,10 +245,10 @@ p, pre{
     object-fit: contain;
 }
 
-.carousel-caption {
-    position: relative;
-    left: 0;
-    top: 0;
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);        /* Makes it easier to see carousel previous and next arrows by inverting the colours */
 }
 
 .line-divider {
