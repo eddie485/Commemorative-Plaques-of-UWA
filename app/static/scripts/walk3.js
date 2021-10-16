@@ -1,5 +1,5 @@
 var color1 = "#e2b600"
-var currentMarker = "";
+var currentMarker = ""; //current marker which we are clicking
 var count = 0;
 
 $.getJSON("../static/sites.json",function(sites){
@@ -12,6 +12,7 @@ $.getJSON("../static/sites.json",function(sites){
     new CustomMarker(el4)
             .setLngLat([115.820092788849, -31.9824709476961])
             .onClick(() => { //when clicked, define the following function
+                //retrieve image path, and blurb description from json file
                     $.getJSON("../static/sites.json",function(sites){
                       var description = sites.Underwood.Description;
                       var picture1 = '/static/images/'+sites.Underwood.FilePath1;
@@ -21,13 +22,15 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image1").attr("src", picture1)
                       $("#image2").attr("src", picture2)
                       $("#image3").attr("src", picture3)
-                      $("#Content").html(description);
-                      $("#Carousel").show();
+                      $("#Content").html(description); //replace html id "Content" with blurb/description
+                      $("#Carousel").show(); //show carousel
+                      //if no marker has been clicked, set current marker to be this marker, and change marker class(marker1b is a clicked marker which is blue`)
                       if(currentMarker == "")
                       {
                         currentMarker = "marker4";
                         $('#marker4').removeClass("marker marker4").addClass('marker marker4b');
                       }
+                      //else, change current marker to this marker, and remove the last clicked marker(so it is no longer blue)
                       else
                       {
                         $('#' + currentMarker).removeClass("marker" + " " + currentMarker+"b").addClass("marker"+ " "+ currentMarker);
@@ -36,11 +39,13 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 4;
-                    console.log(count);
+                    //add previous and next buttons
                     document.getElementById("next").style.display = "none";
                     document.getElementById("prev").style.display = "block";
             })
             .addTo(map);
+
+    //THE MARKERS BELOW FOLLOW THE SAME SCHEMA
 
     const el3 = document.createElement('div');
     el3.className = 'marker marker3';
@@ -74,7 +79,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 3;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -112,7 +117,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 2;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -151,7 +156,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 1;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "none";
             })
@@ -163,7 +168,7 @@ $.getJSON("../static/sites.json",function(sites){
 function clickParam(){
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('marker');
-  
+
   console.log("marker" + myParam);
   $("#marker"+myParam).click();
 }

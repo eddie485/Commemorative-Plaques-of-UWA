@@ -1,6 +1,6 @@
 var color2 = "#27348b"
 var count = 0;
-var currentMarker = "";
+var currentMarker = ""; //current marker which we are clicking
 
 $.getJSON("../static/sites.json",function(sites){
     // create a HTML element for each feature
@@ -9,24 +9,27 @@ $.getJSON("../static/sites.json",function(sites){
     el4.id = "marker4";
     el4.style.marginTop = '-'+(36/2)+'px';
     // make a marker for each feature and add it to the map
-    new CustomMarker(el4)
+    new CustomMarker(el4) //create custom mapbox marker
     .setLngLat([115.817784628967, -31.9786905168583])
     .onClick(() => { //when clicked, define the following function
+        //retrieve image path, and blurb description from json file
             $.getJSON("../static/sites.json",function(sites){
               var description = sites.Reid_Library.Description;
               var picture1 = '/static/images/'+sites.Reid_Library.FilePath1;
               var picture2 = '/static/images/'+sites.Reid_Library.FilePath2;
               var picture3 = '/static/images/'+sites.Reid_Library.FilePath3;
-              $("#Content").html(description);
+              $("#Content").html(description); //replace html id "Content" with blurb/description
               $("#image1").attr("src", picture1)
               $("#image2").attr("src", picture2)
-              $("#image3").attr("src", picture3) 
+              $("#image3").attr("src", picture3)
               $("#Carousel").show();
+                      //if no marker has been clicked, set current marker to be this marker, and change marker class(marker1b is a clicked marker which is blue`)
                       if(currentMarker == "")
                       {
                         currentMarker = "marker4";
                         $('#marker4').removeClass("marker marker4").addClass('marker marker4b');
                       }
+                        //else, change current marker to this marker, and remove the last clicked marker(so it is no longer blue)
                       else
                       {
                         $('#' + currentMarker).removeClass("marker" + " " + currentMarker+"b").addClass("marker"+ " "+ currentMarker);
@@ -35,11 +38,15 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                 count = 4;
-                console.log(count);
+
+                //add previous and next buttons
                 document.getElementById("next").style.display = "block";
                 document.getElementById("prev").style.display = "block";
             })
                 .addTo(map);
+
+    //THE MARKERS BELOW FOLLOW THE SAME SCHEMA
+
 
     const el1 = document.createElement('div');
     el1.className = 'marker marker1';
@@ -57,7 +64,7 @@ $.getJSON("../static/sites.json",function(sites){
               $("#Content").html(description);
               $("#image1").attr("src", picture1)
               $("#image2").attr("src", picture2)
-              $("#image3").attr("src", picture3) 
+              $("#image3").attr("src", picture3)
               $("#Carousel").show();
                       if(currentMarker == "")
                       {
@@ -72,7 +79,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
             count = 1;
-            console.log(count);
+
             document.getElementById("next").style.display = "block";
             document.getElementById("prev").style.display = "none";
         })
@@ -94,7 +101,7 @@ $.getJSON("../static/sites.json",function(sites){
               $("#Content").html(description);
               $("#image1").attr("src", picture1)
               $("#image2").attr("src", picture2)
-              $("#image3").attr("src", picture3) 
+              $("#image3").attr("src", picture3)
               $("#Carousel").show();
                       if(currentMarker == "")
                       {
@@ -109,7 +116,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 3;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -131,7 +138,7 @@ $.getJSON("../static/sites.json",function(sites){
               $("#Content").html(description);
               $("#image1").attr("src", picture1)
               $("#image2").attr("src", picture2)
-              $("#image3").attr("src", picture3) 
+              $("#image3").attr("src", picture3)
               $("#Carousel").show();
                       if(currentMarker == "")
                       {
@@ -146,7 +153,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 2;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -169,7 +176,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#Content").html(description);
                       $("#image1").attr("src", picture1)
                       $("#image2").attr("src", picture2)
-                      $("#image3").attr("src", picture3) 
+                      $("#image3").attr("src", picture3)
                       $("#Carousel").show();
                               if(currentMarker == "")
                               {
@@ -184,7 +191,7 @@ $.getJSON("../static/sites.json",function(sites){
                               }
                             });
                             count = 5;
-                            console.log(count);
+
                             document.getElementById("next").style.display = "block";
                             document.getElementById("prev").style.display = "block";
                     })
@@ -206,7 +213,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#Content").html(description);
                       $("#image1").attr("src", picture1)
                       $("#image2").attr("src", picture2)
-                      $("#image3").attr("src", picture3) 
+                      $("#image3").attr("src", picture3)
                       $("#Carousel").show();
                               if(currentMarker == "")
                               {
@@ -221,7 +228,7 @@ $.getJSON("../static/sites.json",function(sites){
                               }
                             });
                             count = 6;
-                            console.log(count);
+
                             document.getElementById("next").style.display = "block";
                             document.getElementById("prev").style.display = "block";
                     })
@@ -243,7 +250,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#Content").html(description);
                       $("#image1").attr("src", picture1)
                       $("#image2").attr("src", picture2)
-                      $("#image3").attr("src", picture3) 
+                      $("#image3").attr("src", picture3)
                       $("#Carousel").show();
                               if(currentMarker == "")
                               {
@@ -257,6 +264,8 @@ $.getJSON("../static/sites.json",function(sites){
                                 $('#marker7').removeClass("marker marker7").addClass('marker marker7b');
                               }
                             });
+                            document.getElementById("next").style.display = "block";
+                            document.getElementById("prev").style.display = "block";
                     })
                     .addTo(map);
 
@@ -278,7 +287,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#Content").html(description);
                       $("#image1").attr("src", picture1)
                       $("#image2").attr("src", picture2)
-                      $("#image3").attr("src", picture3) 
+                      $("#image3").attr("src", picture3)
                       $("#Carousel").show();
                               if(currentMarker == "")
                               {
@@ -293,7 +302,7 @@ $.getJSON("../static/sites.json",function(sites){
                               }
                             });
                             count = 8;
-                            console.log(count);
+
                             document.getElementById("next").style.display = "block";
                             document.getElementById("prev").style.display = "block";
                     })
@@ -315,7 +324,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#Content").html(description);
                       $("#image1").attr("src", picture1)
                       $("#image2").attr("src", picture2)
-                      $("#image3").attr("src", picture3) 
+                      $("#image3").attr("src", picture3)
                       $("#Carousel").show();
                               if(currentMarker == "")
                               {
@@ -330,7 +339,7 @@ $.getJSON("../static/sites.json",function(sites){
                               }
                             });
                             count = 9;
-                            console.log(count);
+
                             document.getElementById("next").style.display = "block";
                             document.getElementById("prev").style.display = "block";
                     })
@@ -353,7 +362,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#Content").html(description);
                       $("#image1").attr("src", picture1)
                       $("#image2").attr("src", picture2)
-                      $("#image3").attr("src", picture3) 
+                      $("#image3").attr("src", picture3)
                       $("#Carousel").show();
                               if(currentMarker == "")
                               {
@@ -368,7 +377,7 @@ $.getJSON("../static/sites.json",function(sites){
                               }
                             });
                             count = 10;
-                            console.log(count);
+
                             document.getElementById("next").style.display = "block";
                             document.getElementById("prev").style.display = "block";
                     })
@@ -406,7 +415,7 @@ $.getJSON("../static/sites.json",function(sites){
                               }
                             });
                             count = 11;
-                            console.log(count);
+
                             document.getElementById("next").style.display = "block";
                             document.getElementById("prev").style.display = "block";
                     })
@@ -442,7 +451,7 @@ $.getJSON("../static/sites.json",function(sites){
                               }
                             });
                             count = 12;
-                            console.log(count);
+
                             document.getElementById("next").style.display = "none";
                             document.getElementById("prev").style.display = "block";
                     })
@@ -454,7 +463,7 @@ $.getJSON("../static/sites.json",function(sites){
 function clickParam(){
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('marker');
-  
+
   console.log("marker" + myParam);
   $("#marker"+myParam).click();
-}                
+}

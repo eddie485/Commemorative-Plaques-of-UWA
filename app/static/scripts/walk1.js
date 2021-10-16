@@ -1,18 +1,19 @@
 var color1 = "#e2b600"
 var count = 0;
-var currentMarker = "";
+var currentMarker = ""; //current marker which we are clicking
 
 
 $.getJSON("../static/sites.json",function(sites){
     // create a HTML element for each feature
     const el1 = document.createElement('div');
     el1.className = 'marker marker1';
-    el1.id = "marker1";                                                 //id for previous/next button clicking
-    el1.style.marginTop = '-'+(36/2)+'px';
+    el1.id = "marker1";
+    el1.style.marginTop = '-'+(36/2)+'px'; //create div element for marker
     // make a marker for each feature and add it to the map
-    new CustomMarker(el1)
+    new CustomMarker(el1) //create custom mapbox marker
     .setLngLat([115.818189729916, -31.9782788741746])
     .onClick(() => { //when clicked, define the following function
+            //retrieve image path, and blurb description from json file
             $.getJSON("../static/sites.json",function(sites){
               var description = sites.Queen_And_Duke.Description;
               var picture1 = '/static/images/'+sites.Queen_And_Duke.FilePath1;
@@ -22,13 +23,15 @@ $.getJSON("../static/sites.json",function(sites){
               $("#image1").attr("src", picture1)
               $("#image2").attr("src", picture2)
               $("#image3").attr("src", picture3)
-              $("#Content").html(description);
-              $("#Carousel").show();
+              $("#Content").html(description); //replace html id "Content" with blurb/description
+              $("#Carousel").show(); //show carousel
+              //if no marker has been clicked, set current marker to be this marker, and change marker class(marker1b is a clicked marker which is blue`)
               if(currentMarker == "")
               {
                 currentMarker = "marker1";
                 $('#marker1').removeClass("marker marker1").addClass('marker marker1b');
               }
+              //else, change current marker to this marker, and remove the last clicked marker(so it is no longer blue)
               else
               {
                 $('#' + currentMarker).removeClass("marker" + " " + currentMarker+"b").addClass("marker"+ " "+ currentMarker);
@@ -37,12 +40,13 @@ $.getJSON("../static/sites.json",function(sites){
               }
             });
             count = 1;
-            console.log(count);
+            //add previous and next buttons
             document.getElementById("next").style.display = "block";
             document.getElementById("prev").style.display = "none";
         })
         .addTo(map);
 
+        //THE MARKERS BELOW FOLLOW THE SAME SCHEMA
 
     const el2 = document.createElement('div');
     el2.className = 'marker marker2';
@@ -75,7 +79,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 2;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -113,7 +117,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 3;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -150,7 +154,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 4;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -187,7 +191,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 5;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -224,7 +228,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 6;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -261,7 +265,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 7;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -299,7 +303,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 8;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -336,7 +340,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 9;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -373,7 +377,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 10;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "block";
                     document.getElementById("prev").style.display = "block";
             })
@@ -411,7 +415,7 @@ $.getJSON("../static/sites.json",function(sites){
                       }
                     });
                     count = 11;
-                    console.log(count);
+
                     document.getElementById("next").style.display = "none";
                     document.getElementById("prev").style.display = "block";
             })
@@ -420,6 +424,7 @@ $.getJSON("../static/sites.json",function(sites){
             clickParam();
         });
 
+//checks url if any parameters are set. If so click on the corresponding marker which paramater indictates
 function clickParam(){
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('marker');
