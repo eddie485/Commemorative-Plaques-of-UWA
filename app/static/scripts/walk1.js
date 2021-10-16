@@ -21,7 +21,7 @@ $.getJSON("../static/sites.json",function(sites){
               $("#Content").html(description);
               $("#image1").attr("src", picture1)
               $("#image2").attr("src", picture2)
-              $("#image3").attr("src", picture3) 
+              $("#image3").attr("src", picture3)
               $("#Content").html(description);
               $("#Carousel").show();
               if(currentMarker == "")
@@ -81,7 +81,7 @@ $.getJSON("../static/sites.json",function(sites){
             })
             .addTo(map);
 
-            
+
     const el3 = document.createElement('div');
     el3.className = 'marker marker3';
     el3.id = "marker3";
@@ -98,7 +98,7 @@ $.getJSON("../static/sites.json",function(sites){
         $("#Content").html(description);
         $("#image1").attr("src", picture1)
         $("#image2").attr("src", picture2)
-        $("#image3").attr("src", picture3) 
+        $("#image3").attr("src", picture3)
         $("#Carousel").show();
                       if(currentMarker == "")
                       {
@@ -135,7 +135,7 @@ $.getJSON("../static/sites.json",function(sites){
               $("#Content").html(description);
               $("#image1").attr("src", picture1)
               $("#image2").attr("src", picture2)
-              $("#image3").attr("src", picture3) 
+              $("#image3").attr("src", picture3)
               $("#Carousel").show();
                       if(currentMarker == "")
                       {
@@ -172,7 +172,7 @@ $.getJSON("../static/sites.json",function(sites){
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture3) 
+                  $("#image3").attr("src", picture3)
                   $("#Carousel").show();
                       if(currentMarker == "")
                       {
@@ -246,7 +246,7 @@ $.getJSON("../static/sites.json",function(sites){
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture3) 
+                  $("#image3").attr("src", picture3)
                   $("#Carousel").show();
                       if(currentMarker == "")
                       {
@@ -284,7 +284,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#Content").html(description);
                       $("#image1").attr("src", picture1)
                       $("#image2").attr("src", picture2)
-                      $("#image3").attr("src", picture3) 
+                      $("#image3").attr("src", picture3)
                       $("#Carousel").show();
                       if(currentMarker == "")
                       {
@@ -358,7 +358,7 @@ $.getJSON("../static/sites.json",function(sites){
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture3) 
+                  $("#image3").attr("src", picture3)
                   $("#Carousel").show();
                       if(currentMarker == "")
                       {
@@ -396,7 +396,7 @@ $.getJSON("../static/sites.json",function(sites){
                   $("#Content").html(description);
                   $("#image1").attr("src", picture1)
                   $("#image2").attr("src", picture2)
-                  $("#image3").attr("src", picture3) 
+                  $("#image3").attr("src", picture3)
                   $("#Carousel").show();
                       if(currentMarker == "")
                       {
@@ -423,7 +423,7 @@ $.getJSON("../static/sites.json",function(sites){
 function clickParam(){
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('marker');
-  
+
   console.log("marker" + myParam);
   $("#marker"+myParam).click();
 }
