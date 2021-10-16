@@ -24,6 +24,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image3").attr("src", picture3)
                       $("#Content").html(description); //replace html id "Content" with blurb/description
                       $("#Carousel").show(); //show carousel
+                      resetCarousel();
                       //if no marker has been clicked, set current marker to be this marker, and change marker class(marker1b is a clicked marker which is blue`)
                       if(currentMarker == "")
                       {
@@ -66,6 +67,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image3").attr("src", picture3);
                       $("#Content").html(description);
                       $("#Carousel").show();
+                      resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker3";
@@ -104,6 +106,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image3").attr("src", picture3);
                       $("#Content").html(description);
                       $("#Carousel").show();
+                      resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker2";
@@ -143,6 +146,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image3").attr("src", picture3)
                       $("#Content").html(description);
                       $("#Carousel").show();
+                      resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker1";

@@ -25,6 +25,7 @@ $.getJSON("../static/sites.json",function(sites){
               $("#image3").attr("src", picture3)
               $("#Content").html(description); //replace html id "Content" with blurb/description
               $("#Carousel").show(); //show carousel
+              resetCarousel();
               //if no marker has been clicked, set current marker to be this marker, and change marker class(marker1b is a clicked marker which is blue`)
               if(currentMarker == "")
               {
@@ -66,6 +67,7 @@ $.getJSON("../static/sites.json",function(sites){
                 $("#image2").attr("src", picture2)
                 $("#image3").attr("src", picture3)
                 $("#Carousel").show();
+                resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker2";
@@ -104,6 +106,7 @@ $.getJSON("../static/sites.json",function(sites){
         $("#image2").attr("src", picture2)
         $("#image3").attr("src", picture3)
         $("#Carousel").show();
+        resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker3";
@@ -141,6 +144,7 @@ $.getJSON("../static/sites.json",function(sites){
               $("#image2").attr("src", picture2)
               $("#image3").attr("src", picture3)
               $("#Carousel").show();
+              resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker4";
@@ -178,6 +182,7 @@ $.getJSON("../static/sites.json",function(sites){
                   $("#image2").attr("src", picture2)
                   $("#image3").attr("src", picture3)
                   $("#Carousel").show();
+                  resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker5";
@@ -215,6 +220,7 @@ $.getJSON("../static/sites.json",function(sites){
                   $("#image2").attr("src", picture2)
                   $("#image3").attr("src", picture3)
                   $("#Carousel").show();
+                  resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker6";
@@ -252,6 +258,7 @@ $.getJSON("../static/sites.json",function(sites){
                   $("#image2").attr("src", picture2)
                   $("#image3").attr("src", picture3)
                   $("#Carousel").show();
+                  resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker7";
@@ -290,6 +297,7 @@ $.getJSON("../static/sites.json",function(sites){
                       $("#image2").attr("src", picture2)
                       $("#image3").attr("src", picture3)
                       $("#Carousel").show();
+                      resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker8";
@@ -327,6 +335,7 @@ $.getJSON("../static/sites.json",function(sites){
                   $("#image2").attr("src", picture2)
                   $("#image3").attr("src", picture3)
                   $("#Carousel").show();
+                  resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker9";
@@ -364,6 +373,7 @@ $.getJSON("../static/sites.json",function(sites){
                   $("#image2").attr("src", picture2)
                   $("#image3").attr("src", picture3)
                   $("#Carousel").show();
+                  resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker10";
@@ -402,6 +412,7 @@ $.getJSON("../static/sites.json",function(sites){
                   $("#image2").attr("src", picture2)
                   $("#image3").attr("src", picture3)
                   $("#Carousel").show();
+                  resetCarousel();
                       if(currentMarker == "")
                       {
                         currentMarker = "marker11";

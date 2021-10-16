@@ -1,3 +1,11 @@
+function resetCarousel(){
+  $('#Carousel').carousel({
+    pause: true,
+    interval: false
+  }).carousel(0);
+}
+
+
 function startWalk() {
     document.getElementById("start").style.display = "none"; // remove start walk button once clicked
     document.getElementById("next").style.display = "block"; // next location button shows once walk starts
@@ -6,6 +14,7 @@ function startWalk() {
     document.getElementById("marker1").click(); // clicks on the first location marker to start walk
     window.scrollTo(0, 0);
     console.log(count);
+
 }
 
 function changeLoc(num, final){ //"final" arguement is the number of locations minus one
@@ -17,6 +26,11 @@ function changeLoc(num, final){ //"final" arguement is the number of locations m
             map.flyTo({
             });
             document.getElementById(markerID).click();
+            //reset carousel
+            $('Carousel').carousel({
+              pause: true,
+              interval: false
+            }).carousel(0);
             window.scrollTo(0, 0);
             console.log(count);    //shows count on console screen for debugging purposes
             console.log(markerID);
@@ -34,6 +48,11 @@ function changeLoc(num, final){ //"final" arguement is the number of locations m
             map.flyTo({
             });
             document.getElementById(markerID).click();
+            //reset carousel
+            $('#Carousel').carousel({
+              pause: true,
+              interval: false
+            }).carousel(0);
             window.scrollTo(0, 0);
             console.log(count);
         }
