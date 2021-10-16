@@ -71,7 +71,10 @@ document.addEventListener("DOMContentLoaded", function(){
             map.setStyle('mapbox://styles/mapbox/' + layerId);
         };
     };
-    // setTimeout(function() {
-    //     $(".mapboxgl-ctrl-geolocate").click();
-    // },5000);
+    let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+    if (isMobile) {
+      setTimeout(function() {
+          $(".mapboxgl-ctrl-geolocate").click();
+      },5000);
+    }
 });
