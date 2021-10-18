@@ -8,6 +8,7 @@ This is an interactive map website showcasing the myriad of unique locations wit
 The themes present a narrative that the locations share with each other. Select one of the three below to begin your walk and to start exploring the many stories that UWA has to offer. You can also change the style of the map based on your own personal preference between a satelite or a street view style map.
 
 Built With
+
 * Mapbox
 * Bootstrap
 * JQuery
@@ -28,6 +29,7 @@ Maps are used from Mapbox. To use this web application open in:
 Internet explorer is not supported. 
 
 Contact
+
 Ervin Basilio (22836721)
 Haotian Chen (22529033)
 Jason Grogan (21830393)
@@ -36,6 +38,7 @@ Cassie Ritchie (22358769)
 Jamie Vo (22735819)
 
 Acknowledgments
+
 Special thanks to:
 
 * Dr. Margo Warburton
