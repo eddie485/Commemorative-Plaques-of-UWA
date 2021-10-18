@@ -7,3 +7,4 @@ Maps are used from Mapbox. To use this web application open in:
 * Firefox latest.
 * Microsoft Edge 13 (with the most recent Windows 10 update).
 Internet explorer is not supported. 
+
