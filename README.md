@@ -2,6 +2,7 @@
 This is the repository for group 32's project on their CITS3200 Professional Computing unit. 
 
 About The Project
+
 This is an interactive map website showcasing the myriad of unique locations within the University of Western Australia. Most of the locations have specific plaques dedicated to preserving the history behind them for many years to come. Each location is categorised based on a theme that they fit into, this is can be seen through their icon colours.
 
 The themes present a narrative that the locations share with each other. Select one of the three below to begin your walk and to start exploring the many stories that UWA has to offer. You can also change the style of the map based on your own personal preference between a satelite or a street view style map.
@@ -12,9 +13,11 @@ Built With
 * JQuery
 
 Getting Started
+
 *
 
 Usage
+
 *
 
 Maps are used from Mapbox. To use this web application open in:
