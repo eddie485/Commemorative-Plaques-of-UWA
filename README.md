@@ -15,7 +15,12 @@ Built With
 
 Getting Started
 
-*
+To run on your local system start a new virtual environment with `python3 -m venv venv`
+Then activate your vrtual environment with `venv\scripts\activate`
+And install all the required packages with `pip install -r requirements.txt`
+
+Now you can run the website on localhost with `flask run`
+If you open a browser and go to `localhost:5000` then the website will be running
 
 Usage
 
