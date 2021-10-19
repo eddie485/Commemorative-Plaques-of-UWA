@@ -36,6 +36,19 @@ Usage
     * Arts Through Time
     * Distinct Personalities
     * Bilya Marlee 
+* Themes pages present a map along side a sidebar
+  * Map contains all walk information
+    * GPS information on user location is automatically presented on mobile devices
+    * All the Locations have markers at their location on the map
+    * Markers are numbered according to their walk order
+    * The focused on location is highlighted in blue
+    * The User can press a marker to focus on that location
+    * The User can press the GPS button in the top left to hide or reveal there location
+  * The Sidebar contains information on the walk
+    * The Start walk button focuses on the first location
+    * All focused locations will have extra information appear on the sidebar
+    * Underneath the information contains a Previous and next location buttons for moving
+      * The previous and next location buttons allow the user to move through the walk locations in order
 * Locations page presents all locations that are available on website
   * Locations have image and title as well as shortened descriptions  
     * Can be expanded upon clicking the read more button
