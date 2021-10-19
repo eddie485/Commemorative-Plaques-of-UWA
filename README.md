@@ -26,7 +26,7 @@ If you open a browser and go to `localhost:5000` then the website will be runnin
 Usage
 
 * as
-* * asas
+  * asas
 
 Maps are used from Mapbox. To use this web application open in:
 * Safari 9 and above.
