@@ -26,10 +26,10 @@ If you open a browser and go to `localhost:5000` then the website will be runnin
 Usage
 
 * User starts on homepage 
- * Option to choose one of three themes from buttons or navbar dropdown
- * Navbar allows for access to different features of website 
-  * Locations Page
-  * About Page
+  * Option to choose one of three themes from buttons or navbar dropdown
+  * Navbar allows for access to different features of website 
+    * Locations Page
+    * About Page
   
 
 Maps are used from Mapbox. To use this web application open in:
