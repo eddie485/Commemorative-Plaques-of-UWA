@@ -26,10 +26,26 @@ If you open a browser and go to `localhost:5000` then the website will be runnin
 Usage
 
 * User starts on homepage 
-  * Option to choose one of three themes from buttons or navbar dropdown
+  * Presents a map alongside sidebar with all information
+    * Map has ability to change between satelite and street view
+    * Sidebar contains future information regarding walks
   * Navbar allows for access to different features of website 
     * Locations Page
     * About Page
+  * Option to choose one of three themes from buttons or navbar dropdown
+    * Arts Through Time
+    * Distinct Personalities
+    * Bilya Marlee 
+* Locations page presents all locations that are available on website
+  * Locations have image and title as well as shortened descriptions  
+    * Can be expanded upon clicking the read more button
+    * Has a find on map button to take user directly to the location on map
+* About page has all information regarding website
+  * Summary of UWA Historical Society
+  * Information about how website came to be
+  * Aknowledgements
+  * Bibliography
+    
   
 
 Maps are used from Mapbox. To use this web application open in:
